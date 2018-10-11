@@ -1,0 +1,1773 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<!--<link rel="stylesheet" type="text/css" href="css/index.css" />-->
+		<link rel="stylesheet" type="text/css" href="css/index2.css" />
+		<style type="text/css">
+			.sticky-search-container .logo-wrap{
+				float: left;
+			    width: 240px;
+			    height: 36px;
+			    overflow: hidden;
+			}
+			
+			.sticky-search-container {
+				top: -50px;
+				position: fixed;
+				left: 0;
+				width: 100%;
+				height: 50px;
+				background-color: #fff;
+				box-shadow: 0 1px 6px 0 #ccc;
+				z-index: 9999;
+			}
+			
+			.sticky-search-container .logo-wrap .logo{
+				float: left;
+			    width: 115px;
+			    height: 36px;
+			    overflow: hidden;
+			}
+			
+			.top_nav_search{
+				margin: auto;
+				margin-top: 7px;
+    			width: 482px;
+			}
+			
+			.sticky-search-container .logo-wrap .logo img{
+				height: 100%;
+    			float: left;
+			}
+			/*顶部悬浮框*/
+			.wrap{
+				width: 960px;
+			}
+			.container{
+				width: 960px;
+			}
+			
+			 ul{
+			 	margin: 0;
+			 	padding: 0;
+			 }
+			
+			.fm970 {
+				margin: auto;
+				width: 970px;
+			}
+			
+			.mu_nav_wrap {
+				float: left;
+				width: 140px;
+				margin:0 18px 0 0;
+				background: #fafafa url(https://s10.mogucdn.com/pic/140909/1blhwf_ieydemldmy4tombtmmytambqgiyde_5x40.gif);
+			}
+			
+			.mu_nav_info {
+				padding: 20px 0;
+			}
+			
+			.mu_nav {
+				padding: 0 20px;
+			}
+			
+			.mu_nav_info_avatar {
+				position: relative;
+				margin: 0 auto;
+				padding: 5px;
+				width: 100px;
+				height: 100px;
+			}
+			
+			.mu_nav_info_avatar_mk {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 110px;
+				height: 110px;
+			}
+			
+			.mu_nav_info_avatar img {
+				vertical-align: middle;
+				border-radius: 50%;
+			}
+			
+			.mu_nav_info_uname {
+				padding: 0 10px;
+				text-align: center;
+				color: #333;
+			}
+			
+			.mu_title {
+				cursor: pointer;
+				border-top: 1px solid #e1e1e1;
+				font: normal 16px/56px Microsoft YaHei, sans-serif;
+				color: #333;
+			}
+			
+			.mu_nav_item {
+				padding: 0;
+				display: none;
+				margin: 0 -20px 13px;
+				font: normal 12px/26px helvetica, tahoma, arial, sans-serif;
+			}
+			
+			.mu_nav_item a {
+				display: block;
+				padding-left: 20px;
+				color: #666;
+			}
+			
+			.mu_nav_item a:hover{
+				color: #f36;
+			}
+			
+			.mu_nav_count {
+				position: relative;
+				font-weight: 800;
+				color: #ff5896;
+				font-style: normal;
+			}
+			/*用户信息界面*/
+			.per_content_wrap {
+				display: block;
+				float: left;
+				width: 808px;
+				padding-bottom: 20px;
+				overflow: hidden;
+			}
+			
+			.setting_box {
+				font-size: 14px;
+				width: 685px;
+				margin-left: 50px;
+				padding-top: 35px;
+			}
+			
+			.settings_title {
+				background: #f9f9f9;
+				width: 649px;
+				height: 30px;
+				padding: 0 10px 0 20px;
+				margin-bottom: 14px;
+			}
+			
+			.settings_title span {
+				color: #ff6aa2;
+				font-size: 16px;
+				font-weight: 700;
+				height: 30px;
+				line-height: 30px;
+			}
+			
+			.setting_basic {
+				margin-top: 22px;
+				position: relative;
+			}
+			
+			dl {
+				display: block;
+				-webkit-margin-before: 1em;
+				-webkit-margin-after: 1em;
+				-webkit-margin-start: 0px;
+				-webkit-margin-end: 0px;
+			}
+			
+			.setting_box dd {
+				float: left;
+				width: 105px;
+				text-align: right;
+				line-height: 26px;
+				vertical-align: middle;
+				color: #666;
+				font-size: 14px;
+			}
+			
+			.setting_box dt {
+				margin-bottom: 24px;
+				font-size: 13px;
+				color: #666;
+			}
+			
+			.settings_title{
+				background: #f9f9f9;
+			    width: 649px;
+			    height: 30px;
+			    padding: 0 10px 0 20px;
+			    margin-bottom: 14px;
+			}
+			
+			.setting_basic textarea{
+				height: 120px;
+			    width: 466px;
+			    border: 1px solid #cfcfcf;
+			    color: #666;
+			    padding: 5px;
+			    outline: none;
+			    font-size: 12px;
+			    vertical-align: baseline;
+			    margin: 0;
+			}
+			
+			.green_button{
+				cursor: pointer;
+			    width: 115px;
+			    height: 35px;
+			    line-height: 30px;
+			    text-align: center;
+			    font-size: 18px;
+			    font-weight: 700;
+			    background-color: #f46;
+			    display: inline-block;
+			    color: #fff;
+			    vertical-align: middle;
+			    border: none;
+			}
+			
+			.per_wrap {
+				background: #fff;
+			    border: 1px solid #dfdfdf;
+			    overflow: hidden;
+			}
+			/*我的订单界面*/
+			.mu_content_wrap{
+				float: right;
+			    width: 1040px;
+			    padding-bottom: 20px;
+			    display: none;
+			}
+			
+			.order-search{
+				position: relative;
+    			margin: 30px 0;
+			}
+			
+			.order-search-input{
+				height: 30px;
+    			width: 440px;
+    			display: flex;
+			    -webkit-box-orient: horizontal;
+			    -webkit-box-direction: normal;
+			    flex-direction: row;
+			    line-height: 30px;
+			    border: 1px solid #ddd;
+			    position: relative;
+			}
+			
+			.order-search-input input{
+				width: 340px;
+			    border: none;
+			    caret-color: #ff5777;
+			    padding: 0 10px;
+			}
+			
+			.order-search-input-package{
+				width: 80px;
+			    text-align: center;
+			    border-left: 1px solid #ddd;
+			    background-color: #f3f4f9;
+			    cursor: pointer;
+			}
+			
+			.order-title{
+				position: relative;
+			    height: 40px;
+			    margin-bottom: 30px;
+			    line-height: 40px;
+			    background: #fafafa url(https://s10.mogucdn.com/pic/140909/1blhwf_ieydemldmy4tombtmmytambqgiyde_5x40.gif) repeat-x;
+			}
+			
+			.order-title-column li{
+				float: left;
+			    font-weight: 700;
+			    text-align: center;
+			}
+			
+			.goods{
+				width: 32%;
+			}
+			
+			.price{
+				width: 11.7%;
+			}
+			
+			.quantity{
+				width: 6.8%;
+			}
+			
+			.aftersale{
+				width: 11.7%;
+			}
+			
+			.total{
+				width:12.5%;
+			}
+			
+			.status{
+				width:12.5%;
+			}
+			
+			.other{
+				width:12.5%;
+			}
+			
+			.order-list-empty{
+				width: 600px;
+    			margin: 50px auto 10px;
+			}
+			
+			.empty-icon{
+				width: 145px;
+			    height: 165px;
+			    background: url(https://s10.mogucdn.com/pic/140930/empty_ieyginrxg5sdqzbzmmytambqhayde_145x165.png);
+			}
+			
+			.empty-content{
+				margin-left: 50px;
+			}
+			
+			.empty-title{
+				margin: 50px 0 28px;
+			    font-size: 18px;
+			    line-height: 1;
+			    font-weight: 700;
+			}
+			
+			.empty-list li{
+				margin-bottom: 12px;
+			}
+			
+			.empty-list a{
+				color: #f36;
+    			text-decoration: underline;
+			}
+			
+			.empty-list a:hover{
+				color: #f36;
+			}
+			
+			.vertical-top{
+				vertical-align:top;
+			}
+			
+			#leftNavRight{
+				width: 815px;
+				display: none;
+				float: right;
+			}
+			
+			.report-title{
+				padding-left: 20px;
+			    line-height: 43px;
+			    height: 43px;
+			    font-size: 16px;
+			    color: #333;
+			    border-bottom: 1px solid #dfdfdf;
+			    font-weight: 600;
+			}
+			
+			.md-module-table{
+				padding: 20px;
+			}
+			
+			.md-module-table .up-table{
+				width: 100%;
+			}
+			.md-module-table thead{
+				text-align: left;
+				background: #f4f5fa;
+    			color: #666;
+			}
+			
+			.md-module-table thead th{
+				background: #f4f5fa;
+			    border: 1px solid #e2e2e2;
+			    padding: 10px 16px;
+			    font-weight: 400;
+			    margin-right: 1px;
+			}
+			
+			.table-title-content{
+				width: 100%;
+			    height: 100%;
+			    font-weight: 400;
+			}
+			
+			.md-table-nullinfo{
+				text-align: center;
+			    padding: 15px;
+			    font-size: 13px;
+			    color: #666;
+			}
+			
+			.mt-10{
+				margin-top: 10px;
+			}
+			
+			.mc-pagination{
+				margin: 0 auto;
+			    border-radius: 0;
+			    font-size: 0;
+			    text-align: center;
+			}
+			
+			.mc-pagination li{
+				display: inline-block;
+			    margin-left: 1px;
+			    font-size: 12px;
+			    background-color: #fe4c94;
+			}
+			
+			.mc-pagination .active a{
+			    cursor: default;
+			    color: #fff;
+			    float: none;
+			    margin-left: 0;
+			    border: 0;
+			    display: block;
+			    font-weight: 400;
+			    background: none;
+			    padding: 2px 10px;
+			    font-size: 15px;
+			}
+			
+			.leftNavRight{
+				width: 815px;
+				display: none;
+				float: right;
+			}
+			
+			.statistics-zone{
+			    padding: 10px 0;
+				margin: 10px 20px;
+			    border-bottom: 1px dashed #dfdfdf;
+			    color: #999;
+			    font-size: 14px;
+			}
+			
+			.mr-15{
+				margin-right: 15px;
+			}
+			
+			.mc-module-field{
+				float: left;
+				width: auto;
+			    min-width: 28%;
+			    display: inline-block;
+			    vertical-align: middle;
+			    font-size: 14px;
+    			color: #333;
+			}
+			
+			.mc-module-field .form-group{
+				margin-bottom: 0;
+			}
+			
+			.mc-module-field .mc-field-label {
+				float: left;
+				width: 80px;
+			    display: inline-block;
+			    text-align: right;
+			    vertical-align: middle;
+			    padding-right: 10px;
+			}
+			.col-lg{
+			    float: left;
+			    padding: 0;
+			    min-height: 1px;
+			    margin: 5px 0;
+			    line-height: 30px;
+			}
+			
+			.up-calendar-picker{
+			    position: relative;
+			    display: inline-block;
+			    outline: none;
+			    font-size: 14px;
+			    transition: opacity .3s ease;
+    			width: 120px;
+			}
+			
+			.up-input-sm{
+				padding: 1px 7px!important;
+			    height: 28px;
+			    border-radius: 4px;
+			}
+			
+			.up-calendar-picker-input{
+				width: 75px;
+				position: relative;
+    			display: inline-block;
+    			cursor: text;
+			    font-size: 14px;
+			    line-height: 1.5;
+			    color: #666;
+			    background-color: #fff;
+			    background-image: none;
+			    border: 1px solid #d9d9d9;
+			}
+			
+			.up-calendar-picker-icon{
+				position: absolute;
+				user-select: none;
+				transition: all .3s cubic-bezier(.645,.045,.355,1);
+			    width: 12px;
+			    height: 12px;
+			    line-height: 12px;
+			    right: 8px;
+			    color: #999;
+			    top: 50%;
+			    margin-top: -6px;
+			    display: inline-block;
+			    font: normal normal normal 14px/1 FontAwesome;
+			    font-size: inherit;
+			    text-rendering: auto;
+			    -webkit-font-smoothing: antialiased;
+			    background: url(https://s10.mogucdn.com/p2/161031/upload_0gca8gl4d17bi8d7alhc8d186bdjh_27x28.jpg) no-repeat;
+    			background-size: cover;
+			}
+			
+			.ml-2{
+				margin-left: 2px;
+			}
+			
+			.mc-module-field .form-control{
+				min-width: 120px;
+			}
+			
+			.mc-input{
+				width: 120px;
+				height: 30px;
+			    line-height: 30px;
+			    border: 1px solid #c4c4c4;
+			    color: #333;
+			    font-size: 14px;
+			    padding: 0 5px;
+			    outline: none;
+			}
+			
+			.mc-select-input{
+				margin: 5px 0;
+				width: 78px;
+				height: 30px;
+			    line-height: 1.5;
+			    border: 1px solid #c4c4c4;
+			    border-radius: 0;
+			    color: #333;
+			    font-size: 14px;
+			    padding: 4px 35px 4px 5px;
+			    background: url(https://s10.mogucdn.com/pic/150410/1blhwf_ieywgzrrgy3tcyjxgazdambqmeyde_29x30.png) 100% no-repeat #fff;
+			}
+			
+			.vertical-middle{
+				vertical-align: middle;
+			}
+			
+			.primary{
+				margin: 5px 0;
+				line-height: 30px;
+				height: 30px;
+				background-color: #ff5097;
+			    border-color: #ff5097;
+			    color: #fff;
+			    font-weight: 700;
+			}
+			
+			.mgj-btn{
+				display: inline-block;
+			    min-width: 70px;
+			    border: 1px solid #c4c4c4;
+			    border-radius: 2px;
+			    font-size: 14px;
+			    text-align: center;
+			    cursor: pointer;
+			    outline: none;
+			}
+			
+			.mc-field-label{
+				line-height: 30px;
+				margin: 5px 0;
+			}
+			
+			.mc-field-text{
+				margin: 5px 0;
+				width: 120px;
+				float: left;
+			}
+			
+			.mc-field-select{
+				float:left;
+			}
+			
+			#address_wrap{
+				display: none;
+				min-height: 300px;
+			    float: left;
+			    padding-bottom: 20px;
+			}
+			
+			.addr_right{
+				float: left;
+			    width: 800px;
+			    background: #fff;
+			}
+			
+			.addr_title{
+				padding-left: 20px;
+			    line-height: 43px;
+			    height: 43px;
+			    font-size: 16px;
+			    color: #333;
+			    border-bottom: 1px solid #dfdfdf;
+			    font-weight: 400;
+			}
+			
+			.addr_right .addr_edit{
+			 	padding: 18px 18px 50px;
+			 }
+			 
+			 .add_new_addr span{
+			 	float: left;
+			    overflow: hidden;
+			    height: 32px;
+			    line-height: 32px;
+			    width: 115px;
+			    text-indent: -999em;
+			    cursor: pointer;
+			    background: url(//s10.mogucdn.com/mlcdn/c45406/170727_7h5i5bcbkiikgeiljb8hjg7k4211h_115x32.png) no-repeat;
+			 }
+			 
+			 .addr_edit .addr_section{
+			 	margin-top: 10px;
+			    padding: 13px 17px;
+			    border: 1px solid #efefef;
+			    background: #fafafa;
+			 }
+			 
+			 .address_wrapper{
+			 	display: none;
+			 	float: left;
+			 }
+			 
+			 .addr_section ul{
+			 	margin: 20px 0;
+			 }
+			 
+			 .addr_section li{
+			 	float: left;
+			    line-height: 20px;
+			    color: #333;
+			 }
+			 
+			 .addr_section  .name{
+			 	width: 55px;
+			    margin-right: 5px;
+			    word-wrap: break-word;
+			    word-break: normal;
+			 }
+			 
+			 .addr_section .addr{
+			 	width: 350px;
+			 }
+			 
+			 .addr_section .zcode{
+			 	width: 50px;
+			 	margin-left:15px ;
+			 	margin-right: 15px;
+			 }
+			 
+			 .addr_section .mobile{
+			 	margin-right: 15px;
+			 }
+			 
+			 .addr_section .oper a{
+			 	margin-right: 5px;
+			 }
+			 .address_pop{
+			 	position: relative;
+			 }
+			 
+			 .address_pop dt{
+			 	margin: 5px 0;
+			 	position: absolute;
+			    left: 0;
+			    width: 90px;
+			    color: #666;
+			    text-align: right;
+			 }
+			 
+			 .address_pop dd{
+			 	position: relative;
+    			padding-left: 106px;
+			 }
+			 
+			 .address_pop dd i{
+			 	margin:5px 0;
+			 }
+			 
+			.address_pop .needicon{
+			  	position: absolute;
+			    left: 90px;
+			    color: #ff5a00;
+			    font-size: 14px;
+			    line-height: 14px;
+			    font-style: normal;
+			}
+			
+			.address_pop .dt{
+				margin-left: 12px;
+    			color: #666;
+			}
+			
+			.address_pop .vm{
+				vertical-align: middle;
+			}
+			
+			.address_pop .w140{
+				width: 140px;
+			}
+			
+			.address_pop .w100{
+				width: 100px;
+			}
+			
+			.address_pop .text{
+				margin-top: 5px;
+			    margin-bottom: 5px;
+			    padding: 6px 8px;
+			    height: 12px;
+			    line-height: 12px;
+			    color: #666;
+			    border: 1px solid #c7c7c7;
+			    border-radius: 2px;
+			}
+			.address_pop .textarea{
+				margin-top: 5px;
+			    margin-bottom: 5px;
+			    padding: 6px 8px;
+			    line-height: 16px;
+			    color: #666;
+			    border: 1px solid #c7c7c7;
+			    border-radius: 2px;
+			    vertical-align: top;
+			    outline: none;
+			    font-size: 100%;
+			}
+			.address_pop .formsize_large{
+				width: 90%;
+			}
+			
+			.address_pop .formsize_normal{
+				width: 120px;
+			}
+			
+			.address_pop .prompt{
+				padding-left: 8px;
+    			color: #999;
+			}
+			
+			.address_pop .breakline{
+				display: block;
+			}
+			
+			.address_pop  .confirm_btn{
+				display: inline-block;
+			    height: 34px;
+			    overflow: hidden;
+			    width: 104px;
+    			background: url(//s10.mogucdn.com/mlcdn/c45406/170727_1abe5g73jjj49i1kgj6fg6dcj0j7e_360x900.png) -200px -217px no-repeat;
+			}
+			.address_pop  .cancel_btn{
+				display: inline-block;
+			    height: 34px;
+			    overflow: hidden;
+				width: 68px;
+    			background: url(//s10.mogucdn.com/mlcdn/c45406/170727_1abe5g73jjj49i1kgj6fg6dcj0j7e_360x900.png) -200px -251px no-repeat
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--顶部悬浮条-->
+		<div class="sticky-search-container lets-rock">
+			<div class="wrap clearfix">
+				<div class="logo-wrap clearfix">
+					<a class="logo" href="#">
+						<img src="https://s10.mogucdn.com/mlcdn/c45406/180109_0afd7gig4fbdcag30dg7j054jicd0_224x82.png"/>
+					</a>
+				</div>
+				<div class="top_nav_search search-box">
+						<!--下拉选框-->
+						<div class="select-box">
+							<span class="selected">
+								<span class="now-sel">搜商品</span>
+							<i></i>
+							</span>
+							<ol class="sel">
+								<li class="goods">
+									<a href="#">商品</a>
+								</li>
+								<li class="current">
+									<a href="#">店铺</a>
+								</li>
+							</ol>
+						</div>
+						<!--搜索条-->
+						<form class="clearfix" action="">
+							<input class="search" type="text" name="" id="search" value="" placeholder="请输入您想要的商品" />
+							<button class="btn" type="button">搜&nbsp;&nbsp;索</button>
+						</form>
+					</div>
+			</div>
+		</div>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<div class="site-top-nav">
+			<div class="wrap">
+				<a class="home fl">
+					蘑菇街首页
+				</a>
+				<ul class="header-top">
+					<li class="s1 has-icon user-meta"></li>
+					<li class="s1 has-icon message-center">
+						<a href="userMsg.html">消息</a>
+					</li>
+					<li class="s1 has-icon user-meta">
+						<a href="collect_goods.html">我的收藏</a>
+						<i class="icon-delta"></i>
+						<ul class="ext-mode">
+							<li class="s2">
+								<a href="collect_goods.html">收藏的商品</a>
+							</li>
+							<li class="s2">
+								<a href="collect_store.html">收藏的小店</a>
+							</li>
+							<li class="s2">
+								<a href="footprint.html">浏览足迹</a>
+							</li>
+						</ul>
+					</li>
+					<li class="s1 myorder user-meta">
+						<a class="text display_u" href="shoppingCar.html">我的订单</a>
+					</li>
+					<li class="s1 has-line shopping-cart-v2">
+						<a class="cart-info-wrap" href="shoppingCar.html">购物车</a>
+					</li>
+					<li class="s1 has-icon user-meta custom-item">
+						<a href="userMsg.html">客户服务</a>
+						<i class="icon-delta"></i>
+						<ul class="ext-mode">
+							<li class="s2">
+								<a href="">消费者服务</a>
+							</li>
+							<li class="s2">
+								<a href="">商家服务</a>
+							</li>
+							<li class="s2">
+								<a href="">规则中心</a>
+							</li>
+						</ul>
+					</li>
+					<li class="s1 has-icon myxiaodian">
+						<a class="text display_u" href="#">我的小店</a>
+						<i class="icon-delta"></i>
+						<ul class="ext-mode">
+							<li class="s2">
+								<a href="">管理后台</a>
+							</li>
+							<li class="s2">
+								<a href="">商家社区</a>
+							</li>
+							<li class="s2">
+								<a href="">商家培训</a>
+							</li>
+							<li class="s2">
+								<a href="">市场入驻</a>
+							</li>
+						</ul>
+
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="mgj_rightbar J_sidebar">
+			<div class="mgj_rightbar_blank_div"></div>
+			<div class="sidebar-item mgj-my-avatar">
+				<a href="#">
+					<div class="img">
+						<img src="http://s3.mogucdn.com/mlcdn/5abf39/180822_2g871f7iiaa3k1h42adg1hijf299e_100x100.jpg_48x48.jpg" />
+					</div>
+				</a>
+			</div>
+			<div class="sidebar-item mgj-my-cart">
+				<a href="shoppingCa.html">
+					<i class="s-icon"></i>
+					<div>
+						购物车
+					</div>
+				</a>
+			</div>
+			<div class="sidebar-item mgj-my-coupon">
+				<a href="userMag.html">
+					<i class="s-icon"></i>
+					<div>
+						优惠券
+					</div>
+				</a>
+			</div>
+			<div class="sidebar-item mgj-my-wallet">
+				<a href="Mywallet.html">
+					<i class="s-icon"></i>
+					<div>
+						钱包
+					</div>
+				</a>
+			</div>
+			<div class="sidebar-item mgj-my-browserlog">
+				<a href="footprint.html">
+					<i class="s-icon"></i>
+					<div>
+						足迹
+					</div>
+				</a>
+			</div>
+			<div class="mgj-my-browserlog">
+				<a href="#">
+					<i class="qr-icon"></i>
+				</a>
+			</div>
+			<div class="sideBottom">
+				<div class="sidebar-item mgj-back2top">
+					<i class="s-icon"></i>
+				</div>
+			</div>
+		</div>
+		<!--表头-->
+
+		<!--中间内容 上-->
+		<div class="head_mid clearfix">
+			<div class="container search-nav clearfix">
+				<a class="mianLogo" href="index.html">
+					<img src="https://s3.mogucdn.com/mlcdn/c45406/170904_1fj9406416501i4lkabcc0hjb8341_480x180.png" />
+				</a>
+
+				<div class="search-content fl">
+					<!--搜索栏-->
+					<div class="search-box">
+						<!--下拉选框-->
+						<div class="select-box">
+							<span class="selected">
+								<span class="now-sel">搜商品</span>
+							<i></i>
+							</span>
+							<ol class="sel">
+								<li class="goods">
+									<a href="#">商品</a>
+								</li>
+								<li class="current">
+									<a href="#">店铺</a>
+								</li>
+							</ol>
+						</div>
+						<!--搜索条-->
+						<form class="clearfix" action="">
+							<input class="search" type="text" name="" id="search" value="" placeholder="请输入您想要的商品" />
+							<button class="btn" type="button">搜&nbsp;&nbsp;索</button>
+						</form>
+					</div>
+					<!--搜索栏小商品列表-->
+					<div class="G-typeList">
+						<a href="goods_category.html">小白鞋</a>
+						<a href="goods_category.html">牛仔裤</a>
+						<a href="goods_category.html">睡衣</a>
+						<a href="goods_category.html">卫衣</a>
+						<a href="goods_category.html">包包</a>
+						<a href="goods_category.html">衬衫</a>
+						<a href="goods_category.html">外套</a>
+						<a href="goods_category.html">口红</a>
+						<a href="goods_category.html">背带裤</a>
+						<a href="goods_category.html">连衣裙</a>
+					</div>
+				</div>
+				<div class="mid_fr">
+					<img src="https://s11.mogucdn.com/mlcdn/c45406/171130_8gf90d0d5bgc4ag4kk82gi8kc287d_440x180.png" />
+				</div>
+			</div>
+		</div>
+		<!--个人资料界面-->
+		<div class="body_wrap">
+			<div class="body_content_wrap">
+				<div class="fm970">
+					<div class="per_wrap clearfix">
+						<div class="mu_nav_wrap">
+							<div class="mu_nav_info">
+								<div class="mu_nav_info_avatar">
+									<div class="mu_nav_info_avatar_mk">
+										<img src=" http://s3.mogucdn.com/mlcdn/5abf39/180822_2g871f7iiaa3k1h42adg1hijf299e_100x100.jpg " />
+									</div>
+								</div>
+								<p class="mu_nav_info_uname">
+									qq_j4xw25ub1sash
+								</p>
+							</div>
+							<div class="mu_nav">
+								<div class="mu_title">
+									我的订单
+								</div>
+								<ul id="myIndent" class="mu_nav_item">
+									<li>
+										<a href="shoppingCar.html">全部订单</a>
+									</li>
+									<li>
+										<a href="shoppingCar.html">
+											待付款
+											<i class="mu_nav_count">
+										 	<i class="mu_nav_count_arw"></i>
+											</i>
+										</a>
+									</li>
+									<li>
+										<a href="shoppingCar.html">
+											待收货
+											<i class="mu_nav_count">
+										 	<i class="mu_nav_count_arw"></i>
+											</i>
+										</a>
+									</li>
+									<li>
+										<a href="shoppingCar.html">
+											待评价
+											<i class="mu_nav_count">
+										 	<i class="mu_nav_count_arw"></i>
+											</i>
+										</a>
+									</li>
+									<li>
+										<a href="shoppingCar.html">
+											退货退款
+											<i class="mu_nav_count">
+										 	<i class="mu_nav_count_arw"></i>
+											</i>
+										</a>
+									</li>
+									<li>
+										<a href="shoppingCar.html">
+											订单回收站
+											<i class="mu_nav_count">
+										 	<i class="mu_nav_count_arw"></i>
+											</i>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="mu_nav">
+								<div class="mu_title">
+									<a href="Mywallet.html">我的钱包</a>
+								</div>
+							</div>
+							<div class="mu_nav">
+								<div class="mu_title">
+									优惠特权
+								</div>
+								<ul class="mu_nav_item">
+									<li>
+										<a href="vipPage.html">会员中心</a>
+									</li>
+									<li>
+										<a href="vipPage.html">店铺优惠券</a>
+									</li>
+									<li>
+										<a href="vipPage.html">全场优惠券</a>
+									</li>
+									<li>
+										<a href="vipPage.html">活动优惠券</a>
+									</li>
+								</ul>
+							</div>
+							<div class="mu_nav">
+								<div id="adress" class="mu_title">
+									<a href="#">地址管理</a>
+								</div>
+							</div>
+							<div class="mu_nav">
+								<div class="mu_title">
+									安全设置
+								</div>
+								<ul class="mu_nav_item">
+									<li>
+										<a href="#">设置密码</a>
+									</li>
+									<li>
+										<a href="#">绑定手机</a>
+									</li>
+									<li>
+										<a href="#">实名认证</a>
+									</li>
+									<li>
+										<a href="#">账户锁定</a>
+									</li>
+								</ul>
+							</div>
+							<script type="text/javascript">
+								
+							</script>
+							<div class="mu_nav">
+								<div class="mu_title">
+									维权管理
+								</div>
+								<ul id="complain" class="mu_nav_item">
+									<li id="com">
+										<a href="#">投诉管理</a>
+									</li>
+									<li id="rep">
+										<a href="#">举报管理</a>
+									</li>
+								</ul>
+							</div>
+							<div class="mu_nav mu_expand pb40">
+								<div class="mu_title">
+									账号设置
+								</div>
+								<ul class="mu_nav_item">
+									<li id="basicMsg" class="c">
+										<a href="#">基本信息</a>
+									</li>
+									<li>
+										<a href="#">修改头像</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!--用户信息界面-->
+						<div id="per_content_wrap" class="per_content_wrap">
+							<div id="setting_box" class="setting_box fl">
+								<div class="settings_title">
+									<span>基本资料</span>
+								</div>
+								<div class="setting_basic">
+									<form class="infomodify" action="" method="post">
+										<dl>
+											<dd>用户名：</dd>
+											<dt class="unick uname">
+									<span class="usernickname">
+										qq_j4xw25ub1sash
+									</span>
+								</dt>
+											<dd>性别：</dd>
+											<dt class="sex">
+									<input type="radio" name="sex" id="female" value="2" />女
+									<input type="radio" name="sex" id="male" value="1" />男
+								</dt>
+											<dd>所在地：</dd>
+											<dt class="location">
+									<select id="province" name="P1"></select>
+											<select id="city" name="C1"></select>
+								</dt>
+
+											<dd>生日：</dd>
+											<dt class="birthday">
+									<select name="born[]" id="year">
+										<option value="1996">1996</option>
+										<option value="1997">1997</option>
+										<option value="1998">1998</option>
+										<option value="1999">1999</option>
+										<option value="2000">2000</option>
+										<option value="2001">2001</option>
+										<option value="2003">2003</option>
+										<option value="2004">2004</option>
+									</select>
+									&nbsp;年&nbsp;
+									<select name="born[]" id="month">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+									</select>
+									&nbsp;月&nbsp;
+									<select name="born[]" id="day">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+									</select>
+									&nbsp;日
+    							</dt>
+											<dd>职业：</dd>
+											<dt class="profession">
+												<select id="profession" name="profession">
+													<option value="白领">白领</option>
+													<option value="学生">学生</option>
+													<option value="模特">模特</option>
+													<option value="传媒">传媒</option>
+													<option value="艺术">艺术</option>
+													<option value="其他">其他</option>
+												</select>
+											</dt>
+											<br />
+										</dl>
+										<div class="settings_title mt30">
+											<span>其他信息</span>
+										</div>
+										<dl>
+											<dd>自我介绍：</dd>
+											<dt>
+												<textarea name="introduce" class="r3">随便写点什么，让大家了解你吧。</textarea>
+											</dt>
+											<dd>&nbsp;&nbsp;</dd>
+											<dt>
+												<input class="green_button r3 modifycomplete" type="button" name="" id="" value="修改完成" />
+											</dt>
+										</dl>
+									</form>
+								</div>
+							</div>
+						</div>
+						
+						<!--我的订单界面-->
+						<div class="mu_content_wrap">
+							<div class="order-search">
+								<div class="order-search-input">
+									<input type="text" placeholder="请输入订单中的商品名称或订单号" name="" id="" value="" />
+									<div class="order-search-input-package">
+										搜索
+									</div>
+								</div>
+							</div>
+							<div class="order-title">
+								<ul class="order-title-column clearfix">
+									<li class="goods">商品</li>
+									<li class="price">单价(元)</li>
+									<li class="quantity">数量</li>
+									<li class="aftersale">售后</li>
+									<li class="total">实付款(元)</li>
+									<li class="status">交易状态</li>
+									<li class="other">操作</li>
+								</ul>
+							</div>
+							<div class="order-list-empty clearfix">
+								<div class="empty-icon fl"></div>
+								<div class="empty-content fl">
+									<h5 class="empty-title">
+										<p>你还没有购买过商品，赶紧去挑选商品～</p>
+									</h5>
+									<ul class="empty-list">
+										<li>
+											去 
+											<a href="#">服饰</a>
+											 看看大家都喜欢的商品
+										</li>
+										<li>
+											去 
+											<a href="#">团购</a>
+											 看看正在折扣中的商品
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						
+						<!--投诉界面-->
+						<div id="leftNavRight" class="inline-block vertical-top">
+							<div class="report-title">我的投诉</div>
+							<div class="md-module-table">
+								<table class="up-table table-hover" border="" cellspacing="" cellpadding="">
+									<thead>
+										<tr>
+											<th class="md-table-buyerName">
+												<div class="table-title-content">
+													<span>买家昵称</span>
+												</div>
+											</th>
+											<th class="md-table-complaintId">
+												<div class="table-title-content">
+													<span>投诉ID</span>
+												</div>
+											</th>
+											<th class="md-table-complaintStatusStr">
+												<div class="table-title-content">
+													<span>状态</span>
+												</div>
+											</th>
+											<th class="data-reactid">
+												<div class="table-title-content">
+													<span>订单编号</span>
+												</div>
+											</th>
+											<th class="data-reactid">
+												<div class="table-title-content">
+													<span>商家</span>
+												</div>
+											</th>
+											<th class="data-reactid">
+												<div class="table-title-content">
+													<span>创建时间</span>
+												</div>
+											</th>
+											<th class="data-reactid">
+												<div class="table-title-content">
+													<span>操作</span>
+												</div>
+											</th>
+										</tr>
+									</thead>
+								</table>
+								<div class="md-table-nullinfo">暂无数据</div>
+								<div class="mt-10">
+									<ul class="mc-pagination">
+										<li class="active">
+											<a href="#">1</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!--举报界面-->
+						<div class="leftNavRight inline-block vertical-top">
+							<div class="report-title">举报列表</div>
+							<div class="statistics-zone">
+								<span class="mr-15">
+									<span>合计</span>
+									<span>0</span>
+									<span>条</span>
+								</span>
+								<span class="mr-15">
+									<span>举报成功</span>
+									<span>0</span>
+									<span>条</span>
+								</span>
+								<span>
+									<span>处理中</span>
+									<span>0</span>
+									<span>条</span>
+								</span>
+							</div>
+							<div class="report-form">
+								<div class="mc-module-field">
+									<div class="form-group clearfix ">
+										<label class=" mc-field-label  col-lg" for="">
+											<span>举报时间:</span>
+										</label>
+										<div class="mc-field-raw col-lg">
+											<div class="inline-block">
+												<span class="up-calendar-picker">
+													<span>
+														<input placeholder="请选择日期" class="up-calendar-picker-input up-input-sm" type="text" name="" id="" value="" />
+														<span class="up-calendar-picker-icon"></span>
+													</span>
+												</span>
+											</div>
+											<span>-</span>
+											<div class="inline-block ml-2">
+												<span class="up-calendar-picker">
+													<span>
+														<input placeholder="请选择日期" class="up-calendar-picker-input up-input-sm" type="text" name="" id="" value="" />
+														<span class="up-calendar-picker-icon"></span>
+													</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="mc-module-field">
+									<div class="form-group clearfix ">
+										<label class=" mc-field-label  col-lg" for="">
+											<span>举报编号:</span>
+										</label>
+										<div class="mc-field-text">
+											<input type="text" class="form-control mc-input" name="" id="" value="" />
+										</div>
+									</div>
+								</div>
+								<div class="mc-module-field">
+									<div class="form-group clearfix ">
+										<label class="mc-field-label  col-lg" for="">
+											<span>举报类型:</span>
+										</label>
+										<div class="mc-field-select">
+											<select class="form-control mc-select-input" name="">
+												<option value="">全部</option>
+												<option value="">图片侵权举报</option>
+												<option value="">违规商品举报</option>
+												<option value="">重复铺货举报</option>
+												<option value="">知识产权侵权举报</option>
+												<option value="">出手非约定商品</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="clear"></div>
+								<div class="mc-module-field">
+									<div class="form-group clearfix">
+										<label class="mc-field-label" for="">
+											<span>举报结果:</span>
+										</label>
+										<div class="mc-field-select">
+											<select class="form-control mc-select-input" name="">
+												<option value="">全部</option>
+												<option value="">成立</option>
+												<option value="">不成立</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="mc-module-field">
+									<div class="form-group clearfix">
+										<label class="mc-field-label" for="">
+											<span>举报状态:</span>
+										</label>
+										<div class="mc-field-select">
+											<select class="form-control mc-select-input" name="">
+												<option value="">全部</option>
+												<option value="">待介入</option>
+												<option value="">已介入</option>
+												<option value="">处理完成</option>
+												<option value="">已撤销</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="inline-block vertical-middle">
+									<span class="mgj-btn primary search-btn">查询</span>
+								</div>
+							</div>
+							<div class="md-module-table">
+								<table class="up-table table-hover" border="" cellspacing="" cellpadding="">
+									<thead>
+										<tr>
+											<th class="md-table-buyerName">
+												<div class="table-title-content">
+													<span>买家昵称</span>
+												</div>
+											</th>
+											<th class="md-table-complaintId">
+												<div class="table-title-content">
+													<span>投诉ID</span>
+												</div>
+											</th>
+											<th class="md-table-complaintStatusStr">
+												<div class="table-title-content">
+													<span>状态</span>
+												</div>
+											</th>
+											<th class="data-reactid">
+												<div class="table-title-content">
+													<span>订单编号</span>
+												</div>
+											</th>
+											<th class="data-reactid">
+												<div class="table-title-content">
+													<span>商家</span>
+												</div>
+											</th>
+											<th class="data-reactid">
+												<div class="table-title-content">
+													<span>创建时间</span>
+												</div>
+											</th>
+											<th class="data-reactid">
+												<div class="table-title-content">
+													<span>操作</span>
+												</div>
+											</th>
+										</tr>
+									</thead>
+								</table>
+								<div class="md-table-nullinfo">暂无数据</div>
+								<div class="mt-10">
+									<ul class="mc-pagination">
+										<li class="active">
+											<a href="#">1</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!--地址管理界面-->
+						<div id="address_wrap">
+							<div class="addr_right topay">
+								<h2 class="addr_title">地址管理</h2>
+								<div class="addr_edit">
+									<div class="add_new_addr clearfix">
+										<span id="J_saddAddress">+添加地址</span>
+									</div>
+									<div class="address_wrapper">
+										<div class="__addressPop">
+											<dl class="address_pop clearfix">
+												<dt>省：</dt>
+												<dd class="pt_ie6hack">
+													<i class="needicon">*</i>
+													<select class="J_province J_select w140 vm" id="home_address-sprovince" name="province"></select>0
+													<label class="dt" for="">市：</label>
+													<select class="J_city J_select w100 vm" id="home_address-scity" name="city"></select>
+													<label class="dt" for="">区：</label>
+													<select class="J_area J_select w100 vm" id="home_address-sarea" name="area"></select>
+												</dd>
+												<dt>邮政编码：</dt>
+												<dd>
+													<i class="needicon">*</i>
+													<input id="postcode" type="text" class="text formsize_normal J_postcode J_form vm" name="" value="" />
+												</dd>
+												<dt>街道地址：</dt>
+												<dd>
+													<i class="needicon">*</i>
+													<input type="text" class="textarea formsize_large J_street J_form" name="" id="streetAddress" value="" />
+												</dd>
+												<dt>收货人姓名：</dt>
+												<dd>
+													<i class="needicon">*</i>
+													<input id="name" class="text formsize_normal J_name J_form vm" type="text" name="" value="" />
+												</dd>
+												<dt>手机：</dt>
+												<dd>
+													<i class="needicon">*</i>
+													<input id="phoNum" class="text formsize_normal J_mobile J_form vm" type="text" name="" value="" />
+												</dd>
+												<dt></dt>
+												<dd class="pt10 oper_btn">
+													<a id="addAddress" class="confirm_btn J_okbtn mr10"></a>
+													<a id="cancel" class="cancel_btn J_cancelbtn"></a>
+												</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="clear"></div>
+									<div class="addr_section">
+										<ul class="clearfix">
+											<li class="name">姓名</li>
+											<li class="addr">地址</li>
+											<li class="zcode">邮编</li>
+											<li class="mobile">电话</li>
+											<li class="oper">
+												<!--<a href="#" class="J_default">设为默认</a>
+												<a href="#" class="edit">编辑</a>
+												<a href="#" class="del nobd">删除</a>-->
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--分割-->
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<script src="js/PCASClass.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			new PCAS("P1", "C1");
+			new PCAS("province", "city", "area");
+			$("#J_saddAddress").click(function() {
+				$(".address_wrapper").css({
+					display:"block"
+				});
+			});
+			$("#addAddress").click(function(){
+				var $province=$("#home_address-sprovince").val();
+				var $city=$("#home_address-scity").val();
+				var $area=$("#home_address-sarea").val();
+				var $street=$("#streetAddress").val();
+				var $postcode=$("#postcode").val();
+				var $phoNum=$("#phoNum").val();
+				var $name=$("#name").val();
+				var addUl="<ul  class='clearfix'><li class='name'>"+$name+"</li><li class='addr'>"+$province+$city+$area+$street+"</li><li class='zcode'>"+$postcode+"</li><li class='mobile'>"+$phoNum+"</li><li class='oper'><a id='default' class='J_default'>设为默认</a><a class='edit'>编辑</a><a class='del nobd'>删除</a></li></ul>"
+				$(".addr_section").append(addUl);
+				$province="";
+				$area="";
+				$city="";
+				$street="";
+				$postcode="";
+				$phoNum="";
+				$name="";
+				$(".address_wrapper").css({
+					display:"none"
+				});
+			});
+			$(".addr_section").on("click",".del",function () {
+				$(this).parent().parent().remove();
+			});
+			$(".addr_section").on("click","#default",function() {
+				$("#default").parent().parent().css({
+					border:0
+				});
+				$(this).parent().parent().css({
+					border:"2px solid #f36"
+				});
+			});
+			$("#adress").click(function() {
+				$(".per_wrap").children().css({
+					display:"none"
+				});
+				$(".mu_nav_wrap").css({
+					display:"block"
+				});
+				$(".fm970").css({
+					width:1200
+				});
+				$(".container").css({
+					width:1200
+				});
+				$(".wrap").css({
+					width:1200
+				});
+				$(".search-content").css({
+					margin:"20px 0 0 100px"
+				});
+				$("#address_wrap").css({
+					display:"block"
+				});
+			});
+			$("#basicMsg").click(function () {
+				$(".per_wrap").children().css({
+					display:"none"
+				});
+				$(".mu_nav_wrap").css({
+					display:"block"
+				});
+				$("#per_content_wrap").css({
+					display:"block"
+				});
+				$(".fm970").css({
+					width:970
+				});
+				$(".container").css({
+					width:960
+				});
+				$(".wrap").css({
+					width:960
+				});
+				$(".search-content").css({
+					margin:"20px 0 0 0"
+				});
+			})
+			$("#myIndent li").click(function () {
+				$(".per_wrap").children().css({
+					display:"none"
+				});
+				$(".mu_nav_wrap").css({
+					display:"block"
+				});
+				$(".fm970").css({
+					width:1200
+				});
+				$(".container").css({
+					width:1200
+				});
+				$(".wrap").css({
+					width:1200
+				});
+				$(".search-content").css({
+					margin:"20px 0 0 100px"
+				});
+				$(".mu_content_wrap").css({
+					display:"block"
+				});
+			});
+			$("#complain #com").click(function() {
+				$(".per_wrap").children().css({
+					display:"none"
+				});
+				$(".mu_nav_wrap").css({
+					display:"block"
+				});
+				$(".fm970").css({
+					width:960
+				});
+				$(".container").css({
+					width:960
+				});
+				$(".wrap").css({
+					width:960
+				});
+				$("#leftNavRight").css({
+					display:"block"
+				});
+				$(".mu_nav_wrap").css({
+					margin:"0 3px 0 0"
+				});
+			});
+			$("#complain #rep").click(function() {
+				$(".per_wrap").children().css({
+					display:"none"
+				});
+				$(".mu_nav_wrap").css({
+					display:"block"
+				});
+				$(".fm970").css({
+					width:960
+				});
+				$(".container").css({
+					width:960
+				});
+				$(".wrap").css({
+					width:960
+				});
+				$(".mu_nav_wrap").css({
+					margin:"0 3px 0 0"
+				});
+				$(".leftNavRight").css({
+					display:"block"
+				})
+			});
+			$(".icon-delta").click(function() {
+				if($(this).parent().find(".ext-mode").css('display')=='none') {
+					$(this).parent().find(".ext-mode").fadeIn(0.3);
+				} else {
+					$(this).parent().find(".ext-mode").fadeOut(0.3);
+				};
+				
+			});
+			$(".mu_nav").click(function() {
+				if($(this).find(".mu_nav_item").css('display')=='none'){
+						$(this).find(".mu_nav_item").css({
+						display:"block"
+					});
+				}else{
+						$(this).find(".mu_nav_item").css({
+						display:"none"
+					});
+				}
+			});
+			$(window).bind("scroll", function() {
+				var top = $(this).scrollTop();
+				if(top >= 30) {
+					$(".mgj-back2top").fadeIn();
+				} else {
+					$(".mgj-back2top").fadeOut();
+				}
+				if(top>=130){
+					$(".sticky-search-container").css({
+						top:0
+					},150);
+				}else{
+					$(".sticky-search-container").css({
+						top:-50
+					},150);
+				}
+			});
+			
+		</script>
+	</body>
+
+</html>

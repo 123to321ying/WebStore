@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/PayMoney.css" />
+	</head>
+
+	<body>
+		<!--表头-->
+		<div class="site-top-nav">
+			<div class="container">
+				<a href="index.html" class="home">蘑菇街首页</a>
+				<div class="header-top fr clearfix">
+					<li class="nav-info clearfix">
+						<a href="userMsg.html">用户名</a>
+						<i class="icon-delta"></i>
+						<div class="divide"></div>
+						<ol class="ext-mode">
+							<li class="s2">
+								<a href="userMsg.html">个人设置</a>
+							</li>
+							<li class="s2">
+								<a href="login.html">退出</a>
+							</li>
+						</ol>
+					</li>
+					<li class="nav-info">
+						<a href="userMsg.html">消息</a>
+						<div class="divide"></div>
+					</li>
+					<li class="nav-info clearfix">
+						<a href="collect_goods.html">我的收藏</a>
+						<i class="icon-delta"></i>
+						<div class="divide"></div>
+						<ol class="ext-mode">
+							<li class="s2">
+								<a href="collect_goods.html">收藏的商品</a>
+							</li>
+							<li class="s2">
+								<a href="collect_goods.html">收藏的小店</a>
+							</li>
+							<li class="s2">
+								<a href="footprint.html">浏览足迹</a>
+							</li>
+						</ol>
+					</li>
+					<li class="nav-info myorder">
+						<div class="divide"></div>
+						<i></i>
+						<a href="shoppingCar.html.html">我的订单</a>
+					</li>
+					<li class="nav-info orderCar">
+						<div class="divide"></div>
+						<i></i>
+						<a href="shoppingCar.html">购物车
+							<span id="itemNum">3</span> 件
+						</a>
+						<div class="top_shoppingCar">
+							<ul>
+								<li class="top_car_item clearfix">
+									<a href="goods.html">
+										<img src="img/images/item1.webp" />
+									</a>
+									<div class="top_car_info">
+										<a href="goods.html">
+											裸色箭头高跟鞋白色显瘦
+										</a>
+										<span>颜色：白色	 尺码：38</span>
+									</div>
+									<div class="pricAndDel fr">
+										<span>￥139.00</span>
+										<span class="top_del">删除</span>
+									</div>
+								</li>
+								<li class="top_car_item clearfix">
+									<a href="goods.html">
+										<img src="img/images/item2.webp" />
+									</a>
+									<div class="top_car_info">
+										<a href="goods.html">
+											裸色箭头高跟鞋白色显瘦
+										</a>
+										<span>颜色：粉色	 尺码：38</span>
+									</div>
+									<div class="pricAndDel fr">
+										<span>￥98.00</span>
+										<span class="top_del">删除</span>
+									</div>
+								</li>
+								<li class="top_car_item clearfix">
+									<a href="goods.html">
+										<img src="img/images/item3.webp" />
+									</a>
+									<div class="top_car_info">
+										<a href="goods.html">
+											裸色箭头高跟鞋白色显瘦
+										</a>
+										<span>颜色：粉色	 尺码：38</span>
+									</div>
+									<div class="pricAndDel fr">
+										<span>￥199.00</span>
+										<span class="top_del">删除</span>
+									</div>
+								</li>
+							</ul>
+							<div class="seeShoppingCar clearfix">
+								<a href="shoppingCar.html">查看购物车</a>
+							</div>
+						</div>
+					</li>
+					<li class="nav-info clearfix">
+						<a href="userMssg.html">客户服务</a>
+						<i class="icon-delta"></i>
+						<div class="divide"></div>
+						<ol class="ext-mode">
+							<li class="s2">
+								<a href="#">消费者服务</a>
+							</li>
+							<li class="s2">
+								<a href="#">商家服务</a>
+							</li>
+							<li class="s2">
+								<a href="#">规则中心</a>
+							</li>
+						</ol>
+					</li>
+				</div>
+			</div>
+		</div>
+		<!--侧边栏-->
+		<div class="right_fix">
+
+			<div class="kong_top hoverMatter">
+
+			</div>
+			<a class="right_fix_item sp_car" href="shoppingCar.html">
+				<i></i> 购物车
+			</a>
+			<a class="right_fix_item sp_quan hoverMatter" href="userMsg.html">
+				<i></i> 优惠券
+			</a>
+			<a class="right_fix_item sp_money hoverMatter" href="Mywallet.html">
+				<i></i> 钱包
+			</a>
+			<a class="right_fix_item sp_foot hoverMatter" href="footprint.html">
+				<i></i> 足迹
+			</a>
+			<div class="kong_bottom hoverMatter"></div>
+		</div>
+		<!--进度条-->
+		<div class="g-head clearfix">
+			<div class="g-head_in container clearfix">
+				<div class="g-logo fl"></div>
+				<ul class="progressBar_list fr clearfix">
+					<li class="progressBar fl">
+						<div class="site s_1">
+							1
+						</div>
+						<span>购物车</span>
+					</li>
+					<li class="progressBar fl">
+						<div class="site s_2">
+							2
+						</div>
+						<span>确认订单</span>
+					</li>
+					<li class="progressBar fl">
+						<div class="site s_3">
+							3
+						</div>
+						<span>支付</span>
+					</li>
+					<li class="progressBar fl">
+						<div class="site s_4">
+							4
+						</div>
+						<span>完成</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--收货地址大盒子-->
+
+		<!--填写地址信息-->
+		<div class="adressBox ">
+			<h2 class="adress_title">
+				选择收货地址
+			</h2>
+			<!--已经写好的地址-->
+			<div class="new_address_box clearfix">
+				
+			</div>
+			
+			<div class="cart_adress">
+				<ul class="cart_address_ctrl clearfix" id="addressCtrl">
+					<li>
+						<a class="gl">管理收货地址</a>
+					</li>
+					<li>
+						<a class="addOtherAddress">使用新地址</a>
+					</li>
+				</ul>
+				<div class="adress_info">
+
+					<dl class="clearfix">
+						<form class="adress_info_form" action="" method="post">
+							<div class="choseAdress clearfix">
+								<dt class="fl">省：</dt>
+								<i class="needicon">*</i>
+								<select name="province4"></select>&nbsp;&nbsp; 市：
+								<select name="city4"></select>&nbsp;&nbsp; 区：
+								<select name="area4"></select>
+
+							</div>
+							<div class="choseEmail clearfix">
+								<dt class="fl">邮政编码：</dt>
+								<i class="needicon">*</i>
+								<input type="text" name="eNum" id="eNum" datatype="eNum" errormsg="请输入有效的邮箱" nullmsg="请输入邮箱" value="" placeholder="请填写您的邮编" />
+							</div>
+							<div class="choseStreet">
+								<dt class="fl">街道地址：</dt>
+								<textarea class="area" id="area" name="street" datatype="*5-100" normalmsg="5-100字数" nullmsg="请填写地址" errormsg="字数请控制在5-100以内" rows="" cols=""></textarea>
+							</div>
+							<div class="youName">
+								<dt class="fl">收货人姓名：</dt>
+								<i class="needicon">*</i>
+								<input type="text" name="yourName" id="yourName" value="" placeholder="请输入您的姓名" datatype="*1-8" errormsg="请输入正确的姓名" nullmsg="请填写姓名" />
+							</div>
+							<div class="phoneNum">
+								<dt class="fl">手机：</dt>
+								<i class="needicon">*</i>
+								<input type="text" name="phoneNum" id="phoneNum" value="" placeholder="请输入您的手机号" datatype="m" errormsg="请输入有效的手机号" nullmsg="请填写手机号" />
+							</div>
+							<div class="sub clearfix">
+								<button class="ensure fl" id="btn_btn" type="button">确认地址</button>
+								<button class="cancel fl" type="button">取消</button>
+							</div>
+						</form>
+
+					</dl>
+				</div>
+			</div>
+			<div class="orderTitle">
+				<h2>确认商品信息</h2>
+			</div>
+			<div class="sureGoodsInfo">
+				<div class="sure_goods_item s_title clearfix">
+					<li class="sp fl">
+						商品
+					</li>
+					<li class="sp_info fl">
+						商品详情
+					</li>
+					<li class="sp_price fl">
+						单价（元）
+					</li>
+					<li class="sp_num fl">
+						数量
+					</li>
+					<li class="sp_down_price fl">
+						优惠
+					</li>
+					<li class="sp_down_sum fl">
+						小计
+					</li>
+				</div>
+				<div class="sure_goods_item sure_item_color sure_goods_info clearfix">
+					<li class="sp fl clearfix">
+						<a class="sure_img_box" href="goods.html">
+							<img class="sure_img" src="img/images/item1.webp" />
+						</a>
+						<a class="cart_goods_t" href="goods.html">2018夏季新款女鞋一字扣显瘦百搭尖头粗跟超高跟单鞋性感时尚浅口高跟鞋绒面职业OL工作鞋</a>
+					</li>
+					<li class="sp_info fl">
+						<p class="cart_lh20">颜色：粉色</p>
+						<p class="cart_lh20">尺码：38</p>
+					</li>
+					<li class="sp_price fl">
+						<p class="cart_itemUnit">136.00</p>
+					</li>
+					<li class="sp_num fl">
+						<p class="cart_itemNum">1</p>
+					</li>
+					<li class="sp_down_price fl">
+						<span>新品促销:</span>
+						<span>省40.80元</span>
+					</li>
+					<li class="sp_down_sum fl">
+						<p class="cart_font16">95.20</p>
+					</li>
+				</div>
+				<div class="tr_checked clearfix">
+					<td colspan="6" class="pl10 pr20 cart_largepding">
+						<div class="price_sum fr">
+							合计：
+							<span class="cart_red" data-groupid="79199055">95.20</span>
+						</div>
+					</td>
+				</div>
+			</div>
+
+			<div class="cart_payBar clearfix">
+				<a class="goBack_car" href="shoppingCar.html">返回购物车</a>
+				<a class="finish" href="finish.html">确认并付款></a>
+			</div>
+		</div>
+
+		</div>
+		</div>
+		<!--表尾-->
+		<div class="footBox">
+			<div class="mgj_copyright">
+				<div class="mgj_footer_helper">
+					<div class="mgj_footer_helper_mod">
+						<div class="mgj_footer_helper_mod_container">
+							<h4 class="mgj_footer_helper_title color_666">- 新手帮助 -</h4>
+							<ul>
+								<li class="mgj_footer_helper_item">常见问题</li>
+								<li class="mgj_footer_helper_item">自助服务</li>
+								<li class="mgj_footer_helper_item">联系客服</li>
+								<li class="mgj_footer_helper_item">意见反馈</li>
+							</ul>
+						</div>
+					</div>
+					<div class="mgj_footer_helper_mod">
+						<div class="mgj_footer_helper_mod_container">
+							<h4 class="mgj_footer_helper_title color_666">- 权益保障 -</h4>
+							<ul>
+								<li class="mgj_footer_helper_item">全国包邮</li>
+								<li class="mgj_footer_helper_item">七天无理由退款</li>
+								<li class="mgj_footer_helper_item">退货运费补贴</li>
+								<li class="mgj_footer_helper_item">限时发货</li>
+							</ul>
+						</div>
+					</div>
+					<div class="mgj_footer_helper_mod">
+						<div class="mgj_footer_helper_mod_container">
+							<h4 class="mgj_footer_helper_title color_666">- 支付方式 -</h4>
+							<ul>
+								<li class="mgj_footer_helper_item">微信支付</li>
+								<li class="mgj_footer_helper_item">支付宝</li>
+								<li class="mgj_footer_helper_item">白付美支付</li>
+							</ul>
+						</div>
+					</div>
+					<div class="mgj_footer_helper_mod">
+						<div class="mgj_footer_helper_mod_container">
+							<h4 class="mgj_footer_helper_title color_666">- 移动客户端下载 -</h4>
+							<ul>
+								<li class="mgj_footer_helper_item mgj_footer_helper_item_last">
+									<div class="color_999">
+										蘑菇街
+									</div>
+								</li>
+								<li class="mgj_footer_helper_item mgj_footer_helper_item_last">
+									<div class="color_999">
+										美丽说
+									</div>
+								</li>
+								<li class="mgj_footer_helper_item mgj_footer_helper_item_last">
+									<div class="color_999">
+										uni引力
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="mgj_footer_mgjinfo">
+					<ul>
+						<li class="mgj_footer_mgjinfo_item">关于我们</li>
+						<li class="mgj_footer_mgjinfo_item">招聘信息</li>
+						<li class="mgj_footer_mgjinfo_item">联系我们</li>
+						<li class="mgj_footer_mgjinfo_item">商家入驻</li>
+						<li class="mgj_footer_mgjinfo_item">商家后台</li>
+						<li class="mgj_footer_mgjinfo_item">蘑菇商学院</li>
+						<li class="mgj_footer_mgjinfo_item">商家社区</li>
+						<li class="mgj_footer_mgjinfo_item">规则中心</li>
+						<li class="mgj_footer_mgjinfo_item">有害信息举报</li>
+					</ul>
+					<p class="mgjhostname color_999">©2017 Mogujie.com 杭州卷瓜网络有限公司</p>
+				</div>
+				<div class="mgj_footer_copyright">
+					<p class="mgj_footer_copyright_container">
+						<span class="mgj_footer_copyright_span color_999">营业执照：</span>
+						<a class="mgj_footer_a color_999" href="">913301065526808764</a>
+						<b class="mgj_footer_b color_999"> | </b>
+						<span class="mgj_footer_copyright_span color_999">网络文化经营许可证：：</span>
+						<a class="mgj_footer_a color_999" href="">浙网文（2016）0349-219号</a>
+						<b class="mgj_footer_b color_999"> | </b>
+						<span class="mgj_footer_copyright_span color_999">增值电信业务经营许可证：</span>
+						<a class="mgj_footer_a color_999" href="">浙B2-20110349</a>
+						<b class="mgj_footer_b color_999"> | </b>
+						<span class="mgj_footer_copyright_span color_999"></span>
+						<a class="mgj_footer_a color_999" href="">安全责任书</a>
+						<b class="mgj_footer_b color_999"> | </b>
+						<span class="mgj_footer_copyright_span color_999"></span>
+						<a class="mgj_footer_a color_999" href="">浙公网安备 33010602002329号</a>
+						<b class="mgj_footer_b color_999"> | </b>
+						<span class="mgj_footer_copyright_span color_999">：</span>
+						<a class="mgj_footer_a color_999" href="">互联网药品信息服务资格证书编号：（浙)-经营性-2018-0002</a>
+						<b class="mgj_footer_b color_999"> | </b>
+						<span class="mgj_footer_copyright_span color_999"></span>
+						<a class="mgj_footer_a color_999" href="">浙网食A33010003</a>
+						<b class="mgj_footer_b color_999"> | </b>
+						<span class="mgj_footer_copyright_span color_999"></span>
+						<a class="mgj_footer_a color_999" href="">出版物网络交易平台服务经营备案证</a>
+						<b class="mgj_footer_b color_999"> | </b>
+						<span class="mgj_footer_copyright_span color_999"></span>
+						<a class="mgj_footer_a color_999" href="">（浙）网械平台备字[2018]第00006号</a>
+						<b class="mgj_footer_b color_999"> | </b>
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/PCASClass.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/Validform_v5.3.2_min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//侧边栏
+		$(".right_fix").hover(function() {
+			$(".hoverMatter").animate({
+				left: '0'
+			}, 200);
+		}, function() {
+			$(".hoverMatter").animate({
+				left: '30'
+			}, 200);
+		});
+		//点击变色
+		$(".proCar-title_item").eq(0).css({
+			"color": "#FF2255",
+			"border-color": "#FF2255 "
+		});
+		$(".proCar-title").on("click", "a", function() {
+			$(".proCar-title").find("a").css({
+				"color": "#333333",
+				"border-color": "#FFFFFF"
+			});
+
+			$(this).css({
+				"color": "#FF2255",
+				"border-color": "#FF2255"
+			})
+		});
+
+		
+
+		$(".adress_info_form").Validform({
+			tiptype: 3,
+			datatype: {
+				"eNum": /\d{6}/
+			},
+			
+		});
+
+		//省市区 三级联动
+		new PCAS("province4", "city4", "area4", "北京市");
+
+		//表单验证
+		
+		$("#btn_btn").click(function () {
+				var flag=true;
+				$(".adress_info_form input").each(function  () {
+					if($(this).hasClass("Validform_error")||$(this).val()==""){
+						flag=false;
+					};
+				});
+				if (flag==false) {
+					alert("请填写完您的收货信息哦亲");
+				}
+			if (flag==true) {
+				$(".adress_info").css("display","none");
+				var $cart = $('<div class="address_box"><h3 class="name">'+$("#yourName").val() +'</h3><p class="cart_address_street">'+$("#area").val()+'</p><p class="cart_address_zipinfo">'+$("select").eq(0).val()+$("select").eq(1).val()+$("select").eq(2).val()+$("#eNum").val()+'</p><p class="cart_address_mobile">'+$("#phoneNum").val()+'</p><span class="del_cart">删除</span></div>');
+				$(".new_address_box").prepend($cart);
+				$(".new_address_box").css("display","block");
+			}
+			else{
+				return false;
+			}
+			
+		})	
+//		使用新地址
+		$(".addOtherAddress").click(function () {
+			$(".new_address_box").css("display","none");
+			$(".adress_info").css("display","block");
+			$("input").val('');
+			$(".area").val('');
+			$(".Validform_right").text('');
+		});
+		//管理地址
+		$(".gl").click(function () {
+			$(".new_address_box").css("display","block");
+			$(".adress_info").css("display","none");
+		});
+		//删除
+		$(".adressBox").on("click",".del_cart",function () {
+			$(this).parents(".address_box").remove();
+		})
+		//点击选择收获地址
+		$(".new_address_box").on("click",".address_box",function () {
+			$(".address_box").css("border-color","#ccc");
+			$(this).css("border-color","green");
+		})
+	</script>
+
+</html>

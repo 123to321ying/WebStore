@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>商品分类</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/goods_category.css" />
+		<link rel="stylesheet" type="text/css" href="css/right_nav.css" />
+		<link rel="stylesheet" type="text/css" href="css/index2.css" />
+		<link rel="stylesheet" type="text/css" href="css/top-Bottom.css" />
+
+	</head>
+
+	<body>
+		<!--顶部导航-->
+		<div class="site-top-nav">
+			<div class="container">
+				<a href="index.html" class="home">蘑菇街首页</a>
+				<div class="header-top fr clearfix">
+					<li class="nav-info clearfix">
+						<a href="vipPage.html">用户名</a>
+						<i class="icon-delta"></i>
+						<div class="divide"></div>
+						<ol class="ext-mode">
+							<li class="s2">
+								<a href="userMsg.html">个人设置</a>
+							</li>
+							<li class="s2">
+								<a href="login.html">退出</a>
+							</li>
+						</ol>
+					</li>
+					<li class="nav-info">
+						<a href="#">消息</a>
+						<div class="divide"></div>
+					</li>
+					<li class="nav-info clearfix">
+						<a href="collect_goods.html">我的收藏</a>
+						<i class="icon-delta"></i>
+						<div class="divide"></div>
+						<ol class="ext-mode">
+							<li class="s2">
+								<a href="collect_goods.htmll">收藏的商品</a>
+							</li>
+							<li class="s2">
+								<a href="collect_goods.html">收藏的小店</a>
+							</li>
+							<li class="s2">
+								<a href="footprint.html">浏览足迹</a>
+							</li>
+						</ol>
+					</li>
+					<li class="nav-info myorder">
+						<div class="divide"></div>
+						<i></i>
+						<a href="userMsg.html">我的订单</a>
+					</li>
+					<li class="nav-info orderCar">
+						<div class="divide"></div>
+						<i></i>
+						<a href="shoppingCar.html">购物车0件</a>
+					</li>
+					<li class="nav-info clearfix">
+						<a href="userMsg.html">客户服务</a>
+						<i class="icon-delta"></i>
+						<div class="divide"></div>
+						<ol class="ext-mode">
+							<li class="s2">
+								<a href="#">消费者服务</a>
+							</li>
+							<li class="s2">
+								<a href="#">商家服务</a>
+							</li>
+							<li class="s2">
+								<a href="#">规则中心</a>
+							</li>
+						</ol>
+					</li>
+
+				</div>
+			</div>
+		</div>
+
+		<!--搜索栏-->
+		<div class="head_mid clearfix">
+			<div class="container search-nav clearfix">
+				<a class="mianLogo" href="index.html">
+					<img src="https://s3.mogucdn.com/mlcdn/c45406/170904_1fj9406416501i4lkabcc0hjb8341_480x180.png" />
+				</a>
+
+				<div class="search-content">
+					<!--搜索栏-->
+					<div class="search-box">
+						<!--下拉选框-->
+						<div class="select-box">
+							<span class="selected">
+								<span class="now-sel">搜商品</span>
+							<i></i>
+							</span>
+							<ol class="sel">
+								<li class="goods">
+									<a href="#">商品</a>
+								</li>
+								<li class="current">
+									<a href="#">店铺</a>
+								</li>
+							</ol>
+						</div>
+						<!--搜索条-->
+						<form class="clearfix" action="">
+							<input class="search" type="text" name="" id="search" value="" placeholder="请输入您想要的商品" />
+							<button class="btn" type="button">搜&nbsp;&nbsp;索</button>
+						</form>
+					</div>
+					<!--搜索栏小商品列表-->
+					<div class="G-typeList">
+						<a href="goods_category.html">小白鞋</a>
+						<a href="goods_category.html">牛仔裤</a>
+						<a href="goods_category.html">睡衣</a>
+						<a href="goods_category.html">卫衣</a>
+						<a href="goods_category.html">包包</a>
+						<a href="goods_category.html">衬衫</a>
+						<a href="goods_category.html">外套</a>
+						<a href="goods_category.html">口红</a>
+						<a href="goods_category.html">背带裤</a>
+						<a href="goods_category.html">连衣裙</a>
+					</div>
+				</div>
+				<div class="mid_fr">
+					<img src="https://s11.mogucdn.com/mlcdn/c45406/171130_8gf90d0d5bgc4ag4kk82gi8kc287d_440x180.png" />
+				</div>
+			</div>
+		</div>
+
+		<!--侧边栏-->
+		<div class="right_fix">
+			<div class="kong_top hoverMatter"></div>
+			<a class="right_fix_item sp_car" href="shoppingCar.html">
+				<i></i> 购物车
+			</a>
+			<a class="right_fix_item sp_quan hoverMatter" href="shoppingCar.html">
+				<i></i> 优惠券
+			</a>
+			<a class="right_fix_item sp_money hoverMatter" href="shoppingCar.html">
+				<i></i> 钱包
+			</a>
+			<a class="right_fix_item sp_foot hoverMatter" href="footprint.html">
+				<i></i> 足迹
+			</a>
+			<div class="kong_bottom hoverMatter"></div>
+		</div>
+		<!--分类栏-->
+		<div class="sort_box">
+			<div class="container">
+				<div class="sort_title">
+					<ul>
+						<li class="active">
+							<a href="goods_category.html">上衣</a>
+						</li>
+						<li>
+							<a href="goods_category.html">裙子</a>
+						</li>
+						<li>
+							<a href="goods_category.html">袜子</a>
+						</li>
+						<li>
+							<a href="goods_category.html">内衣</a>
+						</li>
+						<li>
+							<a href="goods_category.html">鞋子</a>
+						</li>
+						<li>
+							<a href="goods_category.html">包包</a>
+						</li>
+						<li>
+							<a href="goods_category.html">配饰</a>
+						</li>
+						<li>
+							<a href="goods_category.html">男友</a>
+						</li>
+						<li>
+							<a href="goods_category.html">美妆</a>
+						</li>
+						<li>
+							<a href="goods_category.html">母婴</a>
+						</li>
+						<li>
+							<a href="goods_category.html">家居</a>
+						</li>
+						<li>
+							<a href="goods_category.html">百货</a>
+						</li>
+						<li>
+							<a href="goods_category.html">食品</a>
+						</li>
+						<li>
+							<a href="goods_category.html">家电</a>
+						</li>
+						<li>
+							<a href="goods_category.html">运动</a>
+						</li>
+						<div class="clearfix"></div>
+					</ul>
+				</div>
+				<div class="detail_box fl">
+					<div class="sort_item fl">
+						<div class="item_title">
+							<a href="goods_category.html">当季热卖</a>
+						</div>
+						<div class="item_info">
+							<a href="goods_category.html">
+								<img src="img/170822_5bkei2f91ck7a9hkl977465g39l4i_160x160.jpg" />
+							</a>
+							<ul class="item_list">
+								<li>
+									<a href="goods_category.html">衬衫</a>
+								</li>
+								<li>
+									<a class="red" href="goods_category.html">T恤</a>
+								</li>
+								<li>
+									<a href="goods_category.html">轻薄针织</a>
+								</li>
+								<li>
+									<a class="red" href="goods_category.html">时尚套装</a>
+								</li>
+								<li>
+									<a href="goods_category.html">打底衫</a>
+								</li>
+								<li>
+									<a href="goods_category.html">棒球外套</a>
+								</li>
+								<li>
+									<a href="goods_category.html">秋季雪纺衫</a>
+								</li>
+								<li>
+									<a href="goods_category.html">牛仔外套</a>
+								</li>
+								<li>
+									<a href="goods_category.html">新款外套</a>
+								</li>
+								<li>
+									<a href="goods_category.html">轻薄防晒</a>
+								</li>
+								<li>
+									<a href="goods_category.html">印花T恤</a>
+								</li>
+								<li>
+									<a href="goods_category.html">字母T恤</a>
+								</li>
+								<div class="clearfix"></div>
+							</ul>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="sort_item fl">
+						<div class="item_title">
+							<a href="goods_category.html">潮流时尚</a>
+						</div>
+						<div class="item_info">
+							<a href="goods_category.html">
+								<img src="img/170822_2i5g2ge52lc9ld5ckb7e6jkd60f1d_160x160.jpg" />
+							</a>
+							<ul class="item_list">
+								<li>
+									<a class="red" href="goods_category.html">韩版卫衣</a>
+								</li>
+								<li>
+									<a href="goods_category.html">性感V领</a>
+								</li>
+								<li>
+									<a class="red" href="goods_category.html">蕾丝top</a>
+								</li>
+								<li>
+									<a href="goods_category.html">绑带衬衫</a>
+								</li>
+								<li>
+									<a href="goods_category.html">印花T恤</a>
+								</li>
+								<li>
+									<a href="goods_category.html">针织短袖</a>
+								</li>
+								<li>
+									<a href="goods_category.html">时尚刺绣</a>
+								</li>
+								<li>
+									<a href="goods_category.html">俏皮露肩</a>
+								</li>
+								<li>
+									<a href="goods_category.html">牛仔衬衫</a>
+								</li>
+								<li>
+									<a href="goods_category.html">一字领</a>
+								</li>
+								<li>
+									<a href="goods_category.html">喇叭袖</a>
+								</li>
+								<div class="clearfix"></div>
+							</ul>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="sort_item fl">
+						<div class="item_title">
+							<a href="goods_category.html">上新推荐</a>
+						</div>
+						<div class="item_info">
+							<a href="goods_category.html">
+								<img src="img/180821_1bb8lfgjie5e5fl2e1j4il29jl5ch_160x160.jpg" />
+							</a>
+							<ul class="item_list">
+								<li>
+									<a class="red" href="goods_category.html">秋季新品</a>
+								</li>
+								<li>
+									<a href="goods_category.html">长袖衬衫</a>
+								</li>
+								<li>
+									<a class="red" href="goods_category.html">荷叶边</a>
+								</li>
+								<li>
+									<a href="goods_category.html">风衣</a>
+								</li>
+								<li>
+									<a href="goods_category.html">长款T恤</a>
+								</li>
+								<li>
+									<a href="goods_category.html">防晒衬衫</a>
+								</li>
+								<li>
+									<a href="goods_category.html">牛仔外套</a>
+								</li>
+								<li>
+									<a href="goods_category.html">条纹T恤</a>
+								</li>
+								<li>
+									<a href="goods_category.html">短款外套</a>
+								</li>
+								<div class="clearfix"></div>
+							</ul>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="sort_item fl">
+						<div class="item_title">
+							<a href="goods_category.html">经典必备</a>
+						</div>
+						<div class="item_info">
+							<a href="goods_category.html">
+								<img src="img/170822_2c9596g851ei6lhb5ke460k8k5gf7_160x160.jpg" />
+							</a>
+							<ul class="item_list">
+								<li>
+									<a href="goods_category.html">字母T恤</a>
+								</li>
+								<li>
+									<a href="goods_category.html">针织开衫</a>
+								</li>
+								<li>
+									<a href="goods_category.html">格子衬衫</a>
+								</li>
+								<li>
+									<a href="goods_category.html">条纹衫</a>
+								</li>
+								<li>
+									<a href="goods_category.html">喇叭袖</a>
+								</li>
+								<li>
+									<a href="goods_category.html">白衬衫</a>
+								</li>
+								<li>
+									<a href="goods_category.html">纯色T恤</a>
+								</li>
+								<li>
+									<a href="goods_category.html">情侣装</a>
+								</li>
+								<li>
+									<a href="goods_category.html">宽松T恤</a>
+								</li>
+								<div class="clearfix"></div>
+							</ul>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="banner fr">
+						<img src="img/180821_7kk7ll7h802hdlih4989dfcf9l7lc_200x240.jpg" />
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+
+		<!--商品价格区间-->
+		<div class="choose_price">
+			<div class="container">
+				<div class="choose_price_title">上衣</div>
+				<div class="price_box">
+					<div class="box relative fl">
+						<span class="flur">价格</span>
+						<i id="up" class="up"></i>
+						<i id="down" class="down"></i>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+
+		<!--商品展示-->
+		<div class="goods_box">
+			<div class="container">
+				<div class="alert_box">
+					<span>没有相关的商品结果哦~~</span>
+				</div>
+				<ul>
+					<li>
+						<div>
+							<a href="goods.html"><img src="img/180715_14i0fli2kj6ehkjk1bec8aekj1d4g_640x960.jpg.webp" /></a>
+						</div>
+						<div class="info_box">
+							<div class="txt">
+								<a href="goods.html"><span>秋季新款韩版宽松收腰显瘦荷叶边外套女衬衣灯芯绒衬衫喇叭袖上衣</span></a>
+							</div>
+							<div class="price_heart">
+								<span class="price fl">￥59</span>
+								<span class="old fl">￥</span><span class="over_line fl">84.29</span>
+								<span class="heart fr"><img class="star" src="img/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/><span>1.7w</span></span>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="hover_box">
+							<span>找相似</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="goods.html"><img src="img/180804_50dda46j03046ldbe26f33hil2ge8_640x960.jpg_240x320.v1cAC.70.webp" /></a>
+						</div>
+						<div class="info_box">
+							<div class="txt">
+								<a href="goods.html"><span>【两件59元】【品牌直销】话题2018短袖夏季新款短袖t恤女纯棉宽松韩版百搭ins上衣服</span></a>
+							</div>
+							<div class="price_heart">
+								<span class="price fl">￥89</span>
+								<span class="old fl">￥</span><span class="over_line fl">123</span>
+								<span class="heart fr"><img class="star" src="img/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/><span>1.9w</span></span>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="hover_box">
+							<span>找相似</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="goods.html"><img src="img/170907_405j7284fie6aec0ldhi54a38b85c_640x960.jpg_240x320.v1cAC.70.webp" /></a>
+						</div>
+						<div class="info_box">
+							<div class="txt">
+								<a href="goods.html"><span>秋季新款韩版宽松收腰显瘦荷叶边外套女衬衣灯芯绒衬衫喇叭袖上衣</span></a>
+							</div>
+							<div class="price_heart">
+								<span class="price fl">￥69</span>
+								<span class="old fl">￥</span><span class="over_line fl">84</span>
+								<span class="heart fr"><img class="star" src="img/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/><span>1324</span></span>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="hover_box">
+							<span>找相似</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="goods.html"><img src="img/170927_6hdi1chldj9b681l531116ckb54ii_640x960.jpg_240x320.v1cAC.70.webp" /></a>
+						</div>
+						<div class="info_box">
+							<div class="txt">
+								<a href="goods.html"><span>2018秋季新品韩版百搭休闲防晒衫文艺复古做旧水洗牛仔长袖衬衫外套女</span></a>
+							</div>
+							<div class="price_heart">
+								<span class="price fl">￥45</span>
+								<span class="old fl">￥</span><span class="over_line fl">90</span>
+								<span class="heart fr"><img class="star" src="img/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/><span>1.7w</span></span>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="hover_box">
+							<span>找相似</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="goods.html"><img src="img/180727_0ig8jc18h9caika2jcd52egbck729_640x852.jpg_240x320.v1cAC.70.webp" /></a>
+						</div>
+						<div class="info_box">
+							<div class="txt">
+								<a href="goods.html"><span>秋季新款韩版宽松收腰显瘦荷叶边外套女衬衣灯芯绒衬衫喇叭袖上衣</span></a>
+							</div>
+							<div class="price_heart">
+								<span class="price fl">￥57</span>
+								<span class="old fl">￥</span><span class="over_line fl">84.29</span>
+								<span class="heart fr"><img class="star" src="img/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/><span>1.7w</span></span>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="hover_box">
+							<span>找相似</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="goods.html"><img src="img/00.webp" /></a>
+						</div>
+						<div class="info_box">
+							<div class="txt">
+								<a href="goods.html"><span>秋季新款韩版宽松收腰显瘦荷叶边外套女衬衣灯芯绒衬衫喇叭袖上衣</span></a>
+							</div>
+							<div class="price_heart">
+								<span class="price fl">￥126</span>
+								<span class="old fl">￥</span><span class="over_line fl">184.29</span>
+								<span class="heart fr"><img class="star" src="img/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/><span>1.7w</span></span>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="hover_box">
+							<span>找相似</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="goods.html"><img src="img/01.webp" /></a>
+						</div>
+						<div class="info_box">
+							<div class="txt">
+								<a href="goods.html"><span>话题2018短袖夏季新款短袖t恤女纯棉宽松韩版百搭ins上衣服</span></a>
+							</div>
+							<div class="price_heart">
+								<span class="price fl">￥28</span>
+								<span class="old fl">￥</span><span class="over_line fl">123</span>
+								<span class="heart fr"><img class="star" src="img/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/><span>1.9w</span></span>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="hover_box">
+							<span>找相似</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="goods.html"><img src="img/02.webp" /></a>
+						</div>
+						<div class="info_box">
+							<div class="txt">
+								<a href="goods.html"><span>宽松收腰显瘦荷叶边外套女衬衣灯芯绒衬衫喇叭袖上衣</span></a>
+							</div>
+							<div class="price_heart">
+								<span class="price fl">￥72</span>
+								<span class="old fl">￥</span><span class="over_line fl">147.9</span>
+								<span class="heart fr"><img class="star" src="img/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/><span>1324</span></span>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="hover_box">
+							<span>找相似</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="goods.html"><img src="img/04 (1).webp" /></a>
+						</div>
+						<div class="info_box">
+							<div class="txt">
+								<a href="goods.html"><span>2018秋季新品韩版百搭休闲防晒衫文艺复古做旧水洗牛仔长袖衬衫外套女</span></a>
+							</div>
+							<div class="price_heart">
+								<span class="price fl">￥152</span>
+								<span class="old fl">￥</span><span class="over_line fl">190</span>
+								<span class="heart fr"><img class="star" src="img/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/><span>1.7w</span></span>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="hover_box">
+							<span>找相似</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="goods.html"><img src="img/04 (2).webp" /></a>
+						</div>
+						<div class="info_box">
+							<div class="txt">
+								<a href="goods.html"><span>秋季新款韩版宽松收腰显瘦荷叶边外套女衬衣灯芯绒衬衫喇叭袖上衣</span></a>
+							</div>
+							<div class="price_heart">
+								<span class="price fl">￥86</span>
+								<span class="old fl">￥</span><span class="over_line fl">150.29</span>
+								<span class="heart fr"><img class="star" src="img/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/><span>1.7w</span></span>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="hover_box">
+							<span>找相似</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="goods.html"><img src="img/180727_0ig8jc18h9caika2jcd52egbck729_640x852.jpg_240x320.v1cAC.70.webp" /></a>
+						</div>
+						<div class="info_box">
+							<div class="txt">
+								<a href="goods.html"><span>秋季新款韩版宽松收腰显瘦荷叶边外套女衬衣灯芯绒衬衫喇叭袖上衣</span></a>
+							</div>
+							<div class="price_heart">
+								<span class="price fl">￥59</span>
+								<span class="old fl">￥</span><span class="over_line fl">84.29</span>
+								<span class="heart fr"><img class="star" src="img/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/><span>1.7w</span></span>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="hover_box">
+							<span>找相似</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="goods.html"><img src="img/180715_14i0fli2kj6ehkjk1bec8aekj1d4g_640x960.jpg.webp" /></a>
+						</div>
+						<div class="info_box">
+							<div class="txt">
+								<a href="goods.html"><span>秋季新款韩版宽松收腰显瘦荷叶边外套女衬衣灯芯绒衬衫喇叭袖上衣</span></a>
+							</div>
+							<div class="price_heart">
+								<span class="price fl">￥59</span>
+								<span class="old fl">￥</span><span class="over_line fl">84.29</span>
+								<span class="heart fr"><img class="star" src="img/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/><span>1.7w</span></span>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="hover_box">
+							<span>找相似</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="goods.html"><img src="img/180804_50dda46j03046ldbe26f33hil2ge8_640x960.jpg_240x320.v1cAC.70.webp" /></a>
+						</div>
+						<div class="info_box">
+							<div class="txt">
+								<a href="goods.html"><span>【两件59元】【品牌直销】话题2018短袖夏季新款短袖t恤女纯棉宽松韩版百搭ins上衣服</span></a>
+							</div>
+							<div class="price_heart">
+								<span class="price fl">￥89</span>
+								<span class="old fl">￥</span><span class="over_line fl">123</span>
+								<span class="heart fr"><img class="star" src="img/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/><span>1.9w</span></span>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="hover_box">
+							<span>找相似</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="goods.html"><img src="img/170907_405j7284fie6aec0ldhi54a38b85c_640x960.jpg_240x320.v1cAC.70.webp" /></a>
+						</div>
+						<div class="info_box">
+							<div class="txt">
+								<a href="goods.html"><span>秋季新款韩版宽松收腰显瘦荷叶边外套女衬衣灯芯绒衬衫喇叭袖上衣</span></a>
+							</div>
+							<div class="price_heart">
+								<span class="price fl">￥69</span>
+								<span class="old fl">￥</span><span class="over_line fl">84</span>
+								<span class="heart fr"><img class="star" src="img/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/><span>1324</span></span>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="hover_box">
+							<span>找相似</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="goods.html"><img src="img/170927_6hdi1chldj9b681l531116ckb54ii_640x960.jpg_240x320.v1cAC.70.webp" /></a>
+						</div>
+						<div class="info_box">
+							<div class="txt">
+								<a href="goods.html"><span>2018秋季新品韩版百搭休闲防晒衫文艺复古做旧水洗牛仔长袖衬衫外套女</span></a>
+							</div>
+							<div class="price_heart">
+								<span class="price fl">￥45</span>
+								<span class="old fl">￥</span><span class="over_line fl">90</span>
+								<span class="heart fr"><img class="star" src="img/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/><span>1.7w</span></span>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="hover_box">
+							<span>找相似</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/goods_category.js" type="text/javascript" charset="utf-8"></script>
+
+		<script type="text/javascript">
+			//侧边栏
+			$(".right_fix").hover(function() {
+				$(".hoverMatter").animate({
+					left: '0'
+				}, 200);
+			}, function() {
+				$(".hoverMatter").animate({
+					left: '30'
+				}, 200);
+			})
+		</script>
+	</body>
+
+</html>

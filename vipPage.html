@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index2.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<style type="text/css">
+			.search-content{
+				margin-left: 112px;
+			}
+			.ext-mode{
+				top:19px;
+				padding: 0;
+			}
+			.wrap{
+				width: 1200px;
+			    margin-left: auto;
+			    margin-right: auto;
+			}
+			.body_wrap{
+				min-height: 500px;
+			    font-family: PingFang SC,Microsoft Yahei,\\5B8B\4F53,tahoma,arial,Hiragino Sans GB,sans-serif;
+			    font-weight: 200;
+			    z-index: 1;
+			}
+			.search-content{
+				position: relative;
+			    z-index: 50;
+			    width: 482px;
+			    margin-top: 20px;
+			}
+			.main-contain{
+				width: 1200px;
+			    margin: 0 auto;
+			    position: relative;
+			}
+			.head-content{
+				width: 1200px;
+    			height: 200px;
+    			overflow: hidden;
+			}
+			.head-pic{
+				position: absolute;
+    			z-index: 0;
+			}
+			.head-pic img{
+				width: 100%;
+			    height: 100%;
+			    display: block;
+			}
+			.head-content-left{
+				float: left;
+			}
+			.head-content-right{
+				float: right;
+			}
+			.avater-main{
+				position: relative;
+			    margin: 22px 0 15px 45px;
+			    float: left;
+			}
+			
+			.avater-main .head-avater{
+				width: 105px;
+			    height: 105px;
+			    border-radius: 50%;
+			    border: 2px solid #fff;
+			}
+			.avater-main .head-avater img{
+				width: 100%;
+			    height: 100%;
+			    display: block;
+			    border-radius: 50%;
+			}
+			.avater-main .vip-icon{
+				width: 24px;
+			    height: 24px;
+			    border-radius: 50%;
+			    position: absolute;
+			    bottom: 0;
+			    left: 80px;
+			}
+			.avater-main .vip-icon img{
+				width: 100%;
+			    height: 100%;
+			    display: block;
+			    border-radius: 50%;
+			}
+			.head-info{
+				position: absolute;
+			    left: 165px;
+			    z-index: 3;
+			}
+			.head-info .info-name{
+				width: 190px;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    white-space: nowrap;
+			    height: 28px;
+			    line-height: 28px;
+			    font-size: 20px;
+			    color: #fff;
+			    font-weight: 700;
+			    margin-top: 35px;
+			}
+			.head-info .info-num{
+				font-size: 14px;
+			    line-height: 14px;
+			    color: #fff;
+			    margin-top: 15px;
+			}
+			.head-info .info-num .modou-num{
+				font-size: 20px;
+			}
+			.head-info .info-money{
+				height: 20px;
+			    line-height: 20px;
+			    font-size: 14px;
+			    color: #fff;
+			    margin-top: 6px;
+			}
+			.left-head-btn{
+				position: absolute;
+				top: 142px;
+				margin-left: 45px;
+    			position: absolute;
+			}
+			.left-head-btn .sign-btn{
+				float: left;
+			    display: block;
+			    width: 100px;
+			    height: 28px;
+			    line-height: 28px;
+			    border-radius: 2px;
+			    font-size: 14px;
+			    text-align: center;
+			    background-color: #ff5777;
+			    color: #fff;
+			    margin-right: 20px;
+			}
+			.left-head-btn .record-btn{
+				float: left;
+			    display: block;
+			    width: 100px;
+			    height: 28px;
+			    line-height: 28px;
+			    border-radius: 2px;
+			    font-size: 14px;
+			    text-align: center;
+			    background-color: #f2f2f2;
+    			color: #666;
+			}
+			.head-content-right{
+				float: left;
+			    margin-left: 268px;
+			    margin-top: 90px;
+			}
+			.rank-prompt{
+				width: 80px;
+			    height: 48px;
+			    background-image: url(https://s10.mogucdn.com/p1/161201/idid_ifrdanrsmjqtsmbzmmzdambqmeyde_80x48.png);
+			    position: absolute;
+			    top: 40px;
+			    left: 385px;
+			}
+			.rank-prompt p{
+				height: 14px;
+			    line-height: 14px;
+			    font-size: 12px;
+			    color: #fff;
+			    text-align: center;
+			}
+			.prompt-title{
+				margin-top: 5px;
+			}
+			.prompt-num{
+				margin-top: 2px;
+			}
+			.progressBox{
+				width: 720px;
+			    height: 10px;
+			    background-color: #fff;
+			    border-radius: 100px;
+			    position: relative;
+			}
+			.progressBox .progressBar{
+				height: 10px;
+			    position: absolute;
+			    border-radius: 100px;
+			    background-image: url(https://s10.mogucdn.com/p1/161128/idid_ifrdeylcge3gcmjymmzdambqmeyde_720x10.png);
+			    z-index: 2;
+			}
+			.rank-content{
+				overflow: hidden;
+			}
+			.rank-icon{
+				margin: 10px 100px 0 0;
+			    float: left;
+			    position: relative;
+			}
+			.rank-icon .icon-pic{
+				width: 20px;
+			    height: 20px;
+			    border-radius: 50%;
+			}
+			.rank-icon .icon-pic img{
+				width: 100%;
+			    height: 100%;
+			    display: block;
+			}
+			.rank-icon .rank-text{
+				width: 18px;
+			    height: 14px;
+			    position: absolute;
+			    top: 3px;
+			    left: 25px;
+			}
+			.rank-icon .rank-text img{
+				width: 100%;
+			    height: 100%;
+			    display: block;
+			}
+			.rank-icon .num1{
+				width: 35px;
+			}
+			.rank-icon .num2{
+				width: 40px;
+			}
+			.rank-icon .num3{
+				width: 43px;
+			}
+			.rank-icon .num4{
+				width: 49px;
+			}
+			.rank-tips{
+				position: absolute;
+			    left: 400px;
+			    top: 133px;
+			}
+			.rank-tips .tips2{
+				margin-right: 64px;
+			}
+			.rank-tips .rank-title{
+				width: 56px;
+			    height: 36px;
+			    float: left;
+			    margin-right: 66px;
+			}
+			.rank-tips .rank-title img{
+				width: 100%;
+			    height: 100%;
+			    display: block;
+			}
+			.center-content{
+				width: 1200px;
+			    background-color: #fff;
+			    margin-bottom: 10px;
+			}
+			.center-box{
+				padding: 40px 0 0 30px;
+			}
+			.my-privilege{
+				color: #666;
+			    font-size: 16px;
+			    height: 22px;
+			    line-height: 22px;
+			    font-weight: 700;
+			}
+			.my-privilege-box{
+				padding-bottom: 25px;
+    			overflow: hidden;
+			}
+			.my-privilege-item{
+				width: 180px;
+			    height: 170px;
+			    margin: 5px 12px 5px 0;
+			    float: left;
+			    position: relative;
+			}
+			.privilege-icon{
+				width: 178px;
+			    height: 89px;
+			    padding-top: 30px;
+			    border-top: 1px solid #f2f2f2;
+			    border-left: 1px solid #f2f2f2;
+			    border-right: 1px solid #f2f2f2;
+			}
+			.privilege-title{
+				width: 180px;
+			    height: 42px;
+			    background-color: #f2f2f2;
+			    padding-top: 8px;
+			}
+			.privilege-icon .privilege-pic{
+				width: 180px;
+			    height: 50px;
+			    text-align: center;
+			}
+			.privilege-icon .privilege-pic .privilege-pic-img{
+				width: 50px;
+			    height: 50px;
+			    margin: 0 auto;
+			}
+			.privilege-icon .privilege-pic .privilege-pic-img img{
+				width: 100%;
+			    height: 100%;
+			    display: block;
+			}
+			.privilege-icon .privilege-text{
+			    width: 180px;
+			    font-size: 14px;
+			    color: #333;
+			    height: 17px;
+			    line-height: 17px;
+			    text-align: center;
+			    margin-top: 4px;
+			}
+			.privilege-title .privilege-main{
+				color: #999;
+			    font-size: 12px;
+			    width: 180px;
+			    height: 17px;
+			    line-height: 17px;
+			    text-align: center;
+			}
+			.privilege-title .privilege-min{
+				color: #999;
+			    font-size: 12px;
+			    width: 180px;
+			    height: 17px;
+			    line-height: 17px;
+			    text-align: center;
+			}
+			.privilege-info{
+				width: 46px;
+			    height: 46px;
+			    position: absolute;
+			}
+			.privilege-info img{
+				width: 100%;
+			    height: 100%;
+			    display: block;
+			}
+			.privilege-more-info{
+				width: 40px;
+			    height: 17px;
+			    font-size: 12px;
+			    line-height: 15px;
+			    position: absolute;
+			    z-index: 5;
+			    color: #fff;
+			    top: 7px;
+			    -webkit-transform: rotate(-45deg);
+			}
+			.grade-content{
+				width: 1200px;
+			    padding: 25px 0 30px 30px;
+			    background-color: #fff;
+			    overflow: hidden;
+			    margin-bottom: 10px;
+			}
+			.up-grade-title{
+				color: #666;
+			    font-size: 20px;
+			    height: 28px;
+			    line-height: 28px;
+			    font-weight: 700;
+			}
+			.left-grade{
+				float: left;
+    			margin-right: 20px;
+			}
+			.numbers-tips{
+				margin-top: 20px;
+			}
+			.privilege-icon-tips{
+				width: 180px;
+    			height: 120px;
+			}
+			.privilege-title{
+				width: 180px;
+			    height: 50px;
+			    background-color: #f2f2f2;
+			    padding-top: 8px;
+			}
+			.privilege-icon-tips .icon-tips-img{
+				width: 100%;
+			}
+			.numbers-tips-main{
+				width: 180px;
+			    height: 17px;
+			    line-height: 17px;
+			    text-align: center;
+			    color: #ff5777;
+			    font-size: 14px;
+			}
+			.privilege-min{
+				color: #999;
+			    font-size: 12px;
+			    width: 180px;
+			    height: 17px;
+			    line-height: 17px;
+			    text-align: center;
+			}
+			.header-top{
+				margin: 0;
+			}
+			.pic-wall{
+				width: 1200px;
+    			margin: 45px 0 0;
+			}
+			.pic-wall .wall-title{
+				height: 40px;
+			    line-height: 40px;
+			    color: #333;
+			    font-size: 28px;
+			    margin-bottom: 20px;
+			}
+			.wall_goods_box{
+				width: 1200px;
+				overflow: hidden;
+			}
+			.J_scroll_wallbox{
+				width: 1225px;
+			}
+			.goods_item{
+				width: 218px;
+			    height: 408px;
+			    border: 1px solid #f2f2f2;
+			    background: #fff;
+			}
+			.iwf{
+				margin: 0 25px 25px 0;
+				float: left;
+			    position: relative;
+			    overflow: hidden;
+			}
+			.likeLink{
+				display: none;
+				background-color: rgba(255,85,119,.7);
+				z-index: 5;
+			    top: 300px;
+			    height: 24px;
+			    position: absolute;
+			    left: 0;
+			    width: 100%;
+			    color: #fff;
+			    line-height: 24px;
+			    text-align: center;
+			    cursor: pointer;
+			    font-size: 14px;
+			}
+			.iwf:hover .likeLink{
+				top: 306px;
+				display: block;
+			}
+			.goods_item:hover {
+				border: 1px solid #ff5577;
+			}
+			.J_dynamic_img{
+				width: 100%;
+			}
+			.iwf .title{
+				line-height: 20px;
+			    position: relative;
+			    margin-top: 6px;
+			    font-size: 14px;
+			    width: 100%;
+			    overflow: hidden;
+    			color: #666;
+    			height: 40px;
+    			margin-bottom: 3px;
+			}
+			.iwf .goods_info{
+				height: 25px;
+			    line-height: 25px;
+			    overflow: hidden;
+			    color: #333;
+			    width: 100%;
+			}
+			.iwf .goods_info .price_info{
+				float: left;
+			    color: #333;
+			    font-weight: 700;
+			    font-size: 16px;
+			}
+			.iwf .goods_info .fav_num{
+				font-size: 12px;
+    			color: #999;
+			}
+			.iwf .goods_info .fav_num img{
+				height: 15px;
+			    width: 16px;
+			    vertical-align: -2px;
+			    margin-right: 4px;
+			}
+			.org_price{
+				font-size: 14px;
+			    color: #666;
+			    margin: 3px 0 0 8px;
+			    line-height: 20px;
+			    font-size: 14px;
+    			color: #666;
+    			line-height: 20px;
+			}
+			.org_price span{
+				text-decoration: line-through;
+			}
+			.goods_info_container{
+				display: block;
+			    padding: 0 8px;
+			    overflow: hidden;
+			}
+			.icon_event_leftBottom{
+				height: 21px;
+			    line-height: 14px;
+			    width: 100%;
+			    float: left;
+			    overflow: hidden;
+			}
+			.icon_event_leftBottom img{
+				margin-right: 5px;
+    			height: 18px;
+			}
+			
+			.lets-rock{
+				top: 0;
+    			transition: all .5s ease;
+			}
+			.sticky-search-container{
+				top: -50px;
+				position: fixed;
+				left: 0;
+			    width: 100%;
+			    height: 50px;
+			    background-color: #fff;
+			    box-shadow: 0 1px 6px 0 #ccc;
+			    z-index: 9999;
+			}
+			.top_nav_search{
+				margin: auto;
+				margin-top: 7px;
+    			width: 482px;
+			}
+			.sticky-search-container .logo-wrap{
+				float: left;
+			    width: 240px;
+			    height: 36px;
+			    overflow: hidden;
+			}
+			.sticky-search-container .logo-wrap .logo{
+				float: left;
+			    width: 115px;
+			    height: 36px;
+			    overflow: hidden;
+			}
+			.sticky-search-container .logo-wrap .logo img{
+				height: 100%;
+    			float: left;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="site-top-nav">
+			<div class="wrap">
+				<a class="home fl">
+					蘑菇街首页
+				</a>
+				<ul class="header-top">
+					<li class="s1 has-icon user-meta"></li>
+					<li class="s1 has-icon message-center">
+						<a href="userMsg.html">消息</a>
+					</li>
+					<li class="s1 has-icon user-meta">
+						<a href="collect_goods.html">我的收藏</a>
+						<i class="icon-delta"></i>
+						<ul class="ext-mode">
+							<li class="s2">
+								<a href="collect_goods.html">收藏的商品</a>
+							</li>
+							<li class="s2">
+								<a href="collect_store.html">收藏的小店</a>
+							</li>
+							<li class="s2">
+								<a href="footprint.html">浏览足迹</a>
+							</li>
+						</ul>
+					</li>
+					<li class="s1 myorder user-meta">
+						<a class="text display_u" href="shoppingCar.html">我的订单</a>
+					</li>
+					<li class="s1 has-line shopping-cart-v2">
+						<a class="cart-info-wrap" href="shoppingCar.html">购物车</a>
+					</li>
+					<li class="s1 has-icon user-meta custom-item">
+						<a href="userMsg.html">客户服务</a>
+						<i class="icon-delta"></i>
+						<ul class="ext-mode">
+							<li class="s2">
+								<a href="userMsg.html">消费者服务</a>
+							</li>
+							<li class="s2">
+								<a href="userMsg.html">商家服务</a>
+							</li>
+							<li class="s2">
+								<a href="userMsg.html">规则中心</a>
+							</li>
+						</ul>
+					</li>
+					<li class="s1 has-icon myxiaodian">
+						<a class="text display_u" href="#">我的小店</a>
+						<i class="icon-delta"></i>
+						<ul class="ext-mode">
+							<li class="s2">
+								<a href="userMsg.html">管理后台</a>
+							</li>
+							<li class="s2">
+								<a href="userMsg.html">商家社区</a>
+							</li>
+							<li class="s2">
+								<a href="userMsg.html">商家培训</a>
+							</li>
+							<li class="s2">
+								<a href="userMsg.html">市场入驻</a>
+							</li>
+						</ul>
+
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="mgj_rightbar J_sidebar">
+			<div class="mgj_rightbar_blank_div"></div>
+			<div class="sidebar-item mgj-my-avatar">
+				<a href="index.html">
+					<div class="img">
+						<img src="http://s3.mogucdn.com/mlcdn/5abf39/180822_2g871f7iiaa3k1h42adg1hijf299e_100x100.jpg_48x48.jpg" />
+					</div>
+				</a>
+			</div>
+			<div class="sidebar-item mgj-my-cart">
+				<a href="shoppingCar.html">
+					<i class="s-icon"></i>
+					<div>
+						购物车
+					</div>
+				</a>
+			</div>
+			<div class="sidebar-item mgj-my-coupon">
+				<a href="userMsg.html">
+					<i class="s-icon"></i>
+					<div>
+						优惠券
+					</div>
+				</a>
+			</div>
+			<div class="sidebar-item mgj-my-wallet">
+				<a href="Mywallet.html">
+					<i class="s-icon"></i>
+					<div>
+						钱包
+					</div>
+				</a>
+			</div>
+			<div class="sidebar-item mgj-my-browserlog">
+				<a href="footPrint.html">
+					<i class="s-icon"></i>
+					<div>
+						足迹
+					</div>
+				</a>
+			</div>
+			<div id="QR" class="mgj-my-browserlog">
+				<a href="#">
+					<i class="qr-icon"></i>
+				</a>
+				<div id="detail-qrcode">
+					<img src="https://s10.mogucdn.com/mlcdn/c45406/180521_73ibbgh52kj2dceg869h50b0bgfl6_181x200.png"/>
+				</div>
+			</div>
+			<div class="sideBottom">
+				<a href="#">
+					<div class="sidebar-item mgj-back2top">
+						<i class="s-icon"></i>
+					</div>
+				</a>	
+			</div>
+		</div>
+		<!--表头-->
+
+		<!--中间内容 上-->
+		<div class="head_mid clearfix">
+			<div class="container search-nav clearfix">
+				<a class="mianLogo" href="index.html">
+					<img src="https://s3.mogucdn.com/mlcdn/c45406/170904_1fj9406416501i4lkabcc0hjb8341_480x180.png" />
+				</a>
+
+				<div class="search-content">
+					<!--搜索栏-->
+					<div class="search-box">
+						<!--下拉选框-->
+						<div class="select-box">
+							<span class="selected">
+								<span class="now-sel">搜商品</span>
+							<i></i>
+							</span>
+							<ol class="sel">
+								<li class="goods">
+									<a href="#">商品</a>
+								</li>
+								<li class="current">
+									<a href="#">店铺</a>
+								</li>
+							</ol>
+						</div>
+						<!--搜索条-->
+						<form class="clearfix" action="">
+							<input class="search" type="text" name="" id="search" value="" placeholder="请输入您想要的商品" />
+							<button class="btn" type="button">搜&nbsp;&nbsp;索</button>
+						</form>
+					</div>
+					<!--搜索栏小商品列表-->
+					<div class="G-typeList">
+						<a href="goods_category.html">小白鞋</a>
+						<a href="goods_category.html">牛仔裤</a>
+						<a href="goods_category.html">睡衣</a>
+						<a href="goods_category.html">卫衣</a>
+						<a href="goods_category.html">包包</a>
+						<a href="goods_category.html">衬衫</a>
+						<a href="goods_category.html">外套</a>
+						<a href="goods_category.html">口红</a>
+						<a href="goods_category.html">背带裤</a>
+						<a href="#goods_category.html">连衣裙</a>
+					</div>
+				</div>
+				<div class="mid_fr">
+					<img src="https://s11.mogucdn.com/mlcdn/c45406/171130_8gf90d0d5bgc4ag4kk82gi8kc287d_440x180.png" />
+				</div>
+			</div>
+		</div>
+		<div class="body_wrap">
+			<div class="main-contain">
+				<!--框架-->
+				<div class="head-content">
+					<div class="head-pic">
+						<img src="https://s10.mogucdn.com/p1/161123/idid_ifrwmnzsgu3ggnzwmmzdambqhayde_2400x400.jpg"/>
+					</div>
+					<div class="head-content-left">
+						<div class="left-information">
+							<div class="avater-main">
+								<div class="head-avater">
+									<img src="https://s5.mogucdn.com/mlcdn/5abf39/180822_2g871f7iiaa3k1h42adg1hijf299e_100x100.jpg"/>
+								</div>
+								<div class="vip-icon">
+									<img src="https://s11.mogucdn.com/p1/151125/upload_ifqwimzrgq4tenjrguzdambqgyyde_72x72.png"/>
+								</div>
+							</div>
+							<div class="head-info">
+								<p class="info-name">qq_j4xw25ub1sash</p>
+								<p class="info-num">
+									我的蘑豆
+									<span class="modou-num">0</span>
+									粒
+								</p>
+								<p class="info-money">可抵扣0元</p>
+							</div>
+						</div>
+						<div class="left-head-btn">
+							<a href="#" class="sign-btn">签到领蘑豆</a>
+							<a href="#" class="record-btn">领取记录</a>
+						</div>
+					</div>
+					<div class="head-content-right">
+						<div class="rank-prompt">
+							<p class="prompt-title">积分数</p>
+							<p class="prompt-num">0</p>
+						</div>
+						<div class="progressBox">
+							<div class="progressBar">
+								
+							</div>
+						</div>
+						<div class="rank-content">
+							<div class="rank-icon">
+								<div class="icon-pic">
+									<img src="https://s10.mogucdn.com/p1/161123/idid_ifqtinbqmmzwgnzwmmzdambqgyyde_40x40.png"/>
+								</div>
+								<div class="rank-text">
+									<img src="https://s10.mogucdn.com/p1/161123/idid_ifrdonbrgrqweobwmmzdambqmeyde_36x28.png"/>
+								</div>
+							</div>
+							<div class="rank-icon">
+								<div class="icon-pic">
+									<img src="https://s10.mogucdn.com/p1/161123/idid_ifrtiyrvge3winzwmmzdambqhayde_40x40.png"/>
+								</div>
+								<div class="rank-text num1">
+									<img src="https://s10.mogucdn.com/p1/161123/idid_ifqwmy3dgjsweobwmmzdambqgyyde_70x28.png"/>
+								</div>
+							</div>
+							<div class="rank-icon">
+								<div class="icon-pic">
+									<img src="https://s10.mogucdn.com/p1/161123/idid_ie4wmyzrha2gknzwmmzdambqgqyde_40x40.png"/>
+								</div>
+								<div class="rank-text num1">
+									<img src="https://s10.mogucdn.com/p1/161123/idid_ie4wmyzygmyggobwmmzdambqgqyde_70x28.png"/>
+								</div>
+							</div>
+							<div class="rank-icon">
+								<div class="icon-pic">
+									<img src="https://s10.mogucdn.com/p1/161123/idid_ifrdomddmy3wknzwmmzdambqmeyde_40x40.png"/>
+								</div>
+								<div class="rank-text num2">
+									<img src="https://s10.mogucdn.com/p1/161123/idid_ie4tqmzqmeyggobwmmzdambqgqyde_80x28.png"/>
+								</div>
+							</div>
+							<div class="rank-icon">
+								<div class="icon-pic">
+									<img src="https://s10.mogucdn.com/p1/161123/idid_ie4tmztdmy4gknzwmmzdambqgqyde_40x40.png	"/>
+								</div>
+								<div class="rank-text num3">
+									<img src="https://s10.mogucdn.com/p1/161123/idid_ie4tczddmiywgobwmmzdambqgqyde_86x28.png"/>
+								</div>
+							</div>
+							<div class="rank-icon">
+								<div class="icon-pic">
+									<img src="https://s10.mogucdn.com/p1/161123/idid_ifqwmm3cha4wknzwmmzdambqgyyde_40x40.png"/>
+								</div>
+								<div class="rank-text num4">
+									<img src="https://s10.mogucdn.com/p1/161123/idid_ie4tmnzrgazggobwmmzdambqgqyde_98x28.png"/>
+								</div>
+							</div>
+						</div>
+						<div class="rank-tips">
+							<div class="rank-title">
+								<img src="https://s10.mogucdn.com/p1/161123/idid_ifqtiy3emyztaobwmmzdambqgyyde_112x72.png"/>
+							</div>
+							<div class="rank-title tips2">
+								<img src="https://s10.mogucdn.com/p1/161124/idid_ifqtsnjwga4dqyrwmmzdambqgyyde_112x72.png"/>
+							</div>
+							<div class="rank-title tips2">
+								<img src="https://s10.mogucdn.com/p1/161124/idid_ifrdezjrgu4dqyrwmmzdambqmeyde_112x72.png"/>
+							</div>
+							<div class="rank-title tips2">
+								<img src="https://s10.mogucdn.com/p1/161124/idid_ie4tinjwhe4dqyrwmmzdambqgqyde_112x72.png"/>
+							</div>
+							<div class="rank-title tips2">
+								<img src="https://s10.mogucdn.com/p1/161124/idid_ie4tcyzzmu4dqyrwmmzdambqgqyde_112x72.png"/>
+							</div>
+							<div class="rank-title">
+								<img src="https://s10.mogucdn.com/p1/161124/idid_ie4tczrygq4tqyrwmmzdambqgqyde_112x72.png"/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--头部内容-->
+				<div class="center-content">
+					<div class="center-box">
+						<p class="my-privilege">我的特权</p>
+						<div class="my-privilege-box">
+							<div class="my-privilege-item">
+								<div class="privilege-icon">
+									<div class="privilege-pic">
+										<div class="privilege-pic-img">
+											<img src="https://s2.mogucdn.com/p2/170307/1366_58jikie596d6ijb24gf30belgal52_100x100.png"/>
+										</div>
+									</div>
+									<p class="privilege-text">蘑豆抵扣</p>
+								</div>
+								<div class="privilege-title">
+									<p class="privilege-main">蘑豆抵扣</p>
+									<p class="privilege-min">订单蘑豆抵扣</p>
+								</div>
+							</div>
+							<div class="my-privilege-item">
+								<div class="privilege-icon">
+									<div class="privilege-pic">
+										<div class="privilege-pic-img">
+											<img src="https://s16.mogucdn.com/p1/161208/idid_ie4tcyjqmy3dinlcmmzdambqgqyde_100x100.png"/>
+										</div>
+									</div>
+									<p class="privilege-text">全国包邮</p>
+								</div>
+								<div class="privilege-title">
+									<p class="privilege-main">无限制消费</p>
+									<p class="privilege-min">尊享全国包邮</p>
+								</div>
+							</div>
+							<div class="my-privilege-item">
+								<div class="privilege-icon">
+									<div class="privilege-pic">
+										<div class="privilege-pic-img">
+											<img src="https://s16.mogucdn.com/p1/161208/idid_ie4tcmjygvrdinlcmmzdambqgqyde_100x100.png"/>
+										</div>
+									</div>
+									<p class="privilege-text">7无理由退货</p>
+								</div>
+								<div class="privilege-title">
+									<p class="privilege-main">七天无理由退货</p>
+									<p class="privilege-min">退货无忧</p>
+								</div>
+							</div>
+							<div class="my-privilege-item">
+								<div class="privilege-icon">
+									<div class="privilege-pic">
+										<div class="privilege-pic-img">
+											<img src="https://s2.mogucdn.com/mlcdn/c45406/170912_5kggda1l2k2dijclg3152ii4bj8l4_100x100.png"/>
+										</div>
+									</div>
+									<p class="privilege-text">闪电退货</p>
+								</div>
+								<div class="privilege-title">
+									<p class="privilege-main">闪电退货</p>
+									<p class="privilege-min">无须等待</p>
+								</div>
+							</div>
+							<div class="my-privilege-item">
+								<div class="privilege-icon">
+									<div class="privilege-pic">
+										<div class="privilege-pic-img">
+											<img src="https://s17.mogucdn.com/p1/161208/idid_ifrtknzugrrtinlcmmzdambqhayde_100x100.png"/>
+										</div>
+									</div>
+									<p class="privilege-text">限时发货</p>
+								</div>
+								<div class="privilege-title">
+									<p class="privilege-main">限时发货</p>
+									<p class="privilege-min">部分地区24小时发货</p>
+								</div>
+							</div>
+							<div class="my-privilege-item">
+								<div class="privilege-icon">
+									<div class="privilege-pic">
+										<div class="privilege-pic-img">
+											<img src="https://s17.mogucdn.com/p1/161208/idid_ie4tkmjrmftdinlcmmzdambqgqyde_100x100.png"/>
+										</div>
+									</div>
+									<p class="privilege-text">退货补运费</p>
+								</div>
+								<div class="privilege-title">
+									<p class="privilege-main">七天无理由</p>
+									<p class="privilege-min">退货补运费</p>
+								</div>
+							</div>
+							<div class="my-privilege-item">
+								<div class="privilege-icon">
+									<div class="privilege-pic">
+										<div class="privilege-pic-img">
+											<img src="https://s17.mogucdn.com/p1/161208/idid_ifrdqzjtmqzdknlcmmzdambqmeyde_100x100.png"/>
+										</div>
+									</div>
+									<p class="privilege-text">签到有礼</p>
+								</div>
+								<div class="privilege-title">
+									<p class="privilege-main">签到有礼</p>
+									<p class="privilege-min">送蘑豆送神秘礼物</p>
+								</div>
+							</div>
+							<div class="my-privilege-item">
+								<div class="privilege-icon">
+									<div class="privilege-pic">
+										<div class="privilege-pic-img">
+											<img src="https://s10.mogucdn.com/mlcdn/c45406/180627_24812d6965ea2kg0ag5k17g53d0f9_100x100.png"/>
+										</div>
+									</div>
+									<p class="privilege-text">极速退款</p>
+								</div>
+								<div class="privilege-title">
+									<p class="privilege-main">V0-V3:100元退款额度</p>
+									<p class="privilege-min">V4-V5:200元退款额度</p>
+								</div>
+							</div>
+							<div class="my-privilege-item">
+								<div class="privilege-icon">
+									<div class="privilege-pic">
+										<div class="privilege-pic-img">
+											<img src="https://s16.mogucdn.com/p1/161208/idid_ifrwmnldge3dknlcmmzdambqhayde_100x100.png"/>
+										</div>
+									</div>
+									<p class="privilege-text">周年抽奖</p>
+								</div>
+								<div class="privilege-title">
+									<p class="privilege-main">周年抽奖</p>
+									<p class="privilege-min">大礼等着你</p>
+								</div>
+							</div>
+							<div class="my-privilege-item">
+								<div class="privilege-info">
+									<img src="https://s10.mogucdn.com/p1/161124/idid_ifqtimlggayggyzwmmzdambqgyyde_92x92.png"/>
+								</div>
+								<p class="privilege-more-info">V1可享</p>
+								<div class="privilege-icon">
+									<div class="privilege-pic">
+										<div class="privilege-pic-img">
+											<img src="https://s16.mogucdn.com/p1/161208/idid_ifrdmnlgme4tknlcmmzdambqmeyde_98x86.png"/>
+										</div>
+									</div>
+									<p class="privilege-text">会员活动</p>
+								</div>
+								<div class="privilege-title">
+									<p class="privilege-main">会员活动</p>
+									<p class="privilege-min">专属定制</p>
+								</div>
+							</div>
+							<div class="my-privilege-item">
+								<div class="privilege-info">
+									<img src="https://s10.mogucdn.com/p1/161124/idid_ifqtimlggayggyzwmmzdambqgyyde_92x92.png"/>
+								</div>
+								<p class="privilege-more-info">V4可享</p>
+								<div class="privilege-icon">
+									<div class="privilege-pic">
+										<div class="privilege-pic-img">
+											<img src="https://s2.mogucdn.com/mlcdn/c45406/170912_8fe0094d4eci053jld62la850hl8h_100x100.png"/>
+										</div>
+									</div>
+									<p class="privilege-text">专属服务</p>
+								</div>
+								<div class="privilege-title">
+									<p class="privilege-main">专属服务</p>
+									<p class="privilege-min">专属客服为您服务</p>
+								</div>
+							</div>
+							<div class="my-privilege-item">
+								<div class="privilege-info">
+									<img src="https://s10.mogucdn.com/p1/161124/idid_ifqtimlggayggyzwmmzdambqgyyde_92x92.png"/>
+								</div>
+								<p class="privilege-more-info">V2可享</p>
+								<div class="privilege-icon">
+									<div class="privilege-pic">
+										<div class="privilege-pic-img">
+											<img src="https://s16.mogucdn.com/p1/161208/idid_ifrdqodgga4tknlcmmzdambqmeyde_100x100.png"/>
+										</div>
+									</div>
+									<p class="privilege-text">会员折扣</p>
+								</div>
+								<div class="privilege-title">
+									<p class="privilege-main">会员专享价</p>
+									<p class="privilege-min">专属折扣</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--中部内容-->
+				<div class="grade-content">
+					<p class="up-grade-title">我的积分详情</p>
+					<div class="left-grade numbers-tips">
+						<div class="my-privilege-item">
+							<div class="privilege-icon-tips">
+								<img class="icon-tips-img" src="https://s10.mogucdn.com/p1/170112/idid_ifqwgzjwmnswiobwmqzdambqgyyde_360x240.png"/>
+							</div>
+							<div class="privilege-title">
+								<p class="numbers-tips-main">0分</p>
+								<p class="privilege-min">购买商品: 每元1分</p>
+							</div>
+						</div>
+						<div class="my-privilege-item">
+							<div class="privilege-icon-tips">
+								<img class="icon-tips-img" src="https://s10.mogucdn.com/p1/170112/idid_ifrtinrqgiygkobwmqzdambqhayde_360x240.png"/>
+							</div>
+							<div class="privilege-title">
+								<p class="numbers-tips-main">0分</p>
+								<p class="privilege-min">晒单: 每次5分</p>
+							</div>
+						</div>
+						<div class="my-privilege-item">
+							<div class="privilege-icon-tips">
+								<img class="icon-tips-img" src="https://s10.mogucdn.com/p1/170112/idid_ifrgmnrwguygkobwmqzdambqmeyde_360x240.png"/>
+							</div>
+							<div class="privilege-title">
+								<p class="numbers-tips-main">0分</p>
+								<p class="privilege-min">内容评论: 每次5分</p>
+							</div>
+						</div>
+						<div class="my-privilege-item">
+							<div class="privilege-icon-tips">
+								<img class="icon-tips-img" src="https://s10.mogucdn.com/p1/170112/idid_ifrtemjtheygkobwmqzdambqhayde_360x240.png"/>
+							</div>
+							<div class="privilege-title">
+								<p class="numbers-tips-main">0分</p>
+								<p class="privilege-min">会员任务: 不定额</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--底部内容-->
+				<div class="pic-wall">
+					<p class="wall-title">猜你喜欢</p>
+					<div class="cube_wall_module" id="cube_wall_module">
+						<div class="wall_goods_box">
+							<div class="J_scroll_wallbox clearfix" id="J_scroll_wallbox">
+								<div class="goods_list_mod clearfix J_mod_hidebox J_mod_show" id="J_Dynmod_6px766c7_2">
+									<div class="iwf goods_item ">
+										<a class="likeLink yahei" href="#">找相似</a>
+										<a class="img pagani_log_link J_dynamic_imagebox loading_bg_120 J_loading_success" href="#">
+											<img class="J_dynamic_img fill_img" src="http://s11.mogucdn.com/mlcdn/c45406/180519_8d973ikj87h1hl37kkk5g4bha50cj_640x960.jpg_240x360.v1cAC.70.webp"/>
+										</a>
+										<a class="pagani_log_link goods_info_container" href="#">
+											<p class="title yahei fl">秋冬新款韩版原宿BF套头宽松百搭甜美长袖加绒格子卫衣女外套潮</p>
+											<div class="goods_info fl">
+												<b class="price_info yahei">¥65</b>
+												<span class="fav_num fr">
+													<img src="//s18.mogucdn.com/p2/160908/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/>
+													2233
+												</span>
+											</div>
+										</a>
+									</div>
+									<div class="iwf goods_item ">
+										<a class="likeLink yahei" href="#">找相似</a>
+										<a class="img pagani_log_link J_dynamic_imagebox loading_bg_120 J_loading_success" href="#">
+											<img class="J_dynamic_img fill_img" src="http://s11.mogucdn.com/mlcdn/c45406/180804_04260j2ef5f287clh8b99j77k9184_640x960.jpg_240x360.v1cAC.70.webp"/>
+										</a>
+										<a class="pagani_log_link goods_info_container" href="#">
+											<p class="title yahei fl">2018春秋装新款韩版针织背心裙毛衣外套配字母印花宽松卫衣两件套小个子学生时尚套装</p>
+											<div class="goods_info fl">	
+												<b class="price_info yahei">¥69.3</b>
+												<p class="org_price fl yahei">
+													¥&nbsp;
+													<span>99</span>
+												</p>
+												<span class="fav_num fr">
+													<img src="//s18.mogucdn.com/p2/160908/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/>
+													4616
+												</span>
+											</div>
+										</a>
+									</div>
+									<div class="iwf goods_item ">
+										<a class="likeLink yahei" href="#">找相似</a>
+										<a class="img pagani_log_link J_dynamic_imagebox loading_bg_120 J_loading_success" href="#">
+											<img class="J_dynamic_img fill_img" src="http://s11.mogucdn.com/mlcdn/c45406/180706_1kj3i4bc9fg5cb49c50gg9cgjdik9_640x960.jpg_240x360.v1cAC.70.webp"/>
+										</a>
+										<a class="pagani_log_link goods_info_container" href="#">
+											<p class="title yahei fl">99元任选3件专区 直播粉丝新款秋冬韩版复古毛衣女宽松长袖加厚中长款显瘦百搭针织衫989</p>
+											<div class="goods_info fl">
+												<b class="price_info yahei">¥49.8</b>
+												<span class="fav_num fr">
+													<img src="//s18.mogucdn.com/p2/160908/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/>
+													1852
+												</span>
+											</div>
+										</a>
+									</div>
+									<div class="iwf goods_item ">
+										<a class="likeLink yahei" href="#">找相似</a>
+										<a class="img pagani_log_link J_dynamic_imagebox loading_bg_120 J_loading_success" href="#">
+											<img class="J_dynamic_img fill_img" src="http://s11.mogucdn.com/mlcdn/55cf19/180129_34jhlbc8e597k21ff5ac1g8hk17f8_640x960.jpg_240x360.v1cAC.70.webp"/>
+										</a>
+										<a class="pagani_log_link goods_info_container" href="#">
+											<p class="title yahei fl">春季新款男卫衣休闲韩版青少年男士卫衣T恤卫衣连帽卫衣男上衣</p>
+											<div class="goods_info fl">
+												<b class="price_info yahei">¥86</b>
+												<p class="org_price fl yahei">
+													¥&nbsp;
+													<span>128</span>
+												</p>
+												<span class="fav_num fr">
+													<img src="//s18.mogucdn.com/p2/160908/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/>
+													21
+												</span>
+											</div>
+										</a>
+									</div>
+									<div class="iwf goods_item ">
+										<a class="likeLink yahei" href="#">找相似</a>
+										<a class="img pagani_log_link J_dynamic_imagebox loading_bg_120 J_loading_success" href="#">
+											<img class="J_dynamic_img fill_img" src="http://s11.mogucdn.com/mlcdn/c45406/180512_57cfkfjgedj1cedc79275ig833ef5_640x960.jpg_240x360.v1cAC.70.webp"/>
+										</a>
+										<a class="pagani_log_link goods_info_container" href="#">
+											<p style="height:22px; white-space: nowrap; text-overflow: ellipsis;" class="title yahei fl">2018秋季新款白色运动鞋女韩版ulzzang原宿夏季老爹百搭内增高ins超火小白鞋</p>
+											<p class="icon_event_leftBottom">
+												<img src="//s16.mogucdn.com/p2/160826/upload_1ih5ba874kj6kgce3b165eka4all6_60x36.png"/>
+											</p>
+											<div class="goods_info fl">
+												<b class="price_info yahei">¥69.3</b>
+												<p class="org_price fl yahei">
+													¥&nbsp;
+													<span>99</span>
+												</p>
+												<span class="fav_num fr">
+													<img src="//s18.mogucdn.com/p2/160908/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/>
+													144
+												</span>
+											</div>
+										</a>
+									</div>
+									<div class="iwf goods_item ">
+										<a class="likeLink yahei" href="#">找相似</a>
+										<a class="img pagani_log_link J_dynamic_imagebox loading_bg_120 J_loading_success" href="#">
+											<img class="J_dynamic_img fill_img" src="http://s11.mogucdn.com/mlcdn/c45406/180114_25j5d5h0l32jg0akgb145e1l929ia_640x960.jpg_240x360.v1cAC.70.webp"/>
+										</a>
+										<a class="pagani_log_link goods_info_container" href="#">
+											<p class="title yahei fl">秋季新款小清新个性不规则条纹拼接假两件衬衣学生打底衫女韩版宽松百搭中长款连帽卫衣开衫薄外套</p>
+											<div class="goods_info fl">
+												<b class="price_info yahei">¥49.9</b>
+												<p class="org_price fl yahei">
+													¥&nbsp;
+													<span>71.29</span>
+												</p>
+												<span class="fav_num fr">
+													<img src="//s18.mogucdn.com/p2/160908/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/>
+													2124
+												</span>
+											</div>
+										</a>
+									</div>
+									<div class="iwf goods_item ">
+										<a class="likeLink yahei" href="#">找相似</a>
+										<a class="img pagani_log_link J_dynamic_imagebox loading_bg_120 J_loading_success" href="#">
+											<img class="J_dynamic_img fill_img" src="http://s11.mogucdn.com/mlcdn/c45406/170914_61ilijf42h3id734j9cab679gglkj_640x960.jpg_240x360.v1cAC.70.webp"/>
+										</a>
+										<a class="pagani_log_link goods_info_container" href="#">
+											<p class="title yahei fl">2018春季原宿风新款马丁靴学院百搭系带休闲复古短靴女单靴潮</p>
+											<div class="goods_info fl">
+												<b class="price_info yahei">¥63.9</b>
+												<p class="org_price fl yahei">
+													¥&nbsp;
+													<span>99</span>
+												</p>
+												<span class="fav_num fr">
+													<img src="//s18.mogucdn.com/p2/160908/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/>
+													6942
+												</span>
+											</div>
+										</a>
+									</div>
+									<div class="iwf goods_item ">
+										<a class="likeLink yahei" href="#">找相似</a>
+										<a class="img pagani_log_link J_dynamic_imagebox loading_bg_120 J_loading_success" href="#">
+											<img class="J_dynamic_img fill_img" src="http://s11.mogucdn.com/mlcdn/c45406/171016_4jg8f26d4dga4c71akcj36k5li719_640x960.jpg_240x360.v1cAC.70.webp"/>
+										</a>
+										<a class="pagani_log_link goods_info_container" href="#">
+											<p class="title yahei fl">大号布娃娃1.6米公仔大熊2米泰迪熊毛绒玩具玩偶生日礼物女生七夕情人节</p>
+											<div class="goods_info fl">
+												<b class="price_info yahei">¥68.6</b>
+												<p class="org_price fl yahei">
+													¥&nbsp;
+													<span>98</span>
+												</p>
+												<span class="fav_num fr">
+													<img src="//s18.mogucdn.com/p2/160908/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/>
+													1608
+												</span>
+											</div>
+										</a>
+									</div>
+									<div class="iwf goods_item ">
+										<a class="likeLink yahei" href="#">找相似</a>
+										<a class="img pagani_log_link J_dynamic_imagebox loading_bg_120 J_loading_success" href="#">
+											<img class="J_dynamic_img fill_img" src="http://s11.mogucdn.com/mlcdn/c45406/180806_11ffc2i38ifhb59a1kja3iaf2376f_640x960.jpg_240x360.v1cAC.70.webp"/>
+										</a>
+										<a class="pagani_log_link goods_info_container" href="#">
+											<p style="height:22px; white-space: nowrap; text-overflow: ellipsis;" class="title yahei fl">秋冬新款韩版原宿BF套头宽松百搭甜美长袖加绒格子卫衣女外套潮</p>
+											<p class="icon_event_leftBottom">
+												<img src="//s18.mogucdn.com/p1/160518/upload_ifrdcyjvgu3gkyjzhazdambqmeyde_60x36.png"/>
+											</p>
+											<div class="goods_info fl">
+												<b class="price_info yahei">¥19.9</b>
+												<p class="org_price fl yahei">
+													¥&nbsp;
+													<span>39.9</span>
+												</p>
+												<span class="fav_num fr">
+													<img src="//s18.mogucdn.com/p2/160908/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/>
+													625
+												</span>
+											</div>
+										</a>
+									</div>
+									<div class="iwf goods_item ">
+										<a class="likeLink yahei" href="#">找相似</a>
+										<a class="img pagani_log_link J_dynamic_imagebox loading_bg_120 J_loading_success" href="#">
+											<img class="J_dynamic_img fill_img" src="http://s11.mogucdn.com/mlcdn/c45406/170922_8h726j4563f50f3i8k9eclcb5h912_640x960.jpg_240x360.v1cAC.70.webp"/>
+										</a>
+										<a class="pagani_log_link goods_info_container" href="#">
+											<p class="title yahei fl">新款西装马甲显瘦+长款碎花连衣裙时尚套装女秋款两件套秋装裙子</p>
+											<div class="goods_info fl">
+												<b class="price_info yahei">¥127.15</b>
+												<span class="fav_num fr">
+													<img src="//s18.mogucdn.com/p2/160908/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"/>
+													4337
+												</span>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footBox">
+			<div class="mgj_copyright">
+				<div class="mgj_footer_helper">
+					<div class="mgj_footer_helper_mod">
+						<div class="mgj_footer_helper_mod_container">
+							<h4 class="mgj_footer_helper_title color_666">- 新手帮助 -</h4>
+							<ul>
+								<li class="mgj_footer_helper_item">常见问题</li>
+								<li class="mgj_footer_helper_item">自助服务</li>
+								<li class="mgj_footer_helper_item">联系客服</li>
+								<li class="mgj_footer_helper_item">意见反馈</li>
+							</ul>
+						</div>
+					</div>
+					<div class="mgj_footer_helper_mod">
+						<div class="mgj_footer_helper_mod_container">
+							<h4 class="mgj_footer_helper_title color_666">- 权益保障 -</h4>
+							<ul>
+								<li class="mgj_footer_helper_item">全国包邮</li>
+								<li class="mgj_footer_helper_item">七天无理由退款</li>
+								<li class="mgj_footer_helper_item">退货运费补贴</li>
+								<li class="mgj_footer_helper_item">限时发货</li>
+							</ul>
+						</div>
+					</div>
+					<div class="mgj_footer_helper_mod">
+						<div class="mgj_footer_helper_mod_container">
+							<h4 class="mgj_footer_helper_title color_666">- 支付方式 -</h4>
+							<ul>
+								<li class="mgj_footer_helper_item">微信支付</li>
+								<li class="mgj_footer_helper_item">支付宝</li>
+								<li class="mgj_footer_helper_item">白付美支付</li>
+							</ul>
+						</div>
+					</div>
+					<div class="mgj_footer_helper_mod">
+						<div class="mgj_footer_helper_mod_container">
+							<h4 class="mgj_footer_helper_title color_666">- 移动客户端下载 -</h4>
+							<ul>
+								<li class="mgj_footer_helper_item mgj_footer_helper_item_last">
+									<div class="color_999">
+										蘑菇街
+									</div>
+								</li>
+								<li class="mgj_footer_helper_item mgj_footer_helper_item_last">
+									<div class="color_999">
+										美丽说
+									</div>
+								</li>
+								<li class="mgj_footer_helper_item mgj_footer_helper_item_last">
+									<div class="color_999">
+										uni引力
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="mgj_footer_mgjinfo">
+					<ul>
+						<li class="mgj_footer_mgjinfo_item">关于我们</li>
+						<li class="mgj_footer_mgjinfo_item">招聘信息</li>
+						<li class="mgj_footer_mgjinfo_item">联系我们</li>
+						<li class="mgj_footer_mgjinfo_item">商家入驻</li>
+						<li class="mgj_footer_mgjinfo_item">商家后台</li>
+						<li class="mgj_footer_mgjinfo_item">蘑菇商学院</li>
+						<li class="mgj_footer_mgjinfo_item">商家社区</li>
+						<li class="mgj_footer_mgjinfo_item">规则中心</li>
+						<li class="mgj_footer_mgjinfo_item">有害信息举报</li>
+					</ul>
+					<p class="mgjhostname color_999">©2017 Mogujie.com 杭州卷瓜网络有限公司</p>
+				</div>
+				<div class="mgj_footer_copyright">
+					<p class="mgj_footer_copyright_container">
+						<span class="mgj_footer_copyright_span color_999">营业执照：</span>
+						<a class="mgj_footer_a color_999" href="">913301065526808764</a>
+						<b class="mgj_footer_b color_999"> | </b>
+						<span class="mgj_footer_copyright_span color_999">网络文化经营许可证：：</span>
+						<a class="mgj_footer_a color_999" href="">浙网文（2016）0349-219号</a>
+						<b class="mgj_footer_b color_999"> | </b>
+						<span class="mgj_footer_copyright_span color_999">增值电信业务经营许可证：</span>
+						<a class="mgj_footer_a color_999" href="">浙B2-20110349</a>
+						<b class="mgj_footer_b color_999"> | </b>
+						<span class="mgj_footer_copyright_span color_999"></span>
+						<a class="mgj_footer_a color_999" href="">安全责任书</a>
+						<b class="mgj_footer_b color_999"> | </b>
+						<span class="mgj_footer_copyright_span color_999"></span>
+						<a class="mgj_footer_a color_999" href="">浙公网安备 33010602002329号</a>
+						<b class="mgj_footer_b color_999"> | </b>
+						<span class="mgj_footer_copyright_span color_999">：</span>
+						<a class="mgj_footer_a color_999" href="">互联网药品信息服务资格证书编号：（浙)-经营性-2018-0002</a>
+						<b class="mgj_footer_b color_999"> | </b>
+						<span class="mgj_footer_copyright_span color_999"></span>
+						<a class="mgj_footer_a color_999" href="">浙网食A33010003</a>
+						<b class="mgj_footer_b color_999"> | </b>
+						<span class="mgj_footer_copyright_span color_999"></span>
+						<a class="mgj_footer_a color_999" href="">出版物网络交易平台服务经营备案证</a>
+						<b class="mgj_footer_b color_999"> | </b>
+						<span class="mgj_footer_copyright_span color_999"></span>
+						<a class="mgj_footer_a color_999" href="">（浙）网械平台备字[2018]第00006号</a>
+						<b class="mgj_footer_b color_999"> | </b>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--顶部悬浮框-->
+		<div class="sticky-search-container lets-rock">
+			<div class="wrap clearfix">
+				<div class="logo-wrap clearfix">
+					<a class="logo" href="#">
+						<img src="https://s10.mogucdn.com/mlcdn/c45406/180109_0afd7gig4fbdcag30dg7j054jicd0_224x82.png"/>
+					</a>
+				</div>
+				<div class="top_nav_search search-box">
+						<!--下拉选框-->
+						<div class="select-box">
+							<span class="selected">
+								<span class="now-sel">搜商品</span>
+							<i></i>
+							</span>
+							<ol class="sel">
+								<li class="goods">
+									<a href="#">商品</a>
+								</li>
+								<li class="current">
+									<a href="#">店铺</a>
+								</li>
+							</ol>
+						</div>
+						<!--搜索条-->
+						<form class="clearfix" action="">
+							<input class="search" type="text" name="" id="search" value="" placeholder="请输入您想要的商品" />
+							<button class="btn" type="button">搜&nbsp;&nbsp;索</button>
+						</form>
+					</div>
+			</div>
+		</div>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("#QR").hover(function () {
+				$("#detail-qrcode").stop(true).fadeIn();
+			},function () {
+				$("#detail-qrcode").stop(true).fadeOut();
+			});
+			$(".icon-delta").hover(function() {
+					$(this).parent().find(".ext-mode").stop(true).fadeIn(0.3);
+			},function() {
+					$(this).parent().find(".ext-mode").stop(true).fadeOut(0.3);
+			});
+			$(window).bind("scroll", function() {
+				var top = $(this).scrollTop();
+				if(top >= 30) {
+					$(".mgj-back2top").fadeIn();
+				} else {
+					$(".mgj-back2top").fadeOut();
+				}
+				if(top>=130){
+					$(".sticky-search-container").css({
+						top:0
+					});
+				}else{
+					$(".sticky-search-container").css({
+						top:-50
+					});
+				}
+			});
+		</script>
+	</body>
+</html>

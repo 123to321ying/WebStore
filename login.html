@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index2.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<style type="text/css">
+			.mainlogo {
+				background: url(https://s10.mogucdn.com/p1/160408/upload_ie4gkmjvgvqtiytdg4zdambqgiyde_220x52.png) no-repeat;
+				display: inline-block;
+				width: 220px;
+				height: 52px;
+			}
+			
+			.login_wrap {
+				width: 100%;
+				background-color: #fff;
+				padding: 20px 0;
+			}
+			
+			.logo {
+				width: 1200px;
+				margin: 0 auto;
+				position: relative;
+			}
+			
+			.login-logo-tip {
+				position: absolute;
+				top: 12px;
+				display: inline-block;
+				height: 28px;
+				width: 861px;
+				margin-left: 20px;
+				background-color: #ffefef;
+				border: 1px solid #ffc0cc;
+				text-align: center;
+				line-height: 28px;
+				font-size: 11px;
+				color: #666;
+			}
+			
+			.content {
+				background: url(https://s17.mogucdn.com/p2/170105/upload_541i9di2b3icf9j13f24e0bg7b1i6_1920x600.png) no-repeat center center;
+				width: 100%;
+				display: block;
+			}
+			
+			.lg_banner {
+				width: 62.5%;
+				float: left;
+				display: inline-block;
+				height: 600px;
+			}
+			
+			.clear {
+				clear: both;
+			}
+			
+			.ui-option-main-box {
+				width: 356px;
+				float: left;
+				display: inline;
+				padding: 0 0 30px 44px;
+				background-color: #ffeceb;
+				margin-top: 80px;
+				opacity: 0.9;
+				position: relative;
+			}
+			
+			.login_mod_tab {
+				height: 70px;
+				margin-left: -38px;
+			}
+			
+			.fl {
+				border-bottom: 1px solid #ccc;
+				width: 100%;
+				color: #333;
+			}
+			
+			.lo_mob {
+				display: block;
+				width: 119px;
+				margin: 10px auto 0;
+				height: 43px;
+				line-height: 42px;
+				text-align: center;
+				font-size: 18px;
+				font-weight: 700;
+				color: #3c3c3c;
+			}
+			
+			.error_tip {
+				background: url(https://s10.mogucdn.com/pic/140408/o613k_kqzfunswozbg2s2ugfjeg5sckzsew_16x16.png) 12px no-repeat #fffff8;
+				border: 1px solid #ffd797;
+				height: 30px;
+				line-height: 30px;
+				color: #ff1877;
+				width: 273px;
+				padding-left: 40px;
+				margin-bottom: 9px;
+				display: none;
+			}
+			
+			.userBox {
+				margin-bottom: 15px;
+			}
+			
+			.passwordBox {
+				margin-bottom: 15px;
+			}
+			
+			.btnBox {
+				padding-top: 10px;
+			}
+			
+			.relNameBox{
+				margin-bottom: 15px;
+			}
+			
+			.IDnumBox{
+				margin-bottom: 15px;
+			}
+			
+			.userName {
+				border: 1px solid #ccc;
+				padding: 0 6px;
+				width: 300px;
+				height: 40px;
+			}
+			
+			.relName{
+				border: 1px solid #ccc;
+				padding: 0 6px;
+				width: 300px;
+				height: 40px;
+			}
+			
+			.IDnum{
+				border: 1px solid #ccc;
+				padding: 0 6px;
+				width: 300px;
+				height: 40px;
+			}
+			
+			.userPassword {
+				border: 1px solid #ccc;
+				padding: 0 6px;
+				width: 300px;
+				height: 40px;
+			}
+			
+			.btn {
+				display: inline;
+				float: left;
+				border: none;
+				width: 314px;
+				height: 40px;
+				background: #ff5777;
+				border-radius: 2px;
+				cursor: pointer;
+				color: #fff;
+			}
+			.ot_login{
+				margin-top: 20px;
+			}
+			.ot_btn{
+				padding-top: 6px;
+			}
+			.mr-42{
+				margin-right: 42px;
+			}
+			.ui-ot-btn{
+				line-height: 19px;
+			}
+			.lg_reg{
+				padding-top: 20px;
+			    padding-right: 44px;
+			}
+			.res{
+				float: left;
+				margin-left: 20px;
+				text-decoration: underline;
+    			color: #959595;
+			}
+			.findpwd{
+				float: right;
+				margin-right: 20px;
+				text-decoration: underline;
+    			color: #959595;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="login_wrap">
+			<div class="logo">
+				<a title="蘑菇街" class="mainlogo" href="#"></a>
+				<span class="login-logo-tip">依《网络安全法》相关要求，即日起蘑菇街会员登陆需绑定手机。为保障您的账户安全及正常使用，如您尚未绑定，请尽快完成绑定，感谢您的理解和支持!</span>
+			</div>
+		</div>
+		<div class="content">
+			<div class="lg_banner"></div>
+			<div class="ui-option-main-box">
+				<div class="login_mod_tab ">
+					<div class="fl">
+						<a class="lo_mob" href="">登录</a>
+					</div>
+				</div>
+				<div class="fromBox">
+					<form action="" method="post">
+						<div class="log-res-Box">
+							<div class="userBox">
+								<input type="text" class="userName" datatype="e" nullmsg="请输入您的邮箱！" errormsg="错误的邮箱格式！" placeholder="邮箱" name="" id="" value="" />
+							</div>
+							<div class="passwordBox">
+								<input type="password" datatype="password" nullmsg="请输入您的密码" errormsg="错误的密码格式！" class="userPassword" placeholder="密码" name="" id="" value="" />
+							</div>
+						</div>
+						<div class="btnBox">
+							<input type="button" class="btn" name="" id="" value="登录" />
+							<div class="clear"></div>
+						</div>
+						<div class="ot_login">
+							<div class="ot_btn clearfix">
+								<a class="ui-ot-btn mr-42 ot_btn_qq" href="#"><img src="img/QQlogin.png"/>QQ登录</a>
+								<a class="ui-ot-btn mr-42" href="#"><img src="img/VXlogin.png"/>微信登录</a>
+							</div>
+						</div>
+						<div class="lg_reg">
+							<a class="res" href="#">注册账号</a>
+							<a class="findpwd" href="#">忘记密码</a>
+						</div>
+					</form>
+				</div>
+
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="footBox">
+			<div class="mgj_copyright">
+				<div class="mgj_footer_helper">
+					<div class="mgj_footer_helper_mod">
+						<div class="mgj_footer_helper_mod_container">
+							<h4 class="mgj_footer_helper_title color_666">- 新手帮助 -</h4>
+							<ul>
+								<li class="mgj_footer_helper_item">常见问题</li>
+								<li class="mgj_footer_helper_item">自助服务</li>
+								<li class="mgj_footer_helper_item">联系客服</li>
+								<li class="mgj_footer_helper_item">意见反馈</li>
+							</ul>
+						</div>
+					</div>
+					<div class="mgj_footer_helper_mod">
+						<div class="mgj_footer_helper_mod_container">
+							<h4 class="mgj_footer_helper_title color_666">- 权益保障 -</h4>
+							<ul>
+								<li class="mgj_footer_helper_item">全国包邮</li>
+								<li class="mgj_footer_helper_item">七天无理由退款</li>
+								<li class="mgj_footer_helper_item">退货运费补贴</li>
+								<li class="mgj_footer_helper_item">限时发货</li>
+							</ul>
+						</div>
+					</div>
+					<div class="mgj_footer_helper_mod">
+						<div class="mgj_footer_helper_mod_container">
+							<h4 class="mgj_footer_helper_title color_666">- 支付方式 -</h4>
+							<ul>
+								<li class="mgj_footer_helper_item">微信支付</li>
+								<li class="mgj_footer_helper_item">支付宝</li>
+								<li class="mgj_footer_helper_item">白付美支付</li>
+							</ul>
+						</div>
+					</div>
+					<div class="mgj_footer_helper_mod">
+						<div class="mgj_footer_helper_mod_container">
+							<h4 class="mgj_footer_helper_title color_666">- 移动客户端下载 -</h4>
+							<ul>
+								<li class="mgj_footer_helper_item mgj_footer_helper_item_last">
+									<div class="color_999">
+										蘑菇街
+									</div>
+								</li>
+								<li class="mgj_footer_helper_item mgj_footer_helper_item_last">
+									<div class="color_999">
+										美丽说
+									</div>
+								</li>
+								<li class="mgj_footer_helper_item mgj_footer_helper_item_last">
+									<div class="color_999">
+										uni引力
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="mgj_footer_mgjinfo">
+					<ul>
+						<li class="mgj_footer_mgjinfo_item">关于我们</li>
+						<li class="mgj_footer_mgjinfo_item">招聘信息</li>
+						<li class="mgj_footer_mgjinfo_item">联系我们</li>
+						<li class="mgj_footer_mgjinfo_item">商家入驻</li>
+						<li class="mgj_footer_mgjinfo_item">商家后台</li>
+						<li class="mgj_footer_mgjinfo_item">蘑菇商学院</li>
+						<li class="mgj_footer_mgjinfo_item">商家社区</li>
+						<li class="mgj_footer_mgjinfo_item">规则中心</li>
+						<li class="mgj_footer_mgjinfo_item">有害信息举报</li>
+					</ul>
+					<p class="mgjhostname color_999">©2017 Mogujie.com 杭州卷瓜网络有限公司</p>
+				</div>
+				<div class="mgj_footer_copyright">
+					<p class="mgj_footer_copyright_container">
+						<span class="mgj_footer_copyright_span color_999">营业执照：</span>
+						<a class="mgj_footer_a color_999" href="">913301065526808764</a>
+						<b class="mgj_footer_b color_999"> | </b>
+						<span class="mgj_footer_copyright_span color_999">网络文化经营许可证：：</span>
+						<a class="mgj_footer_a color_999" href="">浙网文（2016）0349-219号</a>
+						<b class="mgj_footer_b color_999"> | </b>
+						<span class="mgj_footer_copyright_span color_999">增值电信业务经营许可证：</span>
+						<a class="mgj_footer_a color_999" href="">浙B2-20110349</a>
+						<b class="mgj_footer_b color_999"> | </b>
+						<span class="mgj_footer_copyright_span color_999"></span>
+						<a class="mgj_footer_a color_999" href="">安全责任书</a>
+						<b class="mgj_footer_b color_999"> | </b>
+						<span class="mgj_footer_copyright_span color_999"></span>
+						<a class="mgj_footer_a color_999" href="">浙公网安备 33010602002329号</a>
+						<b class="mgj_footer_b color_999"> | </b>
+						<span class="mgj_footer_copyright_span color_999">：</span>
+						<a class="mgj_footer_a color_999" href="">互联网药品信息服务资格证书编号：（浙)-经营性-2018-0002</a>
+						<b class="mgj_footer_b color_999"> | </b>
+						<span class="mgj_footer_copyright_span color_999"></span>
+						<a class="mgj_footer_a color_999" href="">浙网食A33010003</a>
+						<b class="mgj_footer_b color_999"> | </b>
+						<span class="mgj_footer_copyright_span color_999"></span>
+						<a class="mgj_footer_a color_999" href="">出版物网络交易平台服务经营备案证</a>
+						<b class="mgj_footer_b color_999"> | </b>
+						<span class="mgj_footer_copyright_span color_999"></span>
+						<a class="mgj_footer_a color_999" href="">（浙）网械平台备字[2018]第00006号</a>
+						<b class="mgj_footer_b color_999"> | </b>
+					</p>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/Validform_v5.3.2_min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mock-json.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mock.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var flag=true;
+			
+			$(".res").click(function () {
+				if(flag){
+					$(".lo_mob").text("注册");
+					$(".btn").val("注册");
+					$(".res").text("登录");
+					var $name='<div class="relNameBox"><input type="text" class="relName" placeholder="真实姓名" name="" id="" value="" /></div>'
+					var $num='<div class="IDnumBox"><input datatype="id" nullmsg="请输入您的身份证" errormsg="错误的身份证格式！" type="text" class="IDnum" placeholder="身份证号" name="" id="" value="" /></div>'
+					$(".log-res-Box").append($name);
+					$(".log-res-Box").append($num);
+					flag=false;
+				}else{
+					$(".lo_mob").text("登录");
+					$(".btn").val("登录");
+					$(".res").text("注册账号");
+					$(".relNameBox").remove();
+					$(".IDnumBox").remove();
+					flag=true;
+				}
+			});
+			$(".btn").click(function () {
+				if(flag==false){
+					$(".lo_mob").text("登录");
+					$(".btn").val("登录");
+					$(".res").text("注册账号");
+					$(".relNameBox").remove();
+					$(".IDnumBox").remove();
+					flag=true;
+				}
+			});
+			$(".log-res-Box").Validform({
+				tiptype: 3,
+				datatype: {
+					'password': /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{5,16}$/,
+					'id':/\d{17}[\d|x]|\d{15}/
+				}
+			});
+		</script>
+	</body>
+
+</html>

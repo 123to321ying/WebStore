@@ -1,0 +1,66 @@
+@charset "utf-8";
+/*右侧边栏*/
+.right_fix{
+	width: 30px;
+	position: fixed;
+	top: 50px;
+	right: 0;
+	z-index: 100000;
+}
+.kong_top{
+	background-color: rgba(0,0,0,0.6);
+	height: 60px;
+	border-bottom: 1px solid rgba(221,221,221,.6);
+}
+.kong_bottom{
+	background-color: rgba(0,0,0,0.6);
+	height: 160px;
+	border-bottom: 1px solid rgba(221,221,221,.6);
+}
+.hoverMatter{
+	position: relative;
+	top: 0;
+	left: 30px;
+}
+.right_fix a:hover{
+	color: #FFFFFF;
+}
+
+.right_fix_item {
+	padding: 4px 4px 12px;
+    display: block;
+    color: #fff;
+    text-align: center;
+    line-height: 15px;
+    background-color: rgba(0,0,0,0.6);
+
+    border-bottom: 1px solid rgba(221,221,221,.6);
+    /*display: none;*/
+}
+.right_fix_item:hover{
+	background-color: #FF2255;
+	opacity: 0.6;
+}
+.right_fix_item i{
+	margin: 0 auto;
+	display:block;
+	margin-top: 10px;
+	width: 20px;
+	height: 20px;
+	background: url(../img/images/upload_8dhi7ll8egg1ee9i12a3fc1lg93b9_609x784.png) ;
+}
+.sp_car{
+	display: block ;
+}
+.sp_car i{
+	background-position: -271px -137px;
+}
+.sp_quan i{
+	background-position: -272px -167px;
+}
+.sp_money i{
+	background-position: -272px -195px;
+}
+.sp_foot i{
+	background-position: -272px -222px;
+}

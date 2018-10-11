@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/shoppingCar.css" />
+	</head>
+
+	<body>
+		<!--表头-->
+		<div class="site-top-nav">
+			<div class="container">
+				<a href="index.html" class="home">蘑菇街首页</a>
+				<div class="header-top fr clearfix">
+					<li class="nav-info clearfix">
+						<a href="user.html">用户名</a>
+						<i class="icon-delta"></i>
+						<div class="divide"></div>
+						<ol class="ext-mode">
+							<li class="s2">
+								<a href="userMsg.html">个人设置</a>
+							</li>
+							<li class="s2">
+								<a href="login.html">退出</a>
+							</li>
+						</ol>
+					</li>
+					<li class="nav-info">
+						<a href="user.html">消息</a>
+						<div class="divide"></div>
+					</li>
+					<li class="nav-info clearfix">
+						<a href="collect_goods.html">我的收藏</a>
+						<i class="icon-delta"></i>
+						<div class="divide"></div>
+						<ol class="ext-mode">
+							<li class="s2">
+								<a href="collect_goods.html">收藏的商品</a>
+							</li>
+							<li class="s2">
+								<a href="collect_goods.html">收藏的小店</a>
+							</li>
+							<li class="s2">
+								<a href="footprint.html">浏览足迹</a>
+							</li>
+						</ol>
+					</li>
+					<li class="nav-info myorder">
+						<div class="divide"></div>
+						<i></i>
+						<a href="PayMoney.html">我的订单</a>
+					</li>
+					<li class="nav-info orderCar">
+						<div class="divide"></div>
+						<i></i>
+						<a href="shoppingCar.html">购物车
+							<span id="itemNum"></span>
+							件</a>
+						<div class="top_shoppingCar">
+							<ul>
+								<li class="top_car_item clearfix">
+									<a href="goods.html">
+										<img src="img/images/item1.webp" />
+									</a>
+									<div class="top_car_info">
+										<a href="goods.html">
+											裸色箭头高跟鞋白色显瘦
+										</a>
+										<span>颜色：白色	 尺码：38</span>
+									</div>
+									<div class="pricAndDel fr">
+										<span>￥139.00</span>
+										<span class="top_del">删除</span>
+									</div>
+								</li>
+								<li class="top_car_item clearfix">
+									<a href="goods.html">
+										<img src="img/images/item2.webp" />
+									</a>
+									<div class="top_car_info">
+										<a href="goods.html">
+											裸色箭头高跟鞋白色显瘦
+										</a>
+										<span>颜色：粉色	 尺码：38</span>
+									</div>
+									<div class="pricAndDel fr">
+										<span>￥98.00</span>
+										<span class="top_del">删除</span>
+									</div>
+								</li>
+								<li class="top_car_item clearfix">
+									<a href="goods.html">
+										<img src="img/images/item3.webp" />
+									</a>
+									<div class="top_car_info">
+										<a href="goods.html">
+											裸色箭头高跟鞋白色显瘦
+										</a>
+										<span>颜色：粉色	 尺码：38</span>
+									</div>
+									<div class="pricAndDel fr">
+										<span>￥199.00</span>
+										<span class="top_del">删除</span>
+									</div>
+								</li>
+							</ul>
+							<div class="seeShoppingCar clearfix">
+								<a href="shoppingCar.html">查看购物车</a>
+							</div>
+						</div>
+					</li>
+					<li class="nav-info clearfix">
+						<a href="user.html">客户服务</a>
+						<i class="icon-delta"></i>
+						<div class="divide"></div>
+						<ol class="ext-mode">
+							<li class="s2">
+								<a href="#">消费者服务</a>
+							</li>
+							<li class="s2">
+								<a href="#">商家服务</a>
+							</li>
+							<li class="s2">
+								<a href="#">规则中心</a>
+							</li>
+						</ol>
+					</li>
+				</div>
+			</div>
+		</div>
+		<!--侧边栏-->
+		<div class="right_fix">
+
+			<div class="kong_top hoverMatter">
+
+			</div>
+			<a class="right_fix_item sp_car" href="shoppingCar.html">
+				<i></i> 购物车
+			</a>
+			<a class="right_fix_item sp_quan hoverMatter" href="vipPage.html">
+				<i></i> 优惠券
+			</a>
+			<a class="right_fix_item sp_money hoverMatter" href="Mywallet.html">
+				<i></i> 钱包
+			</a>
+			<a class="right_fix_item sp_foot hoverMatter" href="footprint.html">
+				<i></i> 足迹
+			</a>
+			<div class="kong_bottom hoverMatter"></div>
+		</div>
+		<!--进度条-->
+		<div class="g-head clearfix">
+			<div class="g-head_in container clearfix">
+				<div class="g-logo fl"></div>
+				<ul class="progressBar_list fr clearfix">
+					<li class="progressBar fl">
+						<div class="site s_1">
+							1
+						</div>
+						<span>购物车</span>
+					</li>
+					<li class="progressBar fl">
+						<div class="site s_2">
+							2
+						</div>
+						<span>确认订单</span>
+					</li>
+					<li class="progressBar fl">
+						<div class="site s_3">
+							3
+						</div>
+						<span>支付</span>
+					</li>
+					<li class="progressBar fl">
+						<div class="site s_4">
+							4
+						</div>
+						<span>完成</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--购物大盒子-->
+		<div class="proCar_box container">
+			<!--title栏-->
+			<ul class="proCar-title clearfix">
+				<li class="fl">
+					<a class="proCar-title_item" href="#">
+						全部商品
+						<span>3</span>
+					</a>
+				</li>
+				<li class="fl">
+					<a class="proCar-title_item" href="#">
+						优惠
+						<span>3</span>
+					</a>
+				</li>
+				<li class="fl">
+					<a class="proCar-title_item" href="#">
+						库存紧张
+						<span>3</span>
+					</a>
+				</li>
+			</ul>
+			<!--table表格-->
+			<div class="CarInfo_list">
+				<table class="cart-table" id="cartOrderTable" border="" cellspacing="" cellpadding="">
+					<thead>
+						<tr>
+							<th class="cart_table_check_wrap">
+								<input type="checkbox" name="" class="selectAll" value="" />
+								<label for="">全选</label>
+							</th>
+							<th class="cart_table_goods_wrap"></th>
+							<th>商品详情</th>
+							<th>单价（元）</th>
+							<th>数量</th>
+							<th>小计（元）</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="cart_mitem pro_cart">
+							<td class="vm ">
+								<input type="checkbox" class="cart_thcheck">
+							</td>
+							<td class="cart_table_goods_wrap cart_info">
+								<!-- 商品 -->
+								<a href="goods.html" class="cart_goods_img fl">
+									<img class="cartImgTip" src="img/images/item1.webp" alt="热卖套装港风怪味少女短款牛仔外套女韩版牛仔衣夹克+高腰显瘦网纱裙套装">
+									<div class="down_price">
+										降价
+										<span></span> 元
+									</div>
+									<!-- 商品title -->
+									<a href="goods.html" class="cart_goods_t" title="热卖套装港风怪味少女短款牛仔外套女韩版牛仔衣夹克+高腰显瘦网纱裙套装"> 热卖套装港风怪味少女短款牛仔外套女韩版牛仔衣夹克+高腰显瘦网纱裙套装 </a>
+
+							</td>
+							<td>
+								<p class="cart_lh20">颜色：网纱裙+牛仔外套</p>
+								<p class="cart_lh20">尺码：L</p>
+							</td>
+							<td class="cart_alcenter">
+								<!-- 单价 -->
+								<p class="cart_lh20 cart_throughline cart_lightgray">198.58</p>
+								<p class="cart_lh20 cart_bold cart_data_sprice"> 139.00 </p>
+								<p> <span class="cart_tip_yellow cart_tip_focuswidth">限量促销</span> </p>
+							</td>
+							<td class="cart_alcenter">
+								<!-- 数量 -->
+								<div>
+									<div class="cart_num cart_counter">
+										<span class="cart_num_add"></span>
+										<input type="text" class="cart_num_input cart_bold" maxlength="3" value="1">
+										<span class="cart_num_reduce"></span>
+									</div>
+								</div>
+							</td>
+							<td class="cart_alcenter">
+								<!-- 小计 -->
+								<p class="cart_deep_red cart_font16 item_sum" data-unit="139" data-price="139.00">139.00</p>
+							</td>
+							<td class="cart_alcenter">
+								<!-- 操作 -->
+								<button class="cart_hoverline delete">删除</button>
+							</td>
+						</tr>
+						<tr class="cart_mitem pro_cart">
+							<td class="vm ">
+								<input type="checkbox" class="cart_thcheck">
+							</td>
+							<td class="cart_table_goods_wrap cart_info">
+								<!-- 商品 -->
+								<a href="goods.html" class="cart_goods_img fl">
+									<img class="cartImgTip" src="img/images/item2.webp" alt="热卖套装港风怪味少女短款牛仔外套女韩版牛仔衣夹克+高腰显瘦网纱裙套装">
+									<div class="down_price">
+										降价
+										<span></span> 元
+									</div>
+									<!-- 商品title -->
+									<a href="goods.html" class="cart_goods_t" title="热卖套装港风怪味少女短款牛仔外套女韩版牛仔衣夹克+高腰显瘦网纱裙套装"> 热卖套装港风怪味少女短款牛仔外套女韩版牛仔衣夹克+高腰显瘦网纱裙套装 </a>
+
+							</td>
+							<td>
+								<p class="cart_lh20">颜色：网纱裙+牛仔外套</p>
+								<p class="cart_lh20">尺码：L</p>
+							</td>
+							<td class="cart_alcenter">
+								<!-- 单价 -->
+								<p class="cart_lh20 cart_throughline cart_lightgray">123.58</p>
+								<p class="cart_lh20 cart_bold cart_data_sprice"> 98.00 </p>
+								<p> <span class="cart_tip_yellow cart_tip_focuswidth">限量促销</span> </p>
+							</td>
+							<td class="cart_alcenter">
+								<!-- 数量 -->
+								<div>
+									<div class="cart_num cart_counter">
+										<span class="cart_num_add"></span>
+										<input type="text" class="cart_num_input cart_bold" maxlength="3" value="1">
+										<span class="cart_num_reduce"></span>
+									</div>
+								</div>
+							</td>
+							<td class="cart_alcenter">
+								<!-- 小计 -->
+								<p class="cart_deep_red cart_font16 item_sum">98.00</p>
+							</td>
+							<td class="cart_alcenter">
+								<!-- 操作 -->
+								<button class="cart_hoverline delete">删除</button>
+							</td>
+						</tr>
+
+						<tr class="cart_mitem pro_cart">
+							<td class="vm ">
+								<input type="checkbox" class="cart_thcheck">
+							</td>
+							<td class="cart_table_goods_wrap cart_info">
+								<!-- 商品 -->
+								<a href="goods.html" class="cart_goods_img fl">
+									<img class="cartImgTip" src="img/images/item3.webp" alt="热卖套装港风怪味少女短款牛仔外套女韩版牛仔衣夹克+高腰显瘦网纱裙套装">
+									<div class="down_price">
+										降价
+										<span></span> 元
+									</div>
+									<!-- 商品title -->
+									<a href="goods.html" class="cart_goods_t" title="热卖套装港风怪味少女短款牛仔外套女韩版牛仔衣夹克+高腰显瘦网纱裙套装"> 热卖套装港风怪味少女短款牛仔外套女韩版牛仔衣夹克+高腰显瘦网纱裙套装 </a>
+
+							</td>
+							<td>
+								<p class="cart_lh20">颜色：网纱裙+牛仔外套</p>
+								<p class="cart_lh20">尺码：L</p>
+							</td>
+							<td class="cart_alcenter">
+								<!-- 单价 -->
+								<p class="cart_lh20 cart_throughline cart_lightgray">324.58</p>
+								<p class="cart_lh20 cart_bold cart_data_sprice"> 199.00 </p>
+								<p> <span class="cart_tip_yellow cart_tip_focuswidth">限量促销</span> </p>
+							</td>
+							<td class="cart_alcenter">
+								<!-- 数量 -->
+								<div>
+									<div class="cart_num cart_counter">
+										<span class="cart_num_add"></span>
+										<input type="text" class="cart_num_input cart_bold" maxlength="3" value="1">
+										<span class="cart_num_reduce"></span>
+									</div>
+								</div>
+							</td>
+							<td class="cart_alcenter">
+								<!-- 小计 -->
+								<p class="cart_deep_red cart_font16 item_sum">199.00</p>
+							</td>
+							<td class="cart_alcenter">
+								<!-- 操作 -->
+								<button class="cart_hoverline delete">删除</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!--结算-->
+			<div class="sub_box clearfix">
+				<div class="left_sub fl">
+					<input type="checkbox" name="" class="selectAll" value="" />
+					<label for="">全选</label>
+					<span>删除</span>
+				</div>
+				<div class="right_sub fr clearfix">
+					<p>
+						共有<span>1</span>件商品，总计：
+					</p>
+					<div class="cost_how">￥0.00</div>
+					<a href="PayMoney.html" class="goPay">
+						去付款 >
+					</a>
+		</div>
+	</body>
+	<script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//侧边栏
+		$(".right_fix").hover(function() {
+			$(".hoverMatter").animate({
+				left: '0'
+			}, 200);
+		}, function() {
+			$(".hoverMatter").animate({
+				left: '30'
+			}, 200);
+		});
+		//点击变色
+		$(".proCar-title_item").eq(0).css({
+			"color": "#FF2255",
+			"border-color": "#FF2255 "
+		});
+		$(".proCar-title").on("click", "a", function() {
+			$(".proCar-title").find("a").css({
+				"color": "#333333",
+				"border-color": "#FFFFFF"
+			});
+
+			$(this).css({
+				"color": "#FF2255",
+				"border-color": "#FF2255"
+			})
+		});
+		//结算漂浮
+		//		 var Height = $(window).height();
+		//		 console.log(Height);
+		//		 var oHeight = Height-($(".CarInfo_list").offset().top+$(".CarInfo_list").height())
+		//		 console.log(oHeight);
+		//		 if (oHeight<-300) {
+		//		 	$(".sub_box").css({
+		//		 		"position":"fixed",
+		//		 		"left":"31px",
+		//		 		"bottom":"0",
+		//		 		"backgroundColor":"#fff"
+		//		 	});
+		//		 }else{
+		//		 	$(".sub_box").css({
+		//		 		"position":"none",
+		//		 		"display":"block",
+		//		 		"height":"50px",
+		//		 		"lineHeight":"50px",
+		//		 		"width":"100%"
+		//		 	});
+		//		 }
+		//购物系统
+		//顶端删除
+		$(".top_del").click(function() {
+			$(this).parents(".top_car_item").remove();
+			//连带删下面
+			var picSrc_top = $(this).parents(".top_car_item").find("img").attr("src");
+			$(".pro_cart").each(function (index) {
+				var picSrc_tr = $(this).find(".cartImgTip").attr("src");
+				if (picSrc_top==picSrc_tr) {
+					$(this).remove();
+					return;
+				}
+			});
+			var itemNum = $(".top_car_item").length;
+		$("#itemNum").text(itemNum);
+		});
+		//降价
+		$(".down_price").each(function(index) {
+			var downPrice = parseInt($(this).parents("tr").find(".cart_lightgray").text()) - parseFloat($(this).parents("tr").find(".cart_data_sprice").text());
+			$(this).children("span").text(downPrice);
+		});
+
+		//全选
+		$(".selectAll").click(function() {
+			if($(this).attr("checked")) {
+				$("input:checkbox").removeAttr("checked");
+			} else {
+				$("input:checkbox").attr("checked", "checked");
+			}
+			SumPrice();
+		});
+		//选择调用Sum函数
+		$(".cart_thcheck").click(function() {
+			SumPrice();
+		});
+		//增加件数
+		$(".cart_num_add").click(function() {
+			var nowVal = parseInt($(this).siblings("input").val());
+			$(this).siblings("input").val(nowVal + 1);
+			//小计
+			var itemSum = 0
+			itemSum = parseFloat($(this).parents(".pro_cart").find(".cart_data_sprice").text()) * (nowVal + 1);
+			$(this).parents(".pro_cart").find(".item_sum").text(itemSum);
+			SumPrice();
+		});
+		//减少件数
+		$(".cart_num_reduce").click(function() {
+			var nowVal = parseInt($(this).siblings("input").val());
+			if(nowVal <= 1) {
+				alert("不能再减了亲");
+				return false;
+			} else {
+				$(this).siblings("input").val(nowVal - 1);
+				//小计
+				var itemSum = 0
+				itemSum = parseFloat($(this).parents(".pro_cart").find(".cart_data_sprice").text()) * (nowVal - 1);
+				$(this).parents(".pro_cart").find(".item_sum").text(itemSum);
+				SumPrice();
+			}
+		});
+
+		//价格总和
+
+		function SumPrice() {
+			var sum = 0;
+			$(".pro_cart").each(function(index) {
+				if($(this).find("input[type='checkbox']").is(':checked')) {
+					sum = sum + parseFloat($(this).find(".item_sum").text());
+				}
+				console.log(sum);
+				$(".cost_how").text("￥" + sum);
+			});
+			if($(".cost_how").text() == '￥0') {
+				$(".goPay").css("background-color", "#d8d8d8")
+			} else {
+				$(".goPay").css("background-color", "#f13e3a")
+			}
+		}
+		//删除事件
+
+		$(".delete").click(function() {
+			$(this).parents("tr").remove();
+			//连带删上面
+			var picSrc_tr = $(this).parents(".pro_cart").find(".cartImgTip").attr("src");
+			$(".top_car_item").each(function (index) {
+				var picSrc_top = $(this).find("img").attr("src");
+				if (picSrc_top==picSrc_tr) {
+					$(this).remove();
+					return;
+				}
+			});
+			var itemNum = $(".top_car_item").length;
+			$("#itemNum").text(itemNum);
+		});
+		//购物车件数
+		var itemNum = $(".top_car_item").length;
+		$("#itemNum").text(itemNum);
+		//点击判断是否要跳转页面
+		$(".goPay").click(function() {
+		if($(".pro_cart").find("input[type='checkbox']").is(':checked') == false) {
+			alert("您没有选择任何商品")
+			return false;
+		} else {
+			location.href = "PayMoney.html";
+		}
+	})
+		
+	</script>
+
+</html>

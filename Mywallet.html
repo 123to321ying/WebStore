@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index2.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<style type="text/css">
+			body{
+				background-color: #e7e8eb;
+			}
+			
+			.back_to_home {
+				background: url(https://s10.mogucdn.com/pic/150508/10sz8d_ieztcmrqgu3toobqgezdambqgyyde_14x14.png) 0 no-repeat;
+				display: inline-block;
+				vertical-align: top;
+				padding-left: 20px;
+				height: 30px;
+				line-height: 30px;
+				color: #333333;
+				font-size: 14px;
+			}
+			
+			.back_to_home:hover {
+				color: #333333;
+			}
+			
+			.h_set {
+				height: 30px;
+				line-height: 30px;
+			}
+			
+			.h_set a {
+				margin: 0 6px 0 30px;
+			}
+			
+			.h_set a:hover {
+				color: #333333;
+			}
+			
+			.header {
+				min-width: 960px;
+				background: #fff;
+			}
+			
+			.logo {
+				float: left;
+				width: 130px;
+				height: 34px;
+				margin: 20px 20px 0 0;
+				overflow: hidden;
+				text-indent: -999em;
+				background: url(https://s10.mogucdn.com/p1/150604/upload_iezdiobqme3wemzzgezdambqmmyde_130x34.png) no-repeat;
+			}
+			
+			.header .header_top {
+				float: right;
+			}
+			
+			.header .header_top li {
+				display: inline;
+				position: relative;
+				line-height: 76px;
+				z-index: 100;
+				float: left;
+				margin: 0 0 0 30px;
+			}
+			
+			.header .header_top li a {
+				height: 74px;
+				line-height: 74px;
+				display: block;
+				font-size: 18px;
+				font-weight: 700;
+				padding: 0 5px;
+				overflow: hidden;
+				border-bottom: 2px solid #fff;
+				color: #333;
+			}
+			
+			.header .header_top .active {
+				color: #f55;
+			}
+			
+			.header .header_top .active a {
+				color: #f55;
+				border-bottom: 2px solid #f55;
+				background: url(https://s10.mogucdn.com/pic/150508/10sz8d_iezgeztfmvsdqobqgezdambqmmyde_8x4.png) bottom no-repeat;
+			}
+			a img{
+			 	border: 0;
+				vertical-align: middle;
+			 }
+			 
+			.body_wrap{
+			 	padding: 30px 0 0;
+			 }
+			 
+			.wallet-header{
+				height: 110px;
+			    margin-bottom: 20px;
+			    background: url(https://s10.mogucdn.com/pic/150511/10sz8d_ieztmn3bhbstcobrgezdambqgyyde_1500x114.jpg) 50% repeat-x;
+			}
+			
+			.wallet-mine .wallet-balance{
+				margin: 10px 0 20px;
+    			font-size: 14px;
+			}
+			
+			.wallet-header-avatar{
+				width: 70px;
+			    height: 70px;
+			    border-radius: 50%;
+			    float: left;
+			    margin-top: 20px;
+			}
+			
+			.wallet-header-l{
+				width: 600px;
+				padding: 27px 0 0 20px;
+			}
+			
+			.wallet-header-l p{
+				color: #333333;
+				line-height: 24px;
+    			white-space: nowrap;
+			}
+			.wallet-header-l .wallet-welcome{
+				font-size: 20px;
+			}
+			
+			.wallet-header-p{
+				line-height: 24px;
+    			white-space: nowrap;
+			}
+			
+			.wallet-h-l-icon{
+				background: hsla(0,0%,100%,.5);
+			    width: 26px;
+			    height: 26px;
+			    border-radius: 50%;
+			    display: block;
+			    float: left;
+			    position: relative;
+			    margin-right: 10px;
+			}
+			
+			.wallet-icon{
+				text-indent: -9999px;
+			    line-height: 26px;
+			    height: 26px;
+			    margin: 0;
+			    display: inline-block;
+			    background: url(https://s10.mogucdn.com/pic/150511/10sz8d_iezdqntdhfrdiobrgezdambqmmyde_30x180.png) no-repeat;
+			}
+			.person{
+				background-position: -2px -63px;
+				padding-left: 26px;
+			}
+			
+			.wallet-header-r{
+				padding: 30px 20px 0 0;
+			}
+			
+			.wallet-header-r p{
+				font-size: 14px;
+			}
+			
+			.wallet-panel{
+				border: 1px solid #ddd;
+			    background: #fff;
+			    margin: 0 auto 20px;
+			}
+			
+			.wallet-mine-l{
+				width: 770px;
+   	 			padding: 0 30px;
+			}
+			
+			.wallet-mine-title{
+				padding-top: 20px;
+			    font-size: 16px;
+			    font-weight: 400;
+			}
+			
+			.fnlist{
+				height: 32px;
+			    line-height: 32px;
+			    font-size: 12px;
+			}
+			
+			.icon-pad{
+				padding-left: 26px;
+    			font-size: 16px;
+			}
+			
+			.balance{
+				background: url(https://s10.mogucdn.com/p2/161123/upload_7led8bdif43hj3694ah32i0gcjcd6_18x18.png) 0 no-repeat;
+    			background-size: 18px 18px;
+			}
+			.transfer{
+				margin-left: 10px;
+			    padding: 4px 6px;
+			    border: 1px solid #f55;
+			    color: #f55;
+			    border-radius: 4px;
+			}
+			
+			.transfer:hover{
+				color: #f55;
+			}
+			
+			.line{
+				width: 100%;
+			    height: 1px;
+			    overflow: hidden;
+			    background-color: #f3f3f3;
+			}
+			
+			.baifumei{
+				position: relative;
+    			padding-bottom: 14px;
+			}
+			
+			.wallet-help{
+				background: url(https://s10.mogucdn.com/p1/150727/upload_ie2dim3gmrsdinlbgizdambqgiyde_18x18.gif) 50% no-repeat;
+			    width: 32px;
+			    height: 32px;
+			    position: absolute;
+			    top: 16px;
+			    left: 60px;
+			    display: block;
+			}
+			
+			.panel-left{
+				width: 380px;
+			    padding-right: 20px;
+			    float: left;
+			}
+			
+			.wallet-mine .wallet-mine-l h4{
+				padding-top: 20px;
+			    font-size: 16px;
+			    font-weight: 400;
+			}
+			
+			.baifumei h4{
+				margin-bottom: 10px;
+			}
+			
+			.txt{
+				font-size: 16px;
+    			color: #333;
+			}
+			
+			.baifumei p{
+				line-height: 28px;
+			}
+			
+			.wallet-btn{
+				margin: 10px 0;
+				box-sizing: border-box;
+				display: inline-block;
+			    vertical-align: middle;
+			    zoom: 1;
+			    background: #fff;
+			    text-align: center;
+			    border: 1px solid #c4c4c4;
+			    border-radius: 2px;
+			    outline: none;
+			    cursor: pointer;
+			}
+			
+			.sm{
+				position: relative;
+			    min-width: 115px;
+			    height: 34px;
+			    font-size: 14px;
+			    line-height: 20px;
+			    padding: 6px 20px;
+			}
+			
+			.orange{
+				background-color: #f55;
+			    border-color: #f55;
+			    color: #fff;
+			}
+			
+			.orange:hover{
+				color: #fff;
+			}
+			
+			.panel-right{
+				float: left;
+			}
+			
+			.panel-right-inner{
+				height: 100px;
+			    margin: 22px 0;
+			    padding-left: 44px;
+			    border-left: 1px solid #f3f3f3;
+			    font-size: 16px;
+			}
+			
+			.panel-right-title{
+				margin-bottom: 16px;
+    			color: #666;
+			}
+			
+			.panel-right-body a{
+				color: #19abe0;
+			}
+			
+			.panel-right-body a:hover{
+				color: #19abe0;
+			}
+			
+			.wallet-mine-info{
+				margin-top: 30px;
+			    padding: 0 0 0 30px;
+			    width: 310px;
+			    height: 212px;
+			    border-left: 1px solid #f3f3f3;
+			}
+			
+			.wallet-mine-info h4{
+				margin-left: 10px;
+			    padding: 0;
+			    font-size: 16px;
+			    font-weight: 400;
+			    float: left;
+			    width: 50px;
+			    line-height: 32px;
+			}
+			
+			.wallet-possession-list{
+				float: left;
+				margin: 0;
+				padding: 0;
+			}
+			
+			.wallet-possession{
+				padding-left: 40px;
+			    line-height: 32px;
+			    float: left;
+			    width: 115px;
+			    color: #888;
+			    margin: 10px 0;
+			    background: url(https://s10.mogucdn.com/p1/151027/upload_ie3wiyzwme3tqzrxgqzdambqgayde_32x240.png) 0 0 no-repeat;
+			}
+			.icon-icon4{
+				background-position: 6px -148px;
+			}
+			
+			.icon-icon1{
+				background-position: 6px -8px;
+			}
+			
+			.icon-icon2{
+				background-position: 6px -53px;
+			}
+			
+			.icon-icon5{
+				background-position: 6px -197px;
+			}
+			
+			.wallet-possession span{
+				color: #ff629d;
+    			margin: 0 5px;
+			}
+			
+			.wallet-panel-header{
+				background: #fafafa;
+			    border-bottom: 1px solid #e7e7e7;
+			    font-size: 16px;
+			    color: #666;
+			    position: relative;
+			    line-height: 30px;
+			    padding: 10px 28px;
+			}
+			
+			.banklist-none{
+				position: relative;
+			    overflow: visible;
+			    text-align: center;
+			    border-bottom: 1px solid #f3f3f3;
+			}
+			
+			.banklist-none img{
+				width: 352px;
+			    height: 110px;
+			    margin-top: 60px;
+			}
+			
+			.wallet-link{
+				display: block;
+			    text-align: center;
+			    line-height: 40px;
+			    color: #2ad;
+    			cursor: pointer;
+			}
+			
+			.wallet-link:hover{
+				color: #2ad;
+			}
+			
+			.mslide_content_box{
+				width: 1200px;
+    			height: 100px;
+    			position: relative;
+    			overflow: hidden;
+			}
+			
+			.mslide_banners{
+				position: relative;
+    			background: #fff;
+			}
+			
+			.mslide_banner{
+				display: none;
+			    width: 100%;
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    z-index: 0;
+			}
+			.mslide_banners .mslide_banner_show{
+				display: block;
+    			z-index: 1;
+			}
+			
+			.mslide_banners a img{
+				border: 0;
+			    vertical-align: middle;
+			    width: 100%;
+			}
+		</style>
+	</head>
+
+	<body class="media_screen_1200">
+		<div class="wrap clearfix">
+			<a href="index.html" class="back_to_home fl">蘑菇街首页</a>
+			<div class="fr h_set">
+				您好，qq_j4xw25ub1sash
+				<a href="login.html">安全退出</a>
+			</div>
+		</div>
+		<div class="header">
+			<div class="wrap clearfix">
+				<a class="logo" title="我的钱包" href="#">我的钱包</a>
+				<ul class="header_top J_nav">
+					<li class="active">
+						<a href="index.html">首页</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>我要赚钱</span>
+							<img style="position: absolute;margin-left: 72px;margin-top: -54px;" src="img/Hotsell.gif"/>
+						</a>
+					</li>
+					<li>
+						<a href="#">账号管理</a>
+					</li>
+					<li>
+						<a href="#">资金管理</a>
+					</li>
+					<li>
+						<a href="#">帮助中心</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="body_wrap">
+			<div class="wallet-header clearfix">
+				<div class="wrap">
+					<img class="fl wallet-header-avatar" src="https://s5.mogucdn.com/mlcdn/5abf39/180822_2g871f7iiaa3k1h42adg1hijf299e_100x100.jpg"/>
+					<div class="wallet-header-l fl">
+						<p>
+							<span class="wallet-welcome">
+         						 亲爱的qq_j4xw25ub1sash，
+          					</span>
+						</p>
+						<div class="wallet-header-p">
+							<a href="#" class="wallet-h-l-icon  ">
+								<span class="wallet-icon person">未实名认证</span>
+							</a>
+						</div>
+					</div>
+					<div class="wallet-header-r fr">
+						<p>上次登录时间：2018-08-27 09:40:04 于山东青岛</p>
+					</div>
+				</div>
+			</div>
+			<div class="wrap clearfix">
+				<div class="wallet-body">
+					<div class="wallet-panel wallet-mine clearfix">
+						<div class="wallet-mine-l fl ">
+							<h4 class="wallet-mine-title">我的资产</h4>
+							<div class="wallet-balance clearfix">
+								<ul class="fnlist clearfix fl">
+									<li class="icon-pad balance">
+										余额
+										<a class="transfer" href="#">提现</a>
+									</li>
+								</ul>
+							</div>
+							<div class="line"></div>
+							<div class="clearfix">
+								<div class="baifumei panel-left clearfix">
+									<h4>白付美</h4>
+									<a class="wallet-help" href="#"></a>
+									<p class="txt">尊享信用消费，1-40天免息~</p>
+									<a href="#" class="wallet-btn sm orange btn-opening">
+										一键开通
+									</a>
+								</div>
+								<div class="panel-right">
+									<div class="panel-right-inner">
+										<div class="panel-right-title">
+											我的发票
+										</div>
+										<div class="panel-right-body">
+											<a href="#">查看详情</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="wallet-mine-info clearfix fl">
+							<h4>优惠</h4>
+							<ul class="wallet-possession-list">
+								<li class="wallet-possession icon-icon4">
+									全场优惠券
+									<a href="#">
+										<span>0</span>
+									</a>
+									张
+								</li>
+								<li class="wallet-possession icon-icon1">
+									店铺优惠券
+									<a href="#">
+										<span>0</span>
+									</a>
+									张
+								</li>
+								<li class="wallet-possession icon-icon2">
+									银行卡
+									<a href="#">
+										<span>0</span>
+									</a>
+									张
+								</li>
+								<li class="wallet-possession icon-icon5">
+									支付红包
+									<a href="#">
+										<span>0</span>
+									</a>
+									个
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="wallet-panel">
+						<div class="wallet-panel-header">
+							已绑定银行卡
+							<span>0</span>
+							张
+						</div>
+						<div class="wallet-panel-body">
+							<div class="banklist-none">
+								<img src="//s10.mogucdn.com/pic/150511/10sz8d_ieztaobvgzrdoojrgezdambqgyyde_352x110.png"/>
+							</div>
+							<div class="wallet-banklist-more">
+								<a href="#" class="wallet-link">查看我的银行卡</a>
+							</div>
+						</div>
+					</div>
+					<div class="wallet-panel mslide_content_box">
+						<div class="mslide_banners">
+							<a href="#" class="mslide_banner mslide_banner_show">
+								<img src="https://s10.mogucdn.com/mlcdn/c45406/180531_2d36hbe7fjiia9jdhgcb3bfaekc77_1200x100.jpg"/>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(".header_top li").click(function () {
+				$(".header_top li").removeClass("active");
+				$(this).addClass("active");
+			})
+		</script>
+	</body>
+
+</html>

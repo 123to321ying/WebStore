@@ -1,0 +1,23 @@
+.goods {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1170px;
+    min-height: 59px;
+    border-left: 2px solid #f4f4f4;
+}
+
+.goods ul {
+    width: 1200px;
+}
+
+.view_box {
+	display: block;
+    margin-top: 56px;
+    height: 1703px;
+}
+.collect_title li span {
+    padding: 5px 0;
+    margin: 0 30px;
+    font-size: 20px;
+}
