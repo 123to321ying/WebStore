@@ -1,0 +1,207 @@
+/*公共类*/
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.black {
+	color: #111;
+}
+
+.grey {
+	color: #999;
+}
+
+.relative {
+	position: relative;
+}
+
+.container {
+	width: 97%;
+	margin: 0 auto;
+}
+
+
+/*私有类*/
+
+.head img {
+	display: block;
+	width: 100px;
+	height: 30px;
+	margin: 20px auto;
+}
+
+.choose .item {
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+	border-top: 2px solid #dadada;
+	background-color: #fff;
+	background-color: #fafafa;
+	color: #999;
+	line-height: 40px;
+	height: 40px;
+	font-size: 16px;
+}
+
+.choose {
+	padding-bottom: 30px;
+}
+
+.choose .on {
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+	border-top: 2px solid #ffba33;
+	background-color: #fff;
+	color: #ffba33;
+	line-height: 40px;
+	height: 40px;
+}
+
+ul.tel {
+	display: none;
+}
+
+ul.input {
+	border-radius: 5px;
+	border: 1px solid #dadada;
+}
+
+ul.input li {
+	border-bottom: 1px solid #dadada;
+}
+
+ul.input li:last-child {
+	border-bottom: 0;
+}
+
+ul.input input {
+	border: 0;
+	background-color: white;
+	width: 100%;
+	text-indent: 11px;
+	font-size: 16px;
+	line-height: 1em;
+	height: 43px;
+	color: #666;
+}
+
+ul.input input::-webkit-input-placeholder {
+	color: #CCCCCC;
+}
+
+.forget {
+	text-align: right;
+}
+
+.forget span {
+	font-size: 12px;
+	color: #999;
+}
+
+ul.tel img {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	margin-top: -20px;
+}
+
+ul.tel button {
+	position: absolute;
+	top: 50%;
+	right: 6px;
+	margin-top: -16.5px;
+	background: #ff8a00;
+	color: white;
+	font-size: 12px;
+	height: 33px;
+	line-height: 33px;
+	padding: 0 10px;
+	border-radius: 5px;
+	border: 0;
+}
+
+.btn {
+	width: 100%;
+	font-size: 18px;
+	line-height: 34px;
+	text-align: center;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
+button.login {
+	background-color: #ffba33;
+	border: 1px solid #d8b165;
+}
+
+button.register {
+	background-color: #fff;
+	border: 1px solid #ffba33;
+}
+
+button.login span {
+	color: white;
+}
+
+button.register span {
+	color: #ffba33;
+}
+
+.forThird .line {
+	position: relative;
+	width: 100%;
+	border-top: 1px solid #d8d8d8;
+	margin-top: 40px;
+	margin-bottom: 25px;
+}
+
+.forThird span.txt {
+	position: absolute;
+	top: -12px;
+	left: 50%;
+	margin-left: -53px;
+	background-color: white;
+	padding: 0 3px;
+	color: #ccc;
+}
+
+.weibo {
+	background: url(../img/connect_ico.png) 5px 10px no-repeat;
+	background-size: 130px 30px;
+	width: 40px;
+	height: 38px;
+	display: block;
+	margin: 0 auto;
+}
+
+.QQ {
+	background: url(../img/connect_ico.png) -45px 10px no-repeat;
+	background-size: 130px 30px;
+	width: 40px;
+	height: 38px;
+	display: block;
+	margin: 0 auto;
+}
+
+ul.sorts li {
+	float: left;
+	width: 46%;
+	border: 1px solid #e6e5e5;
+	background-color: #f3f3f3;
+	color: #666;
+	font-size: 14px;
+	line-height: 30px;
+	padding-bottom: 8px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+ul.sorts li:first-child {
+	margin-right: 8%;
+}

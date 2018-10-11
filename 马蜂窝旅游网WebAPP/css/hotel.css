@@ -1,0 +1,374 @@
+/*公共类*/
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.black {
+	color: #111;
+}
+
+.grey {
+	color: #999;
+}
+
+.relative {
+	position: relative;
+}
+
+
+/**/
+
+.head {
+	display: flex;
+	box-sizing: border-box;
+	padding: 15px 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+.head .logo {
+	width: 26.7vw;
+	margin-right: 3%;
+}
+
+.head .logo img {
+	width: 100%;
+}
+
+.home {
+	position: absolute;
+	right: 6px;
+}
+
+.home a span {
+	box-sizing: initial;
+	color: #ff9d00;
+	padding: 0 10px;
+}
+
+.home span {
+	display: block;
+}
+
+.home .search_logo {
+	background: url(../img/i_head.png) -4px -59px no-repeat;
+	background-size: 94px;
+	width: 34px;
+	height: 30px;
+}
+
+.search_box {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 5px 10px;
+}
+
+i {
+	display: inline-block;
+	background: url(../img/i_search.png) 0 3px no-repeat;
+	background-size: 13px;
+	width: 22px;
+	height: 16px;
+}
+
+.search_ .search_logo {
+	position: absolute;
+	top: 17px;
+	left: 17px;
+}
+
+
+/*目的酒店选择*/
+
+.outer_box {
+	background: #f8f8f8;
+}
+
+.des {
+	padding: 10px 4%;
+	background: white;
+	margin-bottom: 10px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.destination_box span,
+.time_per span {
+	display: block;
+}
+
+.destination_box .choose_id {
+	font-size: 18px;
+	font-weight: bolder;
+	color: #474747;
+	line-height: 24px;
+	padding: 10px 70% 5px 0px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.destination_box .my_id {
+	position: absolute;
+	top: -10px;
+	right: 0px;
+	font-size: 10px;
+}
+
+.destination_box .my_id i {
+	background: url(../img/sprite_prod.png) 1px -306.1px no-repeat;
+	background-size: 350px;
+	width: 20px;
+	height: 20px;
+	margin: 0 auto;
+	display: block;
+}
+
+.time_per {
+	padding: 10px 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.time_per .day,
+.time_per .num {
+	font-size: 18px;
+	font-weight: bolder;
+	color: #474747;
+	line-height: 24px;
+}
+
+.time_per .per {
+	margin-left: 7%;
+}
+
+.time_per span.txt {
+	line-height: 32px;
+}
+
+.time_per .per span.num:before {
+	content: "";
+	position: absolute;
+	top: -5px;
+	left: -8%;
+	width: 1px;
+	height: 31px;
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.time_per .during span.during_ {
+	padding-top: 27px;
+	font-size: 10px;
+}
+
+.time_per .during .during_:before {
+	content: "";
+	position: absolute;
+	top: 24px;
+	left: 50%;
+	width: 1px;
+	height: 29px;
+	transform: rotate(24deg);
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.des .search_btn {
+	text-align: center;
+	width: 100%;
+	background: #ffe24c;
+	color: #474747;
+	padding: 10px 0;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+
+/*--目的酒店选择--*/
+
+
+/*优惠券-收藏-订单*/
+
+.tab {
+	background: white;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	margin-bottom: 10px;
+}
+
+.tab li {
+	text-align: center;
+	width: 33%;
+	font-size: 16px;
+	line-height: 37px;
+	float: left;
+	padding: 6px 0;
+	position: relative;
+}
+
+.tab li:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -1px;
+	height: 100%;
+	width: 1px;
+	background: rgba(0, 0, 0, 0.1);
+}
+
+.tab li:nth-child(1) i {
+	background: url(../img/sprite_prod.png) 1px -245.1px no-repeat;
+	background-size: 406px;
+	width: 26px;
+	height: 26px;
+	margin: 0 auto;
+	display: block;
+}
+
+.tab li:nth-child(2) i {
+	background: url(../img/sprite_prod.png) 1px -221.1px no-repeat;
+	background-size: 406px;
+	width: 26px;
+	height: 26px;
+	margin: 0 auto;
+	display: block;
+}
+
+.tab li:nth-child(3) i {
+	background: url(../img/sprite_prod.png) 1px -383.1px no-repeat;
+	background-size: 406px;
+	width: 26px;
+	height: 26px;
+	margin: 0 auto;
+	display: block;
+}
+
+
+/*--优惠券-收藏-订单--*/
+
+
+/*主题推荐*/
+
+.theme {
+	background: white;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+}
+
+.theme .title {
+	font-size: 18px;
+	margin: 10px 15px;
+	display: block;
+}
+
+.theme .choose_box {
+	width: 335px;
+	overflow: hidden;
+	margin: 0 auto 10px auto;
+}
+
+.theme .choose_box ul {
+	width: 345px;
+}
+
+.theme .choose_box li {
+	width: 105px;
+	text-align: center;
+	padding: 10px;
+	background: #f8f8f8;
+	color: #474747;
+	font-size: 16px;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.theme li.on {
+	font-weight: bold;
+	background: #ffe24c;
+}
+
+.place_box {
+	width: auto;
+	overflow-x: auto;
+	margin-left: 10px;
+	-webkit-overflow-scrolling: touch;
+}
+
+.place_box::-webkit-scrollbar {
+	display: none
+}
+
+.theme .place_box li {
+	float: left;
+	margin-right: 10px;
+	width: 160px;
+}
+
+.place_box li img {
+	width: 100%;
+}
+
+
+/*--主题推荐--*/
+
+
+/*酒店攻略*/
+
+.strategy {
+	background: white;
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	padding-bottom: 10px;
+}
+
+.strategy .title_ {
+	font-size: 18px;
+	margin: 10px 15px;
+	display: block;
+}
+
+.strategy .place_box li {
+	float: left;
+	margin-right: 10px;
+	width: 210px;
+	font-size: 10px;
+}
+
+.strategy .info_box {
+	padding: 10px;
+}
+
+.strategy .title {
+	font-size: 16px;
+	color: #474747;
+	font-weight: bold;
+	height: 40px;
+	overflow: hidden;
+	display: block;
+	line-height: 20px;
+	margin-bottom: 10px;
+}
+
+.strategy .place i {
+	background: url(../img/sprite_prod.png) 1px -91.1px no-repeat;
+	background-size: 329px;
+	width: 16px;
+	height: 16px;
+}
+
+.strategy .num{
+	color: #474747;
+	font-weight: bold;
+	padding: 0 5px;
+}
+/*--酒店攻略--*/
+
+.more{
+	display: block;
+	width: 100%;
+	color: #248bf3;
+	text-align: center;
+	padding: 10px 0 20px 0;
+}

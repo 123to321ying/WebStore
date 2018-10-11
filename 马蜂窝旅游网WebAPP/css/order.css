@@ -1,0 +1,280 @@
+/*公共类*/
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.black {
+	color: #111;
+}
+
+.grey {
+	color: #999;
+}
+
+.container {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.relative {
+	position: relative;
+}
+
+
+/*私有类*/
+
+
+/*顶部导航*/
+
+.head {
+	box-sizing: border-box;
+	padding: 15px 10px;
+}
+
+.head .back {
+	background: url(../img/i_head.png) 84px -14px;
+	background-size: 100px 300px;
+	height: 25px;
+	width: 25px;
+	position: absolute;
+	top: 0;
+	margin-top: 12.5px;
+	left: 15px;
+	z-index: 100;
+}
+
+.head .text {
+	font-size: 16px;
+	text-align: center;
+	color: #666;
+}
+
+.head a {
+	display: block;
+}
+
+
+/*--顶部导航--*/
+
+
+/*轮播图*/
+
+.swiper-slide img {
+	width: 100%;
+}
+
+
+/*--轮播图--*/
+
+
+/*订单选项*/
+
+ul.sorts {
+	display: flex;
+	justify-content: space-around;
+	background: #fff url(../img/line2.png) 0 bottom repeat-x;
+	background-size: 5px;
+}
+
+ul.sorts li {
+	display: block;
+	text-align: center;
+	color: #474747;
+	font-size: 12px;
+	padding: 10px 0;
+}
+
+.on {
+	/*content: "";
+	width: 20px;
+	height: 3px;
+	border-radius: 2px 2px 0 0;
+	background: linear-gradient(98deg, #ffe24c, #ffdb26);
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -10px;*/
+}
+
+ul.sorts li:nth-child(1) i {
+	display: block;
+	background: url(../img/i-order8.png) no-repeat;
+	background-size: 76px;
+	background-position: 3px -70px;
+	width: 22px;
+	height: 22px;
+	margin: 0 auto;
+}
+
+ul.sorts li:nth-child(2) i {
+	display: block;
+	background: url(../img/i-order8.png) no-repeat;
+	background-size: 76px;
+	background-position: -20px -22px;
+	width: 22px;
+	height: 22px;
+	margin: 0 auto;
+}
+
+ul.sorts li:nth-child(3) i {
+	display: block;
+	background: url(../img/i-order8.png) no-repeat;
+	background-size: 76px;
+	background-position: -20px -45px;
+	width: 22px;
+	height: 22px;
+	margin: 0 auto;
+}
+
+ul.sorts li:nth-child(4) i {
+	display: block;
+	background: url(../img/i-order8.png) no-repeat;
+	background-size: 76px;
+	background-position: -20px 1px;
+	width: 22px;
+	height: 22px;
+	margin: 0 auto;
+}
+
+ul.sorts li:nth-child(5) i {
+	display: block;
+	background: url(../img/i-order8.png) no-repeat;
+	background-size: 76px;
+	background-position: -24px -174px;
+	width: 22px;
+	height: 22px;
+	margin: 0 auto;
+}
+
+
+/*--订单选项--*/
+
+
+/*具体订单*/
+
+.item {
+	background: #f4f4f4;
+}
+
+.item ul li {
+	margin-bottom: 15px;
+}
+
+.title {
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 10px;
+	background-color: white;
+}
+
+.title span {
+	display: block;
+	font-size: 10px;
+}
+
+.obligation {
+	color: #ff9d00;
+}
+
+.close {
+	color: #999;
+}
+
+.info {
+	background-color: #f9f9f9;
+	padding: 10px;
+}
+
+.info_box {
+	display: flex;
+	justify-content: space-between;
+}
+
+.info span {
+	display: block;
+}
+
+.info .detail {
+	width: 100%;
+	font-size: 14px;
+	color: #333;
+	margin-bottom: 15px;
+}
+
+.pay {
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+}
+
+.pay span {
+	display: block;
+}
+
+i.free {
+	background: url(../img/i-order8.png) no-repeat;
+	background-size: 73px;
+	background-position: -42px 6px;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+}
+
+i.local {
+	background: url(../img/i-order8.png) no-repeat;
+	background-size: 73px;
+	background-position: -42px -14px;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+}
+
+.toPay {
+	border: 1px solid #ffdb26;
+	background-color: #ffdb26;
+	color: #474747;
+	padding: 0px 18px;
+}
+
+.btn_ {
+	border: 1px solid #696969;
+	background-color: #fff;
+	color: #696969;
+	padding: 0 10px;
+}
+
+
+/*--具体订单--*/
+.view_box{
+	text-align: center;
+}
+.img_null {
+	margin-top: 20px;
+	display: block;
+	background: url(../img/null.png) 3px -129px no-repeat;
+	background-size: 110px;
+	width: 112px;
+	height: 123px;
+	margin: 35px auto 0;
+}
+
+.number_order{
+	display: block;
+	position: absolute;
+	top: 5px;
+	right: -7px;
+	color: white;
+	background-color: red;
+	text-align: center;
+	font-size: 12px;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+}

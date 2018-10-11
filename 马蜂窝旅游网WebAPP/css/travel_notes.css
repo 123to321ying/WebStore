@@ -1,0 +1,302 @@
+/*公共类*/
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.black {
+	color: #111;
+}
+
+.grey {
+	color: #999;
+}
+
+.relative {
+	position: relative;
+}
+
+a:hover{
+	color: #666;
+}
+
+
+/**/
+
+.head {
+	display: flex;
+	box-sizing: border-box;
+	padding: 15px 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+.head .logo {
+	width: 26.7vw;
+	margin-right: 3%;
+}
+
+.head .logo img {
+	width: 100%;
+}
+
+.home {
+	position: absolute;
+	right: 6px;
+}
+
+.home a span {
+	box-sizing: initial;
+	color: #ff9d00;
+	padding: 0 10px;
+}
+
+.home span {
+	display: block;
+}
+
+.home .search_logo {
+	background: url(../img/i_head.png) -4px -59px no-repeat;
+	background-size: 94px;
+	width: 34px;
+	height: 30px;
+}
+
+.banner_head {
+	background: url(../img/fs-bg.png) no-repeat center top;
+	width: 100%;
+	color: white;
+	padding: 23px 10px 0 10px;
+	margin-bottom: 30px;
+}
+
+.banner_head .day {
+	font-size: 28px;
+	padding: 0 5px;
+	text-align: center;
+}
+
+.banner_head .day:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1px;
+	height: 26px;
+	background: white;
+}
+
+.banner_head .day:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 1px;
+	height: 26px;
+	background: white;
+}
+
+.banner_head .year-month {
+	text-align: center;
+}
+
+.banner_head .year-month em {
+	display: block;
+	font-size: 14px;
+	line-height: 14px;
+	padding: 0 5px;
+	width: 48px;
+}
+
+.banner_head .year-month:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 1px;
+	height: 26px;
+	background: white;
+}
+
+.banner_head .txt {
+	font-size: 23px;
+	padding: 0 5px;
+	text-align: center;
+}
+
+.banner_head .txt:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 1px;
+	height: 26px;
+	background: white;
+}
+
+.banner_head .title_txt a {
+	display: block;
+	width: 80px;
+	height: 35px;
+	border-radius: 46px;
+	padding: 4px 15px;
+	background: black;
+	margin-top: -5px;
+}
+
+.banner_head div {
+	vertical-align: middle;
+}
+
+.banner_head .title_txt a span {
+	display: block;
+	line-height: 14px;
+	font-size: 12px;
+	color: white;
+}
+
+.banner_head .title_txt a i {
+	background: url(../img/icon.png) no-repeat;
+	background-position: 0px 2px;
+	background-size: 49px auto;
+	width: 20px;
+	height: 22px;
+	display: inline-block;
+	float: right;
+	vertical-align: middle;
+}
+
+.s_box {
+	border-radius: 4px;
+	margin-top: 30px;
+}
+
+.s_box .txt_box {
+	background: white;
+	color: #111;
+	text-align: center;
+	padding: 10px 0 15px 0;
+}
+
+.s_box .txt_box .name,
+.s_box .txt_box .place {
+	color: #ff9d00;
+}
+
+.s_box .txt_box .title_ {
+	font-size: 18px;
+	line-height: 40px;
+}
+
+.s_box .txt_box>span {
+	display: block;
+}
+
+.swiper-container {
+	width: 100%;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.swiper-slide {
+	background-size: cover;
+	background-position: center;
+}
+
+.gallery-top {
+	height: 80%;
+	width: 100%;
+}
+
+.gallery-thumbs {
+	height: 20%;
+	box-sizing: border-box;
+	padding: 10px 0;
+}
+
+.gallery-thumbs .swiper-slide {
+	height: 100%;
+	opacity: 0.4;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+	opacity: 1;
+}
+
+.item_list li {
+	margin-bottom: 15px;
+}
+
+.item_list li .title {
+	width: 48%;
+	padding: 0 11px;
+}
+
+.item_list li .title>span {
+	display: block;
+	font-size: 14px;
+}
+
+.item_list li .title_txt {
+	font-size: 17px;
+	color: #474747;
+	font-weight: bold;
+	margin-bottom: 4px;
+}
+
+.item_list img {
+	width: 52%;
+}
+
+.item_list .box {
+	padding-left: 22px;
+}
+
+.item_list .num_box {
+	padding-left: 18px;
+	font-size: 12px;
+}
+
+.item_list .title .head_ {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.item_list .box .place {
+	color: #ff9d00;
+}
+
+.item_list .num_box .num{
+	margin-right: 15px;
+}
+
+.item_list .eye {
+	background: url(../img/icon.png) no-repeat;
+	background-position: -26px 2px;
+	background-size: 54px auto;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: 0;
+	left: -15px;
+}
+
+.item_list .msg {
+	background: url(../img/icon.png) no-repeat;
+	background-position: -26px -11px;
+	background-size: 54px auto;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: 0;
+	left: -15px;
+}
+
